@@ -44,7 +44,7 @@ You can then use your `enum` with `Scope`:
 ```swift
 let postsScope = Scope<MyAccessRange>(accessRanges: .readPosts, .writePosts)
 
-postsScope.contains(.writePosts) // -> false
+postsScope.contains(.writePosts) // -> true
 postsScope.contains(.readUsers) // -> false
 ```
 
