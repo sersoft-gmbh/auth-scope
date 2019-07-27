@@ -1,0 +1,17 @@
+clean: true
+
+theme: fullwidth
+
+output: docs
+source_directory: Sources
+readme: README.md
+
+xcodebuild_arguments:
+  -  -project
+  -  ../Xcode/AuthScope.xcodeproj
+module: AuthScope
+undocumented_text: ""
+github_url: https://github.com/sersoft-gmbh/authscope
+
+author: ser.soft GmbH
+author_url: https://sersoft.de

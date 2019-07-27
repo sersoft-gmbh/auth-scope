@@ -1,0 +1,10 @@
+framework module AuthScope {
+  umbrella header "AuthScope.h"
+
+  export *
+  module * { export * }
+}
+
+module AuthScope.__Swift {
+    exclude header "AuthScope-Swift.h"
+}

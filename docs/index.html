@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>AuthScope  Reference</title>
+    <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="css/highlight.css" />
+    <meta charset="utf-8">
+    <script src="js/jquery.min.js" defer></script>
+    <script src="js/jazzy.js" defer></script>
+    
+    <script src="js/lunr.min.js" defer></script>
+    <script src="js/typeahead.jquery.js" defer></script>
+    <script src="js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+
+
+    <a title="AuthScope  Reference"></a>
+
+    <header class="header">
+      <p class="header-col header-col--primary">
+        <a class="header-link" href="index.html">
+          AuthScope 1.0.0 Docs
+        </a>
+         (80% documented)
+      </p>
+    
+      <p class="header-col--secondary">
+        <form role="search" action="search.json">
+          <input type="text" placeholder="Search documentation" data-typeahead>
+        </form>
+      </p>
+    
+        <p class="header-col header-col--secondary">
+          <a class="header-link" href="https://github.com/sersoft-gmbh/authscope">
+            <img class="header-icon" src="img/gh.png"/>
+            View on GitHub
+          </a>
+        </p>
+    
+    </header>
+
+    <p class="breadcrumbs">
+      <a class="breadcrumb" href="index.html">AuthScope Reference</a>
+      <img class="carat" src="img/carat.png" />
+      AuthScope  Reference
+    </p>
+
+    <div class="content-wrapper">
+      <nav class="navigation">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/AccessRangeProtocol.html">AccessRangeProtocol</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/InvalidAccessRangeError.html">InvalidAccessRangeError</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/Scope.html">Scope</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+
+        <section class="section">
+          <div class="section-content">
+            
+            <h1 id='authscope' class='heading'>AuthScope</h1>
+
+<p><a href="https://github.com/sersoft-gmbh/AuthScope/releases/latest"><img src="https://img.shields.io/github/release/sersoft-gmbh/AuthScope.svg?style=flat" alt="GitHub release"></a>
+<a href="https://travis-ci.com/sersoft-gmbh/AuthScope"><img src="https://travis-ci.com/sersoft-gmbh/AuthScope.svg?branch=master" alt="CI Status"></a>
+<a href="https://www.codacy.com/app/ffried/AuthScope?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=sersoft-gmbh/XMLWrangler&amp;utm_campaign=Badge_Grade"><img src="https://api.codacy.com/project/badge/Grade/c997088f35484726bb1bc6167f074cc4" alt="Codacy Badge"></a>
+<a href="https://codecov.io/gh/sersoft-gmbh/AuthScope"><img src="https://codecov.io/gh/sersoft-gmbh/AuthScope/branch/master/graph/badge.svg" alt="codecov"></a></p>
+
+<p>Handle authentication scopes with ease.</p>
+<h2 id='installation' class='heading'>Installation</h2>
+<h3 id='swift-package-manager' class='heading'>Swift Package Manager</h3>
+
+<p>Add the following dependency to your <code>Package.swift</code>:</p>
+<pre class="highlight swift"><code><span class="o">.</span><span class="nf">package</span><span class="p">(</span><span class="nv">url</span><span class="p">:</span> <span class="s">"https://github.com/sersoft-gmbh/authscope.git"</span><span class="p">,</span> <span class="nv">from</span><span class="p">:</span> <span class="s">"1.0.0"</span><span class="p">),</span>
+</code></pre>
+<h3 id='xcode-project' class='heading'>Xcode Project</h3>
+
+<p>There is an Xcode project in the <code>Xcode</code> folder that you can integrate in your iOS, tvOS, watchOS and / or macOS projects.</p>
+<h3 id='carthage' class='heading'>Carthage</h3>
+
+<p>While not officially supported, Carthage may work as well:</p>
+<pre class="highlight plaintext"><code>github sersoft-gmbh/AuthScope ~&gt; 1.0.0
+</code></pre>
+<h2 id='usage' class='heading'>Usage</h2>
+
+<p>The main object you want to use is <code><a href="Structs/Scope.html">Scope&lt;AccessRange&gt;</a></code>. It&rsquo;s generic and wraps all the logic around a given <code>AccessRange</code> type. Since <code><a href="Structs/Scope.html">Scope</a></code> can&rsquo;t know what access ranges you have, you need to provide them yourself. Typically, this is done by using an <code>enum</code> and conforming it to <code><a href="Protocols/AccessRangeProtocol.html">AccessRangeProtocol</a></code>:</p>
+<pre class="highlight swift"><code><span class="kd">enum</span> <span class="kt">MyAccessRange</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="kt">AccessRangeProtocol</span><span class="p">,</span> <span class="kt">CaseIterable</span> <span class="p">{</span>
+    <span class="k">case</span> <span class="n">readPosts</span> <span class="o">=</span> <span class="s">"posts:read"</span>
+    <span class="k">case</span> <span class="n">writePosts</span> <span class="o">=</span> <span class="s">"posts:write"</span>
+
+    <span class="k">case</span> <span class="n">readUsers</span> <span class="o">=</span> <span class="s">"users:read"</span>
+    <span class="k">case</span> <span class="n">writeUsers</span> <span class="o">=</span> <span class="s">"users:write"</span>
+<span class="p">}</span>
+</code></pre>
+
+<p>You can then use your <code>enum</code> with <code><a href="Structs/Scope.html">Scope</a></code>:</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">postsScope</span> <span class="o">=</span> <span class="kt">Scope</span><span class="o">&lt;</span><span class="kt">MyAccessRange</span><span class="o">&gt;</span><span class="p">(</span><span class="nv">accessRanges</span><span class="p">:</span> <span class="o">.</span><span class="n">readPosts</span><span class="p">,</span> <span class="o">.</span><span class="n">writePosts</span><span class="p">)</span>
+
+<span class="n">postsScope</span><span class="o">.</span><span class="nf">contains</span><span class="p">(</span><span class="o">.</span><span class="n">writePosts</span><span class="p">)</span> <span class="c1">// -&gt; true</span>
+<span class="n">postsScope</span><span class="o">.</span><span class="nf">contains</span><span class="p">(</span><span class="o">.</span><span class="n">readUsers</span><span class="p">)</span> <span class="c1">// -&gt; false</span>
+</code></pre>
+
+<p><code><a href="Structs/Scope.html">Scope</a></code> conforms to <code>SetAlgebra</code> to make checking access ranges easier:</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">completeScope</span> <span class="o">=</span> <span class="kt">Scope</span><span class="o">&lt;</span><span class="kt">MyAccessRange</span><span class="o">&gt;.</span><span class="n">all</span> <span class="c1">// `.all` is available when `AccessRange` conforms to `CaseIterable`</span>
+<span class="n">completeScope</span><span class="o">.</span><span class="nf">isSuperset</span><span class="p">(</span><span class="nv">of</span><span class="p">:</span> <span class="n">postsScope</span><span class="p">)</span> <span class="c1">// -&gt; true</span>
+</code></pre>
+
+<p><code><a href="Structs/Scope.html">Scope</a></code> is also able to generate a <q>scope string</q>, since this is usually how they&rsquo;re provided to APIs. The <q>scope string</q> contains all access ranges (their <code>rawValue</code> to be exact) separated by space. It&rsquo;s important to note that <code><a href="Structs/Scope.html">Scope</a></code> does not keep the access ranges in a given order. This means, that it&rsquo;s not guaranteed that two calls to <code>scopeString</code> will contain the access ranges in the same order. It is guaranteed, however, that the resulting scope contains all access ranges. <code><a href="Structs/Scope.html">Scope</a></code> can of course also be created from a scope string. This initializer will throw an error if any of the contained access ranges is not valid.</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">usersScope</span><span class="p">:</span> <span class="kt">Scope</span><span class="o">&lt;</span><span class="kt">MyAccessRange</span><span class="o">&gt;</span> <span class="o">=</span> <span class="p">[</span><span class="o">.</span><span class="n">readUsers</span><span class="p">,</span> <span class="o">.</span><span class="n">writeUsers</span><span class="p">]</span>
+<span class="k">let</span> <span class="nv">string</span> <span class="o">=</span> <span class="n">usersScope</span><span class="o">.</span><span class="n">scopeString</span> <span class="c1">// -&gt; "users:read users:write" OR "users:write users:read"</span>
+<span class="k">let</span> <span class="nv">recreatedScope</span> <span class="o">=</span> <span class="k">try</span> <span class="kt">Scope</span><span class="o">&lt;</span><span class="kt">MyAccessRange</span><span class="o">&gt;</span><span class="p">(</span><span class="nv">scopeString</span><span class="p">:</span> <span class="n">string</span><span class="p">)</span>
+<span class="n">usersScope</span> <span class="o">==</span> <span class="n">recreatedScope</span> <span class="c1">// true</span>
+</code></pre>
+
+<p><code><a href="Structs/Scope.html">Scope</a></code> is also <code>Codable</code> and encodes/decodes itself as its scope string.</p>
+
+<p>Last but not least, Scope also provides some useful regular expression patterns, that can be used to perform matches on a string basis. This is not recommended if your scopes are available as Swift types, but can be useful if you have to match scopes e.g. in a database.
+There are currently three regular expression patterns that are provided:</p>
+
+<ul>
+<li><code>exactMatchRegExp</code>: Returns a pattern that matches a scope string that contains <strong>exactly</strong> the same access ranges. Not more and not less.</li>
+<li><code>containsAllRegExp</code>: Returns a pattern that matches a scope string that contains <strong>all</strong> access ranges, but is allowed to contain more.</li>
+<li><code>containsAnyRegExp</code>: Returns a pattern that matches a scope string that contains <strong>any</strong> access ranges. A match is made as soon as one access range is contained.</li>
+</ul>
+<h2 id='contributing' class='heading'>Contributing</h2>
+
+<p>If you find a bug / like to see a new feature in AuthScope there are a few ways of helping out:</p>
+
+<ul>
+<li>If you can fix the bug / implement the feature yourself please do and open a PR.</li>
+<li>If you know how to code (which you probably do), please add a (failing) test and open a PR. We&rsquo;ll try to get your test green ASAP.</li>
+<li>If you can do neither, then open an issue. While this might be the easiest way, it will likely take the longest for the bug to be fixed / feature to be implemented.</li>
+</ul>
+<h2 id='license' class='heading'>License</h2>
+
+<p>See <a href="./LICENSE">LICENSE</a> file.</p>
+
+          </div>
+        </section>
+
+
+      </article>
+    </div>
+    <section class="footer">
+      <p>&copy; 2019 <a class="link" href="https://sersoft.de" target="_blank" rel="external">ser.soft GmbH</a>. All rights reserved. (Last updated: 2019-07-27)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.10.0</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+    </section>
+  </body>
+</div>
+</html>

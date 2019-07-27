@@ -1,0 +1,13 @@
+version: "Apple Swift version 5.0.1 (swiftlang-1001.0.82.4 clang-1001.0.46.5)"
+options: "0655d74415f0f4d05b7faa0b1633319e"
+build_time: [1564252294, 321151000]
+inputs:
+  "/Users/florianfriedrich/Documents/ser.soft/Projects/AuthScope/Sources/AuthScope/Scope+CustomStringConvertible.swift": [9223372036, 854775807]
+  "/Users/florianfriedrich/Documents/ser.soft/Projects/AuthScope/Sources/AuthScope/Scope+Codable.swift": [9223372036, 854775807]
+  "/Users/florianfriedrich/Documents/ser.soft/Projects/AuthScope/Sources/AuthScope/Scope+Collection.swift": [9223372036, 854775807]
+  "/Users/florianfriedrich/Documents/ser.soft/Projects/AuthScope/Sources/AuthScope/Scope+Defaults.swift": [9223372036, 854775807]
+  "/Users/florianfriedrich/Documents/ser.soft/Projects/AuthScope/Sources/AuthScope/Scope+SetAlgebra.swift": [9223372036, 854775807]
+  "/Users/florianfriedrich/Documents/ser.soft/Projects/AuthScope/Sources/AuthScope/AccessRangeProtocol.swift": [9223372036, 854775807]
+  "/Users/florianfriedrich/Documents/ser.soft/Projects/AuthScope/Sources/AuthScope/Scope+ScopeString.swift": [9223372036, 854775807]
+  "/Users/florianfriedrich/Documents/ser.soft/Projects/AuthScope/Sources/AuthScope/Scope+RegularExpressions.swift": [9223372036, 854775807]
+  "/Users/florianfriedrich/Documents/ser.soft/Projects/AuthScope/Sources/AuthScope/Scope.swift": [9223372036, 854775807]

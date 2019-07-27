@@ -1,0 +1,11 @@
+framework module AuthScope {
+  umbrella header "AuthScope.h"
+
+  export *
+  module * { export * }
+}
+
+module AuthScope.Swift {
+    header "AuthScope-Swift.h"
+    requires objc
+}
