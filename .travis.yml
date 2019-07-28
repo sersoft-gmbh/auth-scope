@@ -24,11 +24,30 @@ jobs:
       os: linux
       dist: bionic
       language: generic
+      addons:
+        apt:
+          packages:
+            - libatomic1
+            - libbsd0
+            - libcurl4
+            - libxml2
+            - libedit2
+            - libsqlite3-0
+            - libc6-dev
+            - binutils
+            - libgcc-5-dev
+            - libstdc++-5-dev
+            - libpython2.7
+            - tzdata
+            - git
+            - pkg-config
+            - curl
       env:
+        - SWIFT_SKIP_APT=1
         - SWIFT_PLATFORM="ubuntu18.04"
         - SWIFT_BRANCH="swift-5.0.2-release"
         - SWIFT_VERSION="swift-5.0.2-RELEASE"
-      install: eval "$(curl -sL 'https://bitbucket.org/!api/2.0/snippets/sersoftgmbh/7AgnAp/be8f565b217c9631f2a17ed6fad96486f881297e/files/install_swift_linux.sh')"
+      install: eval "$(curl -fsL 'https://bitbucket.org/!api/2.0/snippets/sersoftgmbh/7AgnAp/files/install_swift_linux.sh')"
       script: swift test --parallel
 
     - <<: *linux
@@ -52,7 +71,7 @@ jobs:
       name: macOS Swift Release
       osx_image: xcode10.2
       xcode_destination: platform=macOS
-      after_success: bash <(curl -s https://codecov.io/bash) -J "AuthScope"
+      after_success: bash <(curl -fsL https://codecov.io/bash) -J "AuthScope"
 
     - <<: *xcode
       name: macOS Swift Beta
