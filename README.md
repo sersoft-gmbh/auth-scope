@@ -4,6 +4,7 @@
 [![CI Status](https://travis-ci.com/sersoft-gmbh/AuthScope.svg?branch=master)](https://travis-ci.com/sersoft-gmbh/AuthScope)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/19e6d76051fa4696a019e393c10bbeb3)](https://www.codacy.com/app/ffried/AuthScope?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=sersoft-gmbh/AuthScope&amp;utm_campaign=Badge_Grade)
 [![codecov](https://codecov.io/gh/sersoft-gmbh/AuthScope/branch/master/graph/badge.svg)](https://codecov.io/gh/sersoft-gmbh/AuthScope)
+[![jazzy](https://raw.githubusercontent.com/sersoft-gmbh/AuthScope/gh-pages/badge.svg?sanitize=true)](https://sersoft-gmbh.github.io/AuthScope)
 
 Handle authentication scopes with ease.
 
@@ -70,6 +71,10 @@ There are currently three regular expression patterns that are provided:
 -   `exactMatchRegExp`: Returns a pattern that matches a scope string that contains **exactly** the same access ranges. Not more and not less.
 -   `containsAllRegExp`: Returns a pattern that matches a scope string that contains **all** access ranges, but is allowed to contain more.
 -   `containsAnyRegExp`: Returns a pattern that matches a scope string that contains **any** access ranges. A match is made as soon as one access range is contained.
+
+## Documentation
+
+The API is documented using header doc. If you prefer to view the documentation as a webpage, there is an [online version](https://sersoft-gmbh.github.io/AuthScope) available for you.
 
 ## Contributing
 
