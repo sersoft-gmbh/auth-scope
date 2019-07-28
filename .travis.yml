@@ -44,11 +44,12 @@ jobs:
             - curl
       env:
         - SWIFT_SKIP_APT=1
+        - SWIFT_INSTALL_TARGET="./.swift"
         - SWIFT_PLATFORM="ubuntu18.04"
         - SWIFT_BRANCH="swift-5.0.2-release"
         - SWIFT_VERSION="swift-5.0.2-RELEASE"
       install: eval "$(curl -fsL 'https://bitbucket.org/!api/2.0/snippets/sersoftgmbh/7AgnAp/files/install_swift_linux.sh')"
-      script: swift test --parallel
+      script: ./.swift/usr/bin/swift test --parallel
 
     - <<: *linux
       name: SwiftPM Linux Beta
