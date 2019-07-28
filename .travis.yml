@@ -103,8 +103,9 @@ jobs:
       script: jazzy --module-version $TRAVIS_TAG
       deploy:
         provider: pages
-        skip-cleanup: true
         github-token: $GITHUB_DOCS_TOKEN
+        skip-cleanup: true
         local-dir: docs
+        target_branch: docs
         on:
           tags: true
