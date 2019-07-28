@@ -93,6 +93,15 @@ jobs:
       xcode_destination: platform=iOS Simulator,OS=13.0,name=iPhone Xs Max
 
     - <<: *xcode
+      name: iPadOS Swift Release
+      xcode_destination: platform=iOS Simulator,OS=latest,name=iPad Pro (11-inch)
+
+    - <<: *xcode
+      name: iPadOS Swift Beta
+      osx_image: xcode11
+      xcode_destination: platform=iOS Simulator,OS=13.0,name=iPad Pro (11-inch)
+
+    - <<: *xcode
       name: tvOS Swift Release
       xcode_destination: platform=tvOS Simulator,OS=latest,name=Apple TV 4K
 

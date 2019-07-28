@@ -11,7 +11,7 @@ xcodebuild_arguments:
   -  ../Xcode/AuthScope.xcodeproj
 module: AuthScope
 undocumented_text: ""
-github_url: https://github.com/sersoft-gmbh/authscope
+github_url: https://github.com/sersoft-gmbh/AuthScope
 
 author: ser.soft GmbH
 author_url: https://sersoft.de
