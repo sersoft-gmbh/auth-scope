@@ -1,9 +1,9 @@
 if: (branch = master) OR (type = pull_request) OR (tag =~ /^\d+\.\d+\.\d+(-.*)?$/)
 
 stages:
-  - name: validate_tests
+  - name: validate tests
   - name: test
-  - name: publish_docs
+  - name: publish docs
     if: tag =~ /^\d+\.\d+\.\d+(-.*)?$/
 
 os: osx
@@ -13,7 +13,7 @@ xcode_scheme: AuthScope
 
 jobs:
   include:
-    - stage: validate_tests
+    - stage: validate tests
       name: Validate SwiftPM generated linux test files
       osx_image: xcode10.2
       script: swift test --generate-linuxmain && git diff --exit-code
@@ -96,7 +96,7 @@ jobs:
           build | xcpretty
       after_success: false
 
-    - stage: publish_docs
+    - stage: publish docs
       name: Generate and publish documentation
       osx_image: xcode10.2
       install: gem install jazzy
