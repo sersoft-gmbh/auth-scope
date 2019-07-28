@@ -28,7 +28,7 @@ jobs:
         - SWIFT_PLATFORM="ubuntu18.04"
         - SWIFT_BRANCH="swift-5.0.2-release"
         - SWIFT_VERSION="swift-5.0.2-RELEASE"
-      install: eval "$(curl -sL https://sersoft.de/bin/install_swift_linux.sh)"
+      install: eval "$(curl -sL 'https://bitbucket.org/!api/2.0/snippets/sersoftgmbh/7AgnAp/be8f565b217c9631f2a17ed6fad96486f881297e/files/install_swift_linux.sh')"
       script: swift test --parallel
 
     - <<: *linux
@@ -55,7 +55,7 @@ jobs:
       after_success: bash <(curl -s https://codecov.io/bash) -J "AuthScope"
 
     - <<: *xcode
-      name: macOS Swift Release
+      name: macOS Swift Beta
       osx_image: xcode11
       xcode_destination: platform=macOS
 
