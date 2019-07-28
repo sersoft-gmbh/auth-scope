@@ -106,6 +106,6 @@ jobs:
         github-token: $GITHUB_DOCS_TOKEN
         skip-cleanup: true
         local-dir: docs
-        target_branch: docs
+        target_branch: gh-pages
         on:
           tags: true
