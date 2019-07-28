@@ -102,13 +102,23 @@ jobs:
       xcode_destination: platform=tvOS Simulator,OS=13.0,name=Apple TV 4K
 
     - <<: *xcode
-      name: watchOS Swift Release
-      xcode_destination: platform=watchOS Simulator,OS=latest,name=Apple Watch Series 4 - 44mm
+      name: watchOS Swift Release (build only)
+      script: |
+        set -o pipefail
+        xcodebuild -project "${TRAVIS_XCODE_PROJECT}" -scheme "${TRAVIS_XCODE_SCHEME}" \
+          -destination 'platform=watchOS Simulator,OS=latest,name=Apple Watch Series 4 - 44mm' \
+          build | xcpretty
+      after_success: false
 
     - <<: *xcode
-      name: watchOS Swift Beta
+      name: watchOS Swift Beta (build only)
       osx_image: xcode11
-      xcode_destination: platform=watchOS Simulator,OS=6.0,name=Apple Watch Series 4 - 44mm
+      script: |
+        set -o pipefail
+        xcodebuild -project "${TRAVIS_XCODE_PROJECT}" -scheme "${TRAVIS_XCODE_SCHEME}" \
+          -destination 'platform=watchOS Simulator,OS=6.0,name=Apple Watch Series 4 - 44mm' \
+          build | xcpretty
+      after_success: false
 
     - stage: publish docs
       name: Generate and publish documentation
