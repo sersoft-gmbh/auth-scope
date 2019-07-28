@@ -20,7 +20,7 @@ jobs:
 
     - &linux
       stage: test
-      name: SwiftPM Release Linux
+      name: SwiftPM Linux Release
       os: linux
       dist: bionic
       language: generic
@@ -32,19 +32,19 @@ jobs:
       script: swift test --parallel
 
     - <<: *linux
-      name: SwiftPM Beta Linux
+      name: SwiftPM Linux Beta
       env:
         - SWIFT_BRANCH="swift-5.1-branch"
         - SWIFT_VERSION="swift-5.1-DEVELOPMENT-SNAPSHOT-2019-07-25-a"
 
     - &macOS
       stage: test
-      name: SwiftPM Release macOS
+      name: SwiftPM macOS Release
       osx_image: xcode10.2
       script: swift test --parallel
 
     - <<: *macOS
-      name: SwiftPM Beta macOS
+      name: SwiftPM macOS Beta
       osx_image: xcode11
 
     - &xcode
