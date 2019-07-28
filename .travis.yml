@@ -26,6 +26,7 @@ jobs:
       language: generic
       addons:
         apt:
+          update: true
           packages:
             - libatomic1
             - libbsd0
