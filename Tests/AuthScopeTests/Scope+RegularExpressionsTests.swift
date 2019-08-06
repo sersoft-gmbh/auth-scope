@@ -25,6 +25,6 @@ final class Scope_RegularExpressionsTests: XCTestCase {
     func testScopeContainsAnyRegExp() {
         let scope: Scope<TestAccessRange> = [.a, .b, .c]
         let groupString = scope.regExpGroupString
-        XCTAssertEqual(scope.containsAnyRegExp, "((?: |^)(?:\(groupString)))((?1)(?2)| |$)")
+        XCTAssertEqual(scope.containsAnyRegExp, "(?:^| )(?:\(groupString))(?: |$)")
     }
 }
