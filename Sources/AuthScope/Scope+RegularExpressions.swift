@@ -27,6 +27,6 @@ extension Scope {
     /// Returns a regular expression string that matches a string that has at least one of access ranges in self (but not all).
     /// - Note: The order of the access ranges in the string is irrelevant.
     public var containsAnyRegExp: String {
-        return "((?: |^)" + accessRangesRegExGroup + ")((?1)(?2)| |$)"
+        return "(?:^| )" + accessRangesRegExGroup + "(?: |$)"
     }
 }
