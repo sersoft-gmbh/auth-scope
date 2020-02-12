@@ -91,12 +91,12 @@ jobs:
 
     - <<: *xcode
       name: iOS Swift Release
-      xcode_destination: platform=iOS Simulator,OS=latest,name=iPhone Xs Max
+      xcode_destination: platform=iOS Simulator,OS=latest,name=iPhone 11 Pro Max
 
     # - <<: *xcode
     #   name: iOS Swift Beta
     #   osx_image: xcode12
-    #   xcode_destination: platform=iOS Simulator,OS=13.0,name=iPhone Xs Max
+    #   xcode_destination: platform=iOS Simulator,OS=14.0,name=iPhone 11 Pro Max
 
     - <<: *xcode
       name: iPadOS Swift Release
@@ -105,7 +105,7 @@ jobs:
     # - <<: *xcode
     #   name: iPadOS Swift Beta
     #   osx_image: xcode12
-    #   xcode_destination: platform=iOS Simulator,OS=13.0,name=iPad Pro (11-inch)
+    #   xcode_destination: platform=iOS Simulator,OS=14.0,name=iPad Pro (11-inch)
 
     - <<: *xcode
       name: tvOS Swift Release
@@ -114,14 +114,14 @@ jobs:
     # - <<: *xcode
     #   name: tvOS Swift Beta
     #   osx_image: xcode12
-    #   xcode_destination: platform=tvOS Simulator,OS=13.0,name=Apple TV 4K
+    #   xcode_destination: platform=tvOS Simulator,OS=14.0,name=Apple TV 4K
 
     - <<: *xcode
       name: watchOS Swift Release (build only)
       script: |
         set -o pipefail
         xcodebuild -project "${TRAVIS_XCODE_PROJECT}" -scheme "${TRAVIS_XCODE_SCHEME}" \
-          -destination 'platform=watchOS Simulator,OS=latest,name=Apple Watch Series 4 - 44mm' \
+          -destination 'platform=watchOS Simulator,OS=latest,name=Apple Watch Series 5 - 44mm' \
           build | xcpretty
       after_success: false
 
@@ -131,7 +131,7 @@ jobs:
     #   script: |
     #     set -o pipefail
     #     xcodebuild -project "${TRAVIS_XCODE_PROJECT}" -scheme "${TRAVIS_XCODE_SCHEME}" \
-    #       -destination 'platform=watchOS Simulator,OS=6.0,name=Apple Watch Series 4 - 44mm' \
+    #       -destination 'platform=watchOS Simulator,OS=7.0,name=Apple Watch Series 5 - 44mm' \
     #       build | xcpretty
     #   after_success: false
 
