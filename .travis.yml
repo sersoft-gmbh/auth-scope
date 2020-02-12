@@ -73,9 +73,9 @@ jobs:
         - xcrun llvm-cov export -format="lcov" .build/debug/*PackageTests.xctest/Contents/MacOS/*PackageTests -instr-profile .build/debug/codecov/default.profdata > coverage.lcov
         - bash <(curl -fsL https://codecov.io/bash)
 
-    - <<: *macOS
-      name: SwiftPM macOS Beta
-      osx_image: xcode11.3
+    # - <<: *macOS
+    #   name: SwiftPM macOS Beta
+    #   osx_image: xcode11.3
 
     - &xcode
       stage: test
