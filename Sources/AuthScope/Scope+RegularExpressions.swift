@@ -1,7 +1,7 @@
 extension Scope {
     @inline(__always)
     private var accessRangesRegExGroup: String {
-        return "(?:" + accessRanges.map { $0.rawValue }.joined(separator: "|") + ")"
+        return "(?:" + accessRanges.lazy.map { $0.rawValue }.joined(separator: "|") + ")"
     }
 
     @inline(__always)

@@ -28,5 +28,5 @@ public struct Scope<AccessRange: AccessRangeProtocol>: Hashable {
 
     /// Creates a new, empty scope.
     @inlinable
-    public init() { self.init(accessRanges: [] as Set) }
+    public init() { self.init(accessRanges: Set()) }
 }

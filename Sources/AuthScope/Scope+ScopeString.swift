@@ -5,7 +5,7 @@ extension Scope {
 
     /// A string containing all access ranges in self seperated by space.
     public var scopeString: String {
-        return accessRanges.map { $0.rawValue }.joined(separator: String(Scope.stringSeparator))
+        return accessRanges.lazy.map { $0.rawValue }.joined(separator: String(Scope.stringSeparator))
     }
     
     /// Creates a new scope from a given scope string. Throws an error if the string contains invalid access ranges.

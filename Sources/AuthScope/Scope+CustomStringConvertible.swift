@@ -1,5 +1,5 @@
 extension Scope: CustomStringConvertible {
     public var description: String {
-        return String(describing: accessRanges.map { $0.rawValue }.sorted())
+        return String(describing: accessRanges.lazy.map { $0.rawValue }.sorted())
     }
 }
