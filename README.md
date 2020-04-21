@@ -1,7 +1,7 @@
 # AuthScope
 
 [![GitHub release](https://img.shields.io/github/release/sersoft-gmbh/AuthScope.svg?style=flat)](https://github.com/sersoft-gmbh/AuthScope/releases/latest)
-[![CI Status](https://travis-ci.com/sersoft-gmbh/AuthScope.svg?branch=master)](https://travis-ci.com/sersoft-gmbh/AuthScope)
+![Tests](https://github.com/sersoft-gmbh/AuthScope/workflows/Tests/badge.svg)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/19e6d76051fa4696a019e393c10bbeb3)](https://www.codacy.com/app/ffried/AuthScope?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=sersoft-gmbh/AuthScope&amp;utm_campaign=Badge_Grade)
 [![codecov](https://codecov.io/gh/sersoft-gmbh/AuthScope/branch/master/graph/badge.svg)](https://codecov.io/gh/sersoft-gmbh/AuthScope)
 [![jazzy](https://raw.githubusercontent.com/sersoft-gmbh/AuthScope/gh-pages/badge.svg?sanitize=true)](https://sersoft-gmbh.github.io/AuthScope)
