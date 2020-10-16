@@ -65,7 +65,7 @@ jobs:
       - uses: sersoft-gmbh/xcodebuild-action@v1
         with:
           spm-package: "./"
-          scheme: AuthScope
+          scheme: authscope
           destination: ${{matrix.destination}}
           action: ${{matrix.action}}
           build-settings: -parallel-testing-enabled YES -enableCodeCoverage YES
