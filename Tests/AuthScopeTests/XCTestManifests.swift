@@ -30,8 +30,9 @@ extension Scope_CodableTests {
     //   `swift test --generate-linuxmain`
     // to regenerate.
     static let __allTests__Scope_CodableTests = [
-        ("testScopeDecoding", testScopeDecoding),
         ("testScopeEncoding", testScopeEncoding),
+        ("testScopeFailedDecodingDueToInvalidScopeString", testScopeFailedDecodingDueToInvalidScopeString),
+        ("testScopeSuccessfulDecoding", testScopeSuccessfulDecoding),
     ]
 }
 
@@ -54,6 +55,7 @@ extension Scope_CustomStringConvertibleTests {
     //   `swift test --generate-linuxmain`
     // to regenerate.
     static let __allTests__Scope_CustomStringConvertibleTests = [
+        ("testScopeDebugDescription", testScopeDebugDescription),
         ("testScopeDescription", testScopeDescription),
     ]
 }
