@@ -9,23 +9,23 @@ final class Scope_CollectionTests: XCTestCase {
 
     func testScopeStartIndex() {
         let scope: Scope<TestAccessRange> = [.a, .b, .c, .d]
-        XCTAssertEqual(scope.startIndex, scope.accessRanges.startIndex)
+        XCTAssertEqual(scope.startIndex.setIndex, scope.accessRanges.startIndex)
     }
 
     func testScopeEndIndex() {
         let scope: Scope<TestAccessRange> = [.a, .b, .c, .d]
-        XCTAssertEqual(scope.endIndex, scope.accessRanges.endIndex)
+        XCTAssertEqual(scope.endIndex.setIndex, scope.accessRanges.endIndex)
     }
 
     func testScopeIndexSubscript() {
         let scope: Scope<TestAccessRange> = [.a, .b, .c, .d]
         let index = scope.index(after: scope.startIndex)
-        XCTAssertEqual(scope[index], scope.accessRanges[index])
+        XCTAssertEqual(scope[index], scope.accessRanges[index.setIndex])
     }
 
     func testScopeIndexAfterCalculation() {
         let scope: Scope<TestAccessRange> = [.a, .b, .c, .d]
-        XCTAssertEqual(scope.index(after: scope.startIndex), scope.accessRanges.index(after: scope.accessRanges.startIndex))
+        XCTAssertEqual(scope.index(after: scope.startIndex).setIndex, scope.accessRanges.index(after: scope.accessRanges.startIndex))
     }
 
     func testScopeFiltering() {

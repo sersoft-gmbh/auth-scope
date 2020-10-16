@@ -1,11 +1,11 @@
 extension Scope {
     /// The separator used to seperate access ranges in scope strings.
     @usableFromInline
-    internal static var stringSeparator: Character { return "\u{20}" } // space
+    internal static var stringSeparator: Character { "\u{20}" } // space
 
     /// A string containing all access ranges in self seperated by space.
     public var scopeString: String {
-        return accessRanges.lazy.map { $0.rawValue }.joined(separator: String(Scope.stringSeparator))
+        accessRanges.lazy.map(\.rawValue).joined(separator: String(Scope.stringSeparator))
     }
     
     /// Creates a new scope from a given scope string. Throws an error if the string contains invalid access ranges.
@@ -14,6 +14,6 @@ extension Scope {
     /// - Throws: An error if at least one of the access ranges in the scope string is invalid.
     /// - SeeAlso: `AccessRangeProtocol.init(validating:)`
     public init<ScopeString: StringProtocol>(scopeString: ScopeString) throws {
-        self.init(accessRanges: try scopeString.split(separator: Scope.stringSeparator).map(AccessRange.init(validating:)))
+        try self.init(accessRanges: scopeString.split(separator: Scope.stringSeparator).map(AccessRange.init(validating:)))
     }
 }

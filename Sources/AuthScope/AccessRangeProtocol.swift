@@ -6,12 +6,14 @@ public struct InvalidAccessRangeError: Error, CustomStringConvertible, CustomDeb
     /// The type of the access range that was used to validate above's `rawValue`.
     public let accessRangeType: Any.Type
 
+    /// See: `CustomStringConvertible.description`
     public var description: String {
-        return "The value '\(rawValue)' is not a valid scope access range!"
+        "The value '\(rawValue)' is not a valid scope access range!"
     }
 
+    /// See: `CustomDebugStringConvertible.debugDescription`
     public var debugDescription: String {
-        return "The value '\(rawValue)' is not a valid scope access range of \(accessRangeType)!"
+        "The value '\(rawValue)' is not a valid scope access range of \(accessRangeType)!"
     }
 }
 
@@ -25,6 +27,7 @@ public protocol AccessRangeProtocol: RawRepresentable, Hashable where RawValue =
 }
 
 extension AccessRangeProtocol {
+    /// See: `AccessRangeProtocol.init(validating:)`
     public init<S: StringProtocol>(validating string: S) throws {
         let rawValue = RawValue(string)
         guard let accessRange = Self(rawValue: rawValue)

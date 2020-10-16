@@ -14,18 +14,7 @@ Handle authentication scopes with ease.
 
 Add the following dependency to your `Package.swift`:
 ```swift
-.package(url: "https://github.com/sersoft-gmbh/authscope.git", from: "1.0.0"),
-```
-
-### Xcode Project
-
-There is an Xcode project in the `Xcode` folder that you can integrate in your iOS, tvOS, watchOS and / or macOS projects.
-
-### Carthage
-
-While not officially supported, Carthage may work as well:
-```cartfile
-github sersoft-gmbh/AuthScope ~> 1.0.0
+.package(url: "https://github.com/sersoft-gmbh/authscope.git", from: "2.0.0"),
 ```
 
 ## Usage

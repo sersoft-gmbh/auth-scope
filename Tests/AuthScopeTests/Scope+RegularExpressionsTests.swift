@@ -4,7 +4,7 @@ import AuthScope
 fileprivate extension Scope {
     // necessary because it generates the same order as the underlying set
     var regExpGroupString: String {
-        return map { $0.rawValue }.joined(separator: "|")
+        lazy.map(\.rawValue).joined(separator: "|")
     }
 }
 
