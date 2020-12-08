@@ -83,7 +83,7 @@ jobs:
       - uses: sersoft-gmbh/xcodebuild-action@v1
         with:
           spm-package: "./"
-          scheme: authscope
+          scheme: auth-scope
           destination: ${{matrix.destination}}
           action: ${{matrix.action}}
           parallel-testing-enabled: true
