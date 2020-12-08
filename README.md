@@ -1,10 +1,10 @@
 # AuthScope
 
-[![GitHub release](https://img.shields.io/github/release/sersoft-gmbh/AuthScope.svg?style=flat)](https://github.com/sersoft-gmbh/AuthScope/releases/latest)
-![Tests](https://github.com/sersoft-gmbh/AuthScope/workflows/Tests/badge.svg)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/19e6d76051fa4696a019e393c10bbeb3)](https://www.codacy.com/app/ffried/AuthScope?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=sersoft-gmbh/AuthScope&amp;utm_campaign=Badge_Grade)
-[![codecov](https://codecov.io/gh/sersoft-gmbh/AuthScope/branch/master/graph/badge.svg)](https://codecov.io/gh/sersoft-gmbh/AuthScope)
-[![jazzy](https://raw.githubusercontent.com/sersoft-gmbh/AuthScope/gh-pages/badge.svg?sanitize=true)](https://sersoft-gmbh.github.io/AuthScope)
+[![GitHub release](https://img.shields.io/github/release/sersoft-gmbh/auth-scope.svg?style=flat)](https://github.com/sersoft-gmbh/auth-scope/releases/latest)
+![Tests](https://github.com/sersoft-gmbh/auth-scope/workflows/Tests/badge.svg)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/19e6d76051fa4696a019e393c10bbeb3)](https://www.codacy.com/app/ffried/auth-scope?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=sersoft-gmbh/auth-scope&amp;utm_campaign=Badge_Grade)
+[![codecov](https://codecov.io/gh/sersoft-gmbh/auth-scope/branch/master/graph/badge.svg)](https://codecov.io/gh/sersoft-gmbh/auth-scope)
+[![jazzy](https://raw.githubusercontent.com/sersoft-gmbh/auth-scope/gh-pages/badge.svg?sanitize=true)](https://sersoft-gmbh.github.io/auth-scope)
 
 Handle authentication scopes with ease.
 
@@ -12,9 +12,9 @@ Handle authentication scopes with ease.
 
 ### Swift Package Manager
 
-Add the following dependency to your `Package.swift`:
+Add the following package dependency to your `Package.swift`:
 ```swift
-.package(url: "https://github.com/sersoft-gmbh/authscope.git", from: "2.0.0"),
+.package(url: "https://github.com/sersoft-gmbh/auth-scope.git", from: "3.0.0"),
 ```
 
 ## Usage
@@ -63,7 +63,7 @@ There are currently three regular expression patterns that are provided:
 
 ## Documentation
 
-The API is documented using header doc. If you prefer to view the documentation as a webpage, there is an [online version](https://sersoft-gmbh.github.io/AuthScope) available for you.
+The API is documented using header doc. If you prefer to view the documentation as a webpage, there is an [online version](https://sersoft-gmbh.github.io/auth-scope) available for you.
 
 ## Contributing
 
