@@ -31,7 +31,7 @@ extension AccessRangeProtocol {
     public init<S: StringProtocol>(validating string: S) throws {
         let rawValue = RawValue(string)
         guard let accessRange = Self(rawValue: rawValue)
-            else { throw InvalidAccessRangeError(rawValue: rawValue, accessRangeType: Self.self) }
+        else { throw InvalidAccessRangeError(rawValue: rawValue, accessRangeType: Self.self) }
         self = accessRange
     }
 }
