@@ -2,7 +2,7 @@
 
 [![GitHub release](https://img.shields.io/github/release/sersoft-gmbh/auth-scope.svg?style=flat)](https://github.com/sersoft-gmbh/auth-scope/releases/latest)
 ![Tests](https://github.com/sersoft-gmbh/auth-scope/workflows/Tests/badge.svg)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/19e6d76051fa4696a019e393c10bbeb3)](https://www.codacy.com/app/ffried/auth-scope?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=sersoft-gmbh/auth-scope&amp;utm_campaign=Badge_Grade)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/fc57ce86aee7414393d268ef658adb21)](https://www.codacy.com/gh/sersoft-gmbh/auth-scope/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=sersoft-gmbh/auth-scope&amp;utm_campaign=Badge_Grade)
 [![codecov](https://codecov.io/gh/sersoft-gmbh/auth-scope/branch/master/graph/badge.svg)](https://codecov.io/gh/sersoft-gmbh/auth-scope)
 [![jazzy](https://raw.githubusercontent.com/sersoft-gmbh/auth-scope/gh-pages/badge.svg?sanitize=true)](https://sersoft-gmbh.github.io/auth-scope)
 
