@@ -30,3 +30,7 @@ public struct Scope<AccessRange: AccessRangeProtocol>: Hashable {
     @inlinable
     public init() { self.init(accessRanges: Set()) }
 }
+
+#if compiler(>=5.5.2) && canImport(_Concurrency)
+extension Scope: Sendable {}
+#endif

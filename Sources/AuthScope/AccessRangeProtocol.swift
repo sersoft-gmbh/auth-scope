@@ -17,8 +17,16 @@ public struct InvalidAccessRangeError: Error, CustomStringConvertible, CustomDeb
     }
 }
 
+#if compiler(>=5.5.2) && canImport(_Concurrency)
+/// The base for `AccessRangeProtocol`. This is an implementation detail and should not be used directly.
+public typealias _AccessRangeBaseProtocol = Sendable
+#else
+/// The base for `AccessRangeProtocol`. This is an implementation detail and should not be used directly.
+public protocol _AccessRangeBaseProtocol {}
+#endif
+
 /// Describes an access range type. Typically an enum.
-public protocol AccessRangeProtocol: RawRepresentable, Hashable where RawValue == String {
+public protocol AccessRangeProtocol: _AccessRangeBaseProtocol, RawRepresentable, Hashable where RawValue == String {
     /// Creates an access range with the given raw value or throws an error (typically `InvalidAccessRangeError`) if it's not a valid raw value.
     ///
     /// - Parameter rawValue: The raw value to use for the access range.
