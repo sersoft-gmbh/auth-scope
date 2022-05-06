@@ -5,7 +5,7 @@
       "type" : "text"
     },
     {
-      "code" : "Encodable.encode(to:)",
+      "code" : "Swift\/Encodable\/encode(to:)",
       "type" : "codeVoice"
     }
   ],
@@ -204,7 +204,10 @@
 },
 "doc://AuthScope/documentation/AuthScope/Scope": {
   "abstract" : [
-
+    {
+      "text" : "A set of access ranges.",
+      "type" : "text"
+    }
   ],
   "fragments" : [
     {
@@ -251,7 +254,7 @@
       "type" : "text"
     },
     {
-      "code" : "Encodable.encode(to:)",
+      "code" : "Swift\/Encodable\/encode(to:)",
       "type" : "codeVoice"
     }
   ],

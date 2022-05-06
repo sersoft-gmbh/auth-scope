@@ -348,7 +348,10 @@
 },
 "doc://AuthScope/documentation/AuthScope/Scope": {
   "abstract" : [
-
+    {
+      "text" : "A set of access ranges.",
+      "type" : "text"
+    }
   ],
   "fragments" : [
     {
@@ -395,8 +398,9 @@
       "type" : "text"
     },
     {
-      "code" : "Scope",
-      "type" : "codeVoice"
+      "identifier" : "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope",
+      "isActive" : true,
+      "type" : "reference"
     },
     {
       "text" : ".",

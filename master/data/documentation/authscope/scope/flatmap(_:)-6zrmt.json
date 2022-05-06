@@ -260,7 +260,10 @@
 },
 "doc://AuthScope/documentation/AuthScope/Scope": {
   "abstract" : [
-
+    {
+      "text" : "A set of access ranges.",
+      "type" : "text"
+    }
   ],
   "fragments" : [
     {

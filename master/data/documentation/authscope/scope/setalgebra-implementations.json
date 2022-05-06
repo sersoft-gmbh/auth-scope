@@ -101,7 +101,10 @@
 },
 "doc://AuthScope/documentation/AuthScope/Scope": {
   "abstract" : [
-
+    {
+      "text" : "A set of access ranges.",
+      "type" : "text"
+    }
   ],
   "fragments" : [
     {
@@ -137,7 +140,7 @@
       "type" : "text"
     },
     {
-      "code" : "SetAlgebra.formIntersection(_:)",
+      "code" : "Swift\/SetAlgebra.formIntersection(_:)",
       "type" : "codeVoice"
     }
   ],
@@ -222,7 +225,7 @@
       "type" : "text"
     },
     {
-      "code" : "SetAlgebra.formSymmetricDifference(_:)",
+      "code" : "Swift\/SetAlgebra\/formSymmetricDifference(_:)",
       "type" : "codeVoice"
     }
   ],
@@ -307,7 +310,7 @@
       "type" : "text"
     },
     {
-      "code" : "SetAlgebra.formUnion(_:)",
+      "code" : "Swift\/SetAlgebra\/formUnion(_:)",
       "type" : "codeVoice"
     }
   ],
@@ -512,7 +515,7 @@
       "type" : "text"
     },
     {
-      "code" : "SetAlgebra.insert(_:)",
+      "code" : "Swift\/SetAlgebra\/insert(_:)",
       "type" : "codeVoice"
     }
   ],
@@ -647,7 +650,7 @@
       "type" : "text"
     },
     {
-      "code" : "SetAlgebra.intersection(_:)",
+      "code" : "Swift\/SetAlgebra\/intersection(_:)",
       "type" : "codeVoice"
     }
   ],
@@ -1091,7 +1094,7 @@
       "type" : "text"
     },
     {
-      "code" : "SetAlgebra.remove(_:)",
+      "code" : "Swift\/SetAlgebra\/remove(_:)",
       "type" : "codeVoice"
     }
   ],
@@ -1301,7 +1304,7 @@
       "type" : "text"
     },
     {
-      "code" : "SetAlgebra.symmetricDifference(_:)",
+      "code" : "Swift\/SetAlgebra\/symmetricDifference(_:)",
       "type" : "codeVoice"
     }
   ],
@@ -1403,7 +1406,7 @@
       "type" : "text"
     },
     {
-      "code" : "SetAlgebra.union(_:)",
+      "code" : "Swift\/SetAlgebra\/union(_:)",
       "type" : "codeVoice"
     }
   ],
@@ -1505,7 +1508,7 @@
       "type" : "text"
     },
     {
-      "code" : "SetAlgebra.update(with:)",
+      "code" : "Swift\/SetAlgebra\/update(with:)",
       "type" : "codeVoice"
     }
   ],

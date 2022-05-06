@@ -5,7 +5,7 @@
       "type" : "text"
     },
     {
-      "code" : "SetAlgebra.formSymmetricDifference(_:)",
+      "code" : "Swift\/SetAlgebra\/formSymmetricDifference(_:)",
       "type" : "codeVoice"
     }
   ],
@@ -213,7 +213,10 @@
 },
 "doc://AuthScope/documentation/AuthScope/Scope": {
   "abstract" : [
-
+    {
+      "text" : "A set of access ranges.",
+      "type" : "text"
+    }
   ],
   "fragments" : [
     {
@@ -260,7 +263,7 @@
       "type" : "text"
     },
     {
-      "code" : "SetAlgebra.formSymmetricDifference(_:)",
+      "code" : "Swift\/SetAlgebra\/formSymmetricDifference(_:)",
       "type" : "codeVoice"
     }
   ],

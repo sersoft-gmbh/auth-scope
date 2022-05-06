@@ -78,7 +78,10 @@
 },
 "doc://AuthScope/documentation/AuthScope/Scope": {
   "abstract" : [
-
+    {
+      "text" : "A set of access ranges.",
+      "type" : "text"
+    }
   ],
   "fragments" : [
     {
@@ -114,7 +117,7 @@
       "type" : "text"
     },
     {
-      "code" : "ExpressibleByArrayLiteral.ArrayLiteralElement",
+      "code" : "Swift\/ExpressibleByArrayLiteral\/ArrayLiteralElement",
       "type" : "codeVoice"
     }
   ],
@@ -184,7 +187,7 @@
       "type" : "text"
     },
     {
-      "code" : "ExpressibleByArrayLiteral.init(arrayLiteral:)",
+      "code" : "Swift\/ExpressibleByArrayLiteral\/init(arrayLiteral:)",
       "type" : "codeVoice"
     }
   ],

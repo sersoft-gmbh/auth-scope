@@ -1,7 +1,7 @@
 {
   "abstract" : [
     {
-      "text" : "No overview available.",
+      "text" : "A set of access ranges.",
       "type" : "text"
     }
   ],
@@ -279,7 +279,10 @@
 },
 "doc://AuthScope/documentation/AuthScope/Scope": {
   "abstract" : [
-
+    {
+      "text" : "A set of access ranges.",
+      "type" : "text"
+    }
   ],
   "fragments" : [
     {
@@ -912,7 +915,7 @@
       "type" : "text"
     },
     {
-      "code" : "Set",
+      "code" : "Swift\/Set",
       "type" : "codeVoice"
     },
     {

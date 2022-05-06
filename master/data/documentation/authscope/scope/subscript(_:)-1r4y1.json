@@ -5,7 +5,7 @@
       "type" : "text"
     },
     {
-      "code" : "Collection.subscript(position:)",
+      "code" : "Swift\/Collection\/subscript(position:)",
       "type" : "codeVoice"
     }
   ],
@@ -255,7 +255,10 @@
 },
 "doc://AuthScope/documentation/AuthScope/Scope": {
   "abstract" : [
-
+    {
+      "text" : "A set of access ranges.",
+      "type" : "text"
+    }
   ],
   "fragments" : [
     {
@@ -302,8 +305,9 @@
       "type" : "text"
     },
     {
-      "code" : "Scope",
-      "type" : "codeVoice"
+      "identifier" : "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope",
+      "isActive" : true,
+      "type" : "reference"
     },
     {
       "text" : ".",
@@ -376,7 +380,7 @@
       "type" : "text"
     },
     {
-      "code" : "Collection.subscript(position:)",
+      "code" : "Swift\/Collection\/subscript(position:)",
       "type" : "codeVoice"
     }
   ],

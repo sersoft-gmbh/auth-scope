@@ -71,7 +71,10 @@
 },
 "doc://AuthScope/documentation/AuthScope/Scope": {
   "abstract" : [
-
+    {
+      "text" : "A set of access ranges.",
+      "type" : "text"
+    }
   ],
   "fragments" : [
     {
@@ -107,7 +110,7 @@
       "type" : "text"
     },
     {
-      "code" : "Decodable.init(from:)",
+      "code" : "Swift\/Decodable\/init(from:)",
       "type" : "codeVoice"
     }
   ],

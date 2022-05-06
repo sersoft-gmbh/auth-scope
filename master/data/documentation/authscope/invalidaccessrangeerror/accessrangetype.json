@@ -5,8 +5,9 @@
       "type" : "text"
     },
     {
-      "code" : "rawValue",
-      "type" : "codeVoice"
+      "identifier" : "doc:\/\/AuthScope\/documentation\/AuthScope\/InvalidAccessRangeError\/rawValue",
+      "isActive" : true,
+      "type" : "reference"
     },
     {
       "text" : ".",
@@ -179,8 +180,9 @@
       "type" : "text"
     },
     {
-      "code" : "rawValue",
-      "type" : "codeVoice"
+      "identifier" : "doc:\/\/AuthScope\/documentation\/AuthScope\/InvalidAccessRangeError\/rawValue",
+      "isActive" : true,
+      "type" : "reference"
     },
     {
       "text" : ".",
@@ -219,6 +221,43 @@
   "title" : "accessRangeType",
   "type" : "topic",
   "url" : "\/documentation\/authscope\/invalidaccessrangeerror\/accessrangetype"
+},
+"doc://AuthScope/documentation/AuthScope/InvalidAccessRangeError/rawValue": {
+  "abstract" : [
+    {
+      "text" : "The raw value of the access range that didn’t pass validation.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "let"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "rawValue"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:SS",
+      "text" : "String"
+    }
+  ],
+  "identifier" : "doc:\/\/AuthScope\/documentation\/AuthScope\/InvalidAccessRangeError\/rawValue",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "rawValue",
+  "type" : "topic",
+  "url" : "\/documentation\/authscope\/invalidaccessrangeerror\/rawvalue"
 }
 }
 }

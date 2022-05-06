@@ -5,7 +5,7 @@
       "type" : "text"
     },
     {
-      "code" : "CustomDebugStringConvertible.debugDescription",
+      "code" : "Swift\/CustomDebugStringConvertible\/debugDescription",
       "type" : "codeVoice"
     }
   ],
@@ -181,7 +181,7 @@
       "type" : "text"
     },
     {
-      "code" : "CustomDebugStringConvertible.debugDescription",
+      "code" : "Swift\/CustomDebugStringConvertible\/debugDescription",
       "type" : "codeVoice"
     }
   ],

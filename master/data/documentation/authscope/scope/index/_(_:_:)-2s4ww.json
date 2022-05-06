@@ -1,12 +1,21 @@
 {
   "abstract" : [
     {
-      "text" : "See ",
+      "text" : "See ``Swift\/Comparable\/<(",
       "type" : "text"
     },
     {
-      "code" : "Comparable.<",
-      "type" : "codeVoice"
+      "inlineContent" : [
+        {
+          "text" : ":",
+          "type" : "text"
+        }
+      ],
+      "type" : "emphasis"
+    },
+    {
+      "text" : ":)`",
+      "type" : "text"
     }
   ],
   "hierarchy" : {
@@ -280,7 +289,10 @@
 },
 "doc://AuthScope/documentation/AuthScope/Scope": {
   "abstract" : [
-
+    {
+      "text" : "A set of access ranges.",
+      "type" : "text"
+    }
   ],
   "fragments" : [
     {
@@ -327,8 +339,9 @@
       "type" : "text"
     },
     {
-      "code" : "Scope",
-      "type" : "codeVoice"
+      "identifier" : "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope",
+      "isActive" : true,
+      "type" : "reference"
     },
     {
       "text" : ".",
@@ -397,12 +410,21 @@
 "doc://AuthScope/documentation/AuthScope/Scope/Index/_(_:_:)-2s4ww": {
   "abstract" : [
     {
-      "text" : "See ",
+      "text" : "See ``Swift\/Comparable\/<(",
       "type" : "text"
     },
     {
-      "code" : "Comparable.<",
-      "type" : "codeVoice"
+      "inlineContent" : [
+        {
+          "text" : ":",
+          "type" : "text"
+        }
+      ],
+      "type" : "emphasis"
+    },
+    {
+      "text" : ":)`",
+      "type" : "text"
     }
   ],
   "fragments" : [

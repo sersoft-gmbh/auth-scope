@@ -176,8 +176,9 @@
       "type" : "text"
     },
     {
-      "code" : "rawValue",
-      "type" : "codeVoice"
+      "identifier" : "doc:\/\/AuthScope\/documentation\/AuthScope\/InvalidAccessRangeError\/rawValue",
+      "isActive" : true,
+      "type" : "reference"
     },
     {
       "text" : ".",
@@ -224,7 +225,7 @@
       "type" : "text"
     },
     {
-      "code" : "CustomDebugStringConvertible.debugDescription",
+      "code" : "Swift\/CustomDebugStringConvertible\/debugDescription",
       "type" : "codeVoice"
     }
   ],
@@ -265,7 +266,7 @@
       "type" : "text"
     },
     {
-      "code" : "CustomStringConvertible.description",
+      "code" : "Swift\/CustomStringConvertible\/description",
       "type" : "codeVoice"
     }
   ],

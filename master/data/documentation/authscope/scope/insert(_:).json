@@ -5,7 +5,7 @@
       "type" : "text"
     },
     {
-      "code" : "SetAlgebra.insert(_:)",
+      "code" : "Swift\/SetAlgebra\/insert(_:)",
       "type" : "codeVoice"
     }
   ],
@@ -322,7 +322,10 @@
 },
 "doc://AuthScope/documentation/AuthScope/Scope": {
   "abstract" : [
-
+    {
+      "text" : "A set of access ranges.",
+      "type" : "text"
+    }
   ],
   "fragments" : [
     {
@@ -369,7 +372,7 @@
       "type" : "text"
     },
     {
-      "code" : "SetAlgebra.insert(_:)",
+      "code" : "Swift\/SetAlgebra\/insert(_:)",
       "type" : "codeVoice"
     }
   ],

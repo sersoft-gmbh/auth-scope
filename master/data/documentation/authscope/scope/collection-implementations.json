@@ -133,7 +133,10 @@
 },
 "doc://AuthScope/documentation/AuthScope/Scope": {
   "abstract" : [
-
+    {
+      "text" : "A set of access ranges.",
+      "type" : "text"
+    }
   ],
   "fragments" : [
     {
@@ -169,7 +172,7 @@
       "type" : "text"
     },
     {
-      "code" : "Collection.Element",
+      "code" : "Swift\/Collection\/Element",
       "type" : "codeVoice"
     }
   ],
@@ -239,8 +242,9 @@
       "type" : "text"
     },
     {
-      "code" : "Scope",
-      "type" : "codeVoice"
+      "identifier" : "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope",
+      "isActive" : true,
+      "type" : "reference"
     },
     {
       "text" : ".",
@@ -670,7 +674,7 @@
       "type" : "text"
     },
     {
-      "code" : "Collection.endIndex",
+      "code" : "Swift\/Collection\/endIndex",
       "type" : "codeVoice"
     }
   ],
@@ -1462,7 +1466,7 @@
       "type" : "text"
     },
     {
-      "code" : "Collection.index(after:)",
+      "code" : "Swift\/Collection\/index(after:)",
       "type" : "codeVoice"
     }
   ],
@@ -1825,7 +1829,7 @@
       "type" : "text"
     },
     {
-      "code" : "Collection.isEmpty",
+      "code" : "Swift\/Collection\/isEmpty",
       "type" : "codeVoice"
     }
   ],
@@ -2822,7 +2826,7 @@
       "type" : "text"
     },
     {
-      "code" : "Collection.startIndex",
+      "code" : "Swift\/Collection\/startIndex",
       "type" : "codeVoice"
     }
   ],
@@ -2912,7 +2916,7 @@
       "type" : "text"
     },
     {
-      "code" : "Collection.subscript(position:)",
+      "code" : "Swift\/Collection\/subscript(position:)",
       "type" : "codeVoice"
     }
   ],
