@@ -12,7 +12,7 @@ extension Scope {
     ///
     /// - Parameter scopeString: The scope string (e.g. created by `scopeString` of an existing scope) to parse.
     /// - Throws: An error if at least one of the access ranges in the scope string is invalid.
-    /// - SeeAlso: `AccessRangeProtocol.init(validating:)`
+    /// - SeeAlso: ``AccessRangeProtocol/init(validating:)``
     public init<ScopeString: StringProtocol>(scopeString: ScopeString) throws {
         try self.init(accessRanges: scopeString.split(separator: Scope.stringSeparator).map(AccessRange.init(validating:)))
     }

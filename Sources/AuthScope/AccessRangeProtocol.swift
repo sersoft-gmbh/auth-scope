@@ -3,39 +3,39 @@ public struct InvalidAccessRangeError: Error, CustomStringConvertible, CustomDeb
     /// The raw value of the access range that didn't pass validation.
     public let rawValue: String
 
-    /// The type of the access range that was used to validate above's `rawValue`.
+    /// The type of the access range that was used to validate above's ``rawValue``.
     public let accessRangeType: Any.Type
 
-    /// See: `CustomStringConvertible.description`
+    /// See: ``Swift/CustomStringConvertible/description``
     public var description: String {
         "The value '\(rawValue)' is not a valid scope access range!"
     }
 
-    /// See: `CustomDebugStringConvertible.debugDescription`
+    /// See: ``Swift/CustomDebugStringConvertible/debugDescription``
     public var debugDescription: String {
         "The value '\(rawValue)' is not a valid scope access range of \(accessRangeType)!"
     }
 }
 
 #if compiler(>=5.5.2) && canImport(_Concurrency)
-/// The base for `AccessRangeProtocol`. This is an implementation detail and should not be used directly.
+/// The base for ``AccessRangeProtocol``. This is an implementation detail and should not be used directly.
 public typealias _AccessRangeBaseProtocol = Sendable
 #else
-/// The base for `AccessRangeProtocol`. This is an implementation detail and should not be used directly.
-public protocol _AccessRangeBaseProtocol {}
+/// The base for ``AccessRangeProtocol``. This is an implementation detail and should not be used directly.
+public typealias _AccessRangeBaseProtocol = Any
 #endif
 
 /// Describes an access range type. Typically an enum.
-public protocol AccessRangeProtocol: _AccessRangeBaseProtocol, RawRepresentable, Hashable where RawValue == String {
-    /// Creates an access range with the given raw value or throws an error (typically `InvalidAccessRangeError`) if it's not a valid raw value.
-    ///
+public protocol AccessRangeProtocol: _AccessRangeBaseProtocol, RawRepresentable, Hashable
+where RawValue == String
+{
+    /// Creates an access range with the given raw value or throws an error (typically ``InvalidAccessRangeError``) if it's not a valid raw value.
     /// - Parameter rawValue: The raw value to use for the access range.
     /// - Throws: Any error (typically `InvalidAccessRangeError`) if it's not a vaild raw value.
     init<S: StringProtocol>(validating string: S) throws
 }
 
 extension AccessRangeProtocol {
-    /// See: `AccessRangeProtocol.init(validating:)`
     public init<S: StringProtocol>(validating string: S) throws {
         let rawValue = RawValue(string)
         guard let accessRange = Self(rawValue: rawValue)
