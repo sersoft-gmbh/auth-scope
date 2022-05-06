@@ -4,7 +4,7 @@
 ![Tests](https://github.com/sersoft-gmbh/auth-scope/workflows/Tests/badge.svg)
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/fc57ce86aee7414393d268ef658adb21)](https://www.codacy.com/gh/sersoft-gmbh/auth-scope/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=sersoft-gmbh/auth-scope&amp;utm_campaign=Badge_Grade)
 [![codecov](https://codecov.io/gh/sersoft-gmbh/auth-scope/branch/master/graph/badge.svg)](https://codecov.io/gh/sersoft-gmbh/auth-scope)
-[![jazzy](https://raw.githubusercontent.com/sersoft-gmbh/auth-scope/gh-pages/badge.svg?sanitize=true)](https://sersoft-gmbh.github.io/auth-scope)
+[![Docs](https://img.shields.io/badge/-documentation-informational)](https://sersoft-gmbh.github.io/auth-scope)
 
 Handle authentication scopes with ease.
 
