@@ -20,7 +20,7 @@
         "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope",
         "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/Collection-Implementations",
         "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/Index",
-        "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/Index\/-Implementations"
+        "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/Index\/Comparable-Implementations"
       ]
     ]
   },
@@ -323,7 +323,7 @@
   ],
   "schemaVersion" : {
     "major" : 0,
-    "minor" : 2,
+    "minor" : 3,
     "patch" : 0
   },
   "sections" : [
@@ -474,17 +474,6 @@
   "type" : "topic",
   "url" : "\/documentation\/authscope\/scope\/index"
 },
-"doc://AuthScope/documentation/AuthScope/Scope/Index/-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/Index\/-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : " Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/authscope\/scope\/index\/-implementations"
-},
 "doc://AuthScope/documentation/AuthScope/Scope/Index/.._(_:_:)": {
   "abstract" : [
     {
@@ -569,6 +558,17 @@
   "title" : "..<(_:_:)",
   "type" : "topic",
   "url" : "\/documentation\/authscope\/scope\/index\/'.._(_:_:)"
+},
+"doc://AuthScope/documentation/AuthScope/Scope/Index/Comparable-Implementations": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/Index\/Comparable-Implementations",
+  "kind" : "article",
+  "role" : "collectionGroup",
+  "title" : "Comparable Implementations",
+  "type" : "topic",
+  "url" : "\/documentation\/authscope\/scope\/index\/comparable-implementations"
 }
 }
 }
