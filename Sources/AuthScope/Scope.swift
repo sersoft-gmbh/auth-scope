@@ -1,5 +1,5 @@
 /// A set of access ranges.
-public struct Scope<AccessRange: AccessRangeProtocol>: Hashable {
+public struct Scope<AccessRange: AccessRangeProtocol>: Hashable, Sendable {
     /// The internal access ranges.
     @usableFromInline
     internal var accessRanges: Set<AccessRange>
@@ -28,7 +28,3 @@ public struct Scope<AccessRange: AccessRangeProtocol>: Hashable {
     @inlinable
     public init() { self.init(accessRanges: Set()) }
 }
-
-#if compiler(>=5.5.2) && canImport(_Concurrency)
-extension Scope: Sendable {}
-#endif

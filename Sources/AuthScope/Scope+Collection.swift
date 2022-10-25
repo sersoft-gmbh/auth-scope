@@ -4,7 +4,7 @@ extension Scope: Collection {
 
     /// The index type of ``Scope``.
     @frozen
-    public struct Index: Comparable {
+    public struct Index: Comparable, Sendable {
         @usableFromInline
         let setIndex: Set<Element>.Index
 
