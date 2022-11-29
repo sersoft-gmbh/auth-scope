@@ -108,6 +108,13 @@
         "doc:\/\/AuthScope\/documentation\/AuthScope\/InvalidAccessRangeError\/rawValue"
       ],
       "title" : "Instance Properties"
+    },
+    {
+      "generated" : true,
+      "identifiers" : [
+        "doc:\/\/AuthScope\/documentation\/AuthScope\/InvalidAccessRangeError\/CustomStringConvertible-Implementations"
+      ],
+      "title" : "Default Implementations"
     }
   ],
   "variants" : [
@@ -168,6 +175,17 @@
   "title" : "InvalidAccessRangeError",
   "type" : "topic",
   "url" : "\/documentation\/authscope\/invalidaccessrangeerror"
+},
+"doc://AuthScope/documentation/AuthScope/InvalidAccessRangeError/CustomStringConvertible-Implementations": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/AuthScope\/documentation\/AuthScope\/InvalidAccessRangeError\/CustomStringConvertible-Implementations",
+  "kind" : "article",
+  "role" : "collectionGroup",
+  "title" : "CustomStringConvertible Implementations",
+  "type" : "topic",
+  "url" : "\/documentation\/authscope\/invalidaccessrangeerror\/customstringconvertible-implementations"
 },
 "doc://AuthScope/documentation/AuthScope/InvalidAccessRangeError/accessRangeType": {
   "abstract" : [

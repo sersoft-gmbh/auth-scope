@@ -41,7 +41,9 @@
     {
       "generated" : true,
       "identifiers" : [
+        "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/all(_:)",
         "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/allSatisfy(_:)",
+        "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/any(_:)",
         "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/compactMap(_:)",
         "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/contains(_:)",
         "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/contains(where:)",
@@ -62,6 +64,7 @@
         "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/max(by:)",
         "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/min()",
         "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/min(by:)",
+        "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/none(_:)",
         "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/reduce(_:_:)",
         "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/reduce(into:_:)",
         "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/reversed()",
@@ -134,6 +137,65 @@
   "title" : "Scope",
   "type" : "topic",
   "url" : "\/documentation\/authscope\/scope"
+},
+"doc://AuthScope/documentation/AuthScope/Scope/all(_:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "all"
+    },
+    {
+      "kind" : "text",
+      "text" : "(("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Element"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    }
+  ],
+  "identifier" : "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/all(_:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "all(_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/authscope\/scope\/all(_:)"
 },
 "doc://AuthScope/documentation/AuthScope/Scope/allSatisfy(_:)": {
   "abstract" : [
@@ -220,6 +282,65 @@
   "title" : "allSatisfy(_:)",
   "type" : "topic",
   "url" : "\/documentation\/authscope\/scope\/allsatisfy(_:)"
+},
+"doc://AuthScope/documentation/AuthScope/Scope/any(_:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "any"
+    },
+    {
+      "kind" : "text",
+      "text" : "(("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Element"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    }
+  ],
+  "identifier" : "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/any(_:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "any(_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/authscope\/scope\/any(_:)"
 },
 "doc://AuthScope/documentation/AuthScope/Scope/compactMap(_:)": {
   "abstract" : [
@@ -2289,6 +2410,65 @@
   "title" : "min(by:)",
   "type" : "topic",
   "url" : "\/documentation\/authscope\/scope\/min(by:)"
+},
+"doc://AuthScope/documentation/AuthScope/Scope/none(_:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "none"
+    },
+    {
+      "kind" : "text",
+      "text" : "(("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Element"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    }
+  ],
+  "identifier" : "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/none(_:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "none(_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/authscope\/scope\/none(_:)"
 },
 "doc://AuthScope/documentation/AuthScope/Scope/reduce(_:_:)": {
   "abstract" : [

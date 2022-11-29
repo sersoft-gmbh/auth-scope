@@ -54,31 +54,44 @@
     {
       "generated" : true,
       "identifiers" : [
+        "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/convertByOffset(_:in:)-45yvn",
+        "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/convertByOffset(_:in:)-93sn3",
         "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/distance(from:to:)",
         "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/drop(while:)",
         "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/dropFirst(_:)",
         "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/dropLast(_:)",
         "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/firstIndex(of:)",
         "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/firstIndex(where:)",
+        "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/firstRange(of:)",
         "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/formIndex(_:offsetBy:)",
         "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/formIndex(_:offsetBy:limitedBy:)",
         "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/formIndex(after:)",
         "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/index(_:offsetBy:)",
         "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/index(_:offsetBy:limitedBy:)",
         "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/index(after:)",
+        "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/index(atOffset:)",
         "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/index(of:)",
         "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/makeIterator()",
         "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/map(_:)-11ra4",
+        "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/offset(of:)",
+        "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/offset(ofIndex:)",
+        "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/offsets(of:)",
         "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/prefix(_:)",
         "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/prefix(through:)",
         "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/prefix(upTo:)",
         "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/prefix(while:)",
         "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/randomElement()",
         "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/randomElement(using:)",
+        "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/ranges(of:)",
+        "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/split(around:)",
         "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/split(maxSplits:omittingEmptySubsequences:whereSeparator:)",
         "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/split(separator:maxSplits:omittingEmptySubsequences:)",
         "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/suffix(_:)",
-        "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/suffix(from:)"
+        "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/suffix(from:)",
+        "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/trimmingPrefix(_:)",
+        "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/trimmingPrefix(while:)",
+        "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/tryDropPrefix(_:)",
+        "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/tryDropSuffix(_:)"
       ],
       "title" : "Instance Methods"
     },
@@ -303,6 +316,190 @@
   "title" : "Scope.Index",
   "type" : "topic",
   "url" : "\/documentation\/authscope\/scope\/index"
+},
+"doc://AuthScope/documentation/AuthScope/Scope/convertByOffset(_:in:)-45yvn": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "convertByOffset"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "genericParameter",
+      "text" : "C"
+    },
+    {
+      "kind" : "text",
+      "text" : ">("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Index"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "in"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "C"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "C"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Index"
+    }
+  ],
+  "identifier" : "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/convertByOffset(_:in:)-45yvn",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "convertByOffset(_:in:)",
+  "type" : "topic",
+  "url" : "\/documentation\/authscope\/scope\/convertbyoffset(_:in:)-45yvn"
+},
+"doc://AuthScope/documentation/AuthScope/Scope/convertByOffset(_:in:)-93sn3": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "convertByOffset"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "genericParameter",
+      "text" : "C"
+    },
+    {
+      "kind" : "text",
+      "text" : ">("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sn",
+      "text" : "Range"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Index"
+    },
+    {
+      "kind" : "text",
+      "text" : ">, "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "in"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "C"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sn",
+      "text" : "Range"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "C"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Index"
+    },
+    {
+      "kind" : "text",
+      "text" : ">"
+    }
+  ],
+  "identifier" : "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/convertByOffset(_:in:)-93sn3",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "convertByOffset(_:in:)",
+  "type" : "topic",
+  "url" : "\/documentation\/authscope\/scope\/convertbyoffset(_:in:)-93sn3"
 },
 "doc://AuthScope/documentation/AuthScope/Scope/count": {
   "abstract" : [
@@ -1016,6 +1213,127 @@
   "type" : "topic",
   "url" : "\/documentation\/authscope\/scope\/firstindex(where:)"
 },
+"doc://AuthScope/documentation/AuthScope/Scope/firstRange(of:)": {
+  "abstract" : [
+    {
+      "text" : "Finds and returns the range of the first occurrence of a given collection",
+      "type" : "text"
+    },
+    {
+      "text" : " ",
+      "type" : "text"
+    },
+    {
+      "text" : "within this collection.",
+      "type" : "text"
+    }
+  ],
+  "conformance" : {
+    "availabilityPrefix" : [
+      {
+        "text" : "Available when",
+        "type" : "text"
+      }
+    ],
+    "conformancePrefix" : [
+      {
+        "text" : "Conforms when",
+        "type" : "text"
+      }
+    ],
+    "constraints" : [
+      {
+        "code" : "Element",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : " conforms to ",
+        "type" : "text"
+      },
+      {
+        "code" : "Equatable",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : ".",
+        "type" : "text"
+      }
+    ]
+  },
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "firstRange"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "genericParameter",
+      "text" : "C"
+    },
+    {
+      "kind" : "text",
+      "text" : ">("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "of"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "C"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sn",
+      "text" : "Range"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Index"
+    },
+    {
+      "kind" : "text",
+      "text" : ">?"
+    }
+  ],
+  "identifier" : "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/firstRange(of:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "firstRange(of:)",
+  "type" : "topic",
+  "url" : "\/documentation\/authscope\/scope\/firstrange(of:)"
+},
 "doc://AuthScope/documentation/AuthScope/Scope/formIndex(_:offsetBy:)": {
   "abstract" : [
     {
@@ -1577,6 +1895,64 @@
   "type" : "topic",
   "url" : "\/documentation\/authscope\/scope\/index(after:)"
 },
+"doc://AuthScope/documentation/AuthScope/Scope/index(atOffset:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "index"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "atOffset"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Si",
+      "text" : "Int"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Index"
+    }
+  ],
+  "identifier" : "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/index(atOffset:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "index(atOffset:)",
+  "type" : "topic",
+  "url" : "\/documentation\/authscope\/scope\/index(atoffset:)"
+},
 "doc://AuthScope/documentation/AuthScope/Scope/index(of:)": {
   "abstract" : [
     {
@@ -2066,6 +2442,202 @@
   "type" : "topic",
   "url" : "\/documentation\/authscope\/scope\/map(_:)-11ra4"
 },
+"doc://AuthScope/documentation/AuthScope/Scope/offset(of:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "offset"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "of"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Index"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Si",
+      "text" : "Int"
+    }
+  ],
+  "identifier" : "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/offset(of:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "offset(of:)",
+  "type" : "topic",
+  "url" : "\/documentation\/authscope\/scope\/offset(of:)"
+},
+"doc://AuthScope/documentation/AuthScope/Scope/offset(ofIndex:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "offset"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "ofIndex"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Index"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Si",
+      "text" : "Int"
+    }
+  ],
+  "identifier" : "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/offset(ofIndex:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "offset(ofIndex:)",
+  "type" : "topic",
+  "url" : "\/documentation\/authscope\/scope\/offset(ofindex:)"
+},
+"doc://AuthScope/documentation/AuthScope/Scope/offsets(of:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "offsets"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "of"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sn",
+      "text" : "Range"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Index"
+    },
+    {
+      "kind" : "text",
+      "text" : ">) -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sn",
+      "text" : "Range"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Si",
+      "text" : "Int"
+    },
+    {
+      "kind" : "text",
+      "text" : ">"
+    }
+  ],
+  "identifier" : "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/offsets(of:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "offsets(of:)",
+  "type" : "topic",
+  "url" : "\/documentation\/authscope\/scope\/offsets(of:)"
+},
 "doc://AuthScope/documentation/AuthScope/Scope/prefix(_:)": {
   "abstract" : [
     {
@@ -2527,6 +3099,245 @@
   "title" : "randomElement(using:)",
   "type" : "topic",
   "url" : "\/documentation\/authscope\/scope\/randomelement(using:)"
+},
+"doc://AuthScope/documentation/AuthScope/Scope/ranges(of:)": {
+  "abstract" : [
+    {
+      "text" : "Finds and returns the ranges of the all occurrences of a given sequence",
+      "type" : "text"
+    },
+    {
+      "text" : " ",
+      "type" : "text"
+    },
+    {
+      "text" : "within the collection.",
+      "type" : "text"
+    }
+  ],
+  "conformance" : {
+    "availabilityPrefix" : [
+      {
+        "text" : "Available when",
+        "type" : "text"
+      }
+    ],
+    "conformancePrefix" : [
+      {
+        "text" : "Conforms when",
+        "type" : "text"
+      }
+    ],
+    "constraints" : [
+      {
+        "code" : "Element",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : " conforms to ",
+        "type" : "text"
+      },
+      {
+        "code" : "Equatable",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : ".",
+        "type" : "text"
+      }
+    ]
+  },
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "ranges"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "genericParameter",
+      "text" : "C"
+    },
+    {
+      "kind" : "text",
+      "text" : ">("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "of"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "C"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> ["
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sn",
+      "text" : "Range"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Index"
+    },
+    {
+      "kind" : "text",
+      "text" : ">]"
+    }
+  ],
+  "identifier" : "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/ranges(of:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "ranges(of:)",
+  "type" : "topic",
+  "url" : "\/documentation\/authscope\/scope\/ranges(of:)"
+},
+"doc://AuthScope/documentation/AuthScope/Scope/split(around:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "split"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "around"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sn",
+      "text" : "Range"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Index"
+    },
+    {
+      "kind" : "text",
+      "text" : ">) -> (prefix"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "SubSequence"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "SubSequence"
+    },
+    {
+      "kind" : "text",
+      "text" : ", suffix"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "SubSequence"
+    },
+    {
+      "kind" : "text",
+      "text" : ")"
+    }
+  ],
+  "identifier" : "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/split(around:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "split(around:)",
+  "type" : "topic",
+  "url" : "\/documentation\/authscope\/scope\/split(around:)"
 },
 "doc://AuthScope/documentation/AuthScope/Scope/split(maxSplits:omittingEmptySubsequences:whereSeparator:)": {
   "abstract" : [
@@ -3346,6 +4157,388 @@
   "title" : "suffix(from:)",
   "type" : "topic",
   "url" : "\/documentation\/authscope\/scope\/suffix(from:)"
+},
+"doc://AuthScope/documentation/AuthScope/Scope/trimmingPrefix(_:)": {
+  "abstract" : [
+    {
+      "text" : "Returns a new collection of the same type by removing initial elements",
+      "type" : "text"
+    },
+    {
+      "text" : " ",
+      "type" : "text"
+    },
+    {
+      "text" : "that satisfy the given predicate from the start.",
+      "type" : "text"
+    }
+  ],
+  "conformance" : {
+    "availabilityPrefix" : [
+      {
+        "text" : "Available when",
+        "type" : "text"
+      }
+    ],
+    "conformancePrefix" : [
+      {
+        "text" : "Conforms when",
+        "type" : "text"
+      }
+    ],
+    "constraints" : [
+      {
+        "code" : "Element",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : " conforms to ",
+        "type" : "text"
+      },
+      {
+        "code" : "Equatable",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : ".",
+        "type" : "text"
+      }
+    ]
+  },
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "trimmingPrefix"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "genericParameter",
+      "text" : "Prefix"
+    },
+    {
+      "kind" : "text",
+      "text" : ">("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Prefix"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "SubSequence"
+    }
+  ],
+  "identifier" : "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/trimmingPrefix(_:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "trimmingPrefix(_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/authscope\/scope\/trimmingprefix(_:)"
+},
+"doc://AuthScope/documentation/AuthScope/Scope/trimmingPrefix(while:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "trimmingPrefix"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "while"
+    },
+    {
+      "kind" : "text",
+      "text" : ": ("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Element"
+    },
+    {
+      "kind" : "text",
+      "text" : ") "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "throws"
+    },
+    {
+      "kind" : "text",
+      "text" : " -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    },
+    {
+      "kind" : "text",
+      "text" : ") "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "rethrows"
+    },
+    {
+      "kind" : "text",
+      "text" : " -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "SubSequence"
+    }
+  ],
+  "identifier" : "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/trimmingPrefix(while:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "trimmingPrefix(while:)",
+  "type" : "topic",
+  "url" : "\/documentation\/authscope\/scope\/trimmingprefix(while:)"
+},
+"doc://AuthScope/documentation/AuthScope/Scope/tryDropPrefix(_:)": {
+  "abstract" : [
+    {
+      "text" : "Attempts to drop a given prefix from the collection.",
+      "type" : "text"
+    }
+  ],
+  "conformance" : {
+    "availabilityPrefix" : [
+      {
+        "text" : "Available when",
+        "type" : "text"
+      }
+    ],
+    "conformancePrefix" : [
+      {
+        "text" : "Conforms when",
+        "type" : "text"
+      }
+    ],
+    "constraints" : [
+      {
+        "code" : "Element",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : " conforms to ",
+        "type" : "text"
+      },
+      {
+        "code" : "Equatable",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : ".",
+        "type" : "text"
+      }
+    ]
+  },
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "tryDropPrefix"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "genericParameter",
+      "text" : "C"
+    },
+    {
+      "kind" : "text",
+      "text" : ">("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "C"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "SubSequence"
+    },
+    {
+      "kind" : "text",
+      "text" : "?"
+    }
+  ],
+  "identifier" : "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/tryDropPrefix(_:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "tryDropPrefix(_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/authscope\/scope\/trydropprefix(_:)"
+},
+"doc://AuthScope/documentation/AuthScope/Scope/tryDropSuffix(_:)": {
+  "abstract" : [
+    {
+      "text" : "Attempts to drop a given suffix from the collection.",
+      "type" : "text"
+    }
+  ],
+  "conformance" : {
+    "availabilityPrefix" : [
+      {
+        "text" : "Available when",
+        "type" : "text"
+      }
+    ],
+    "conformancePrefix" : [
+      {
+        "text" : "Conforms when",
+        "type" : "text"
+      }
+    ],
+    "constraints" : [
+      {
+        "code" : "Element",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : " conforms to ",
+        "type" : "text"
+      },
+      {
+        "code" : "Equatable",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : ".",
+        "type" : "text"
+      }
+    ]
+  },
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "tryDropSuffix"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "genericParameter",
+      "text" : "C"
+    },
+    {
+      "kind" : "text",
+      "text" : ">("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "C"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "SubSequence"
+    },
+    {
+      "kind" : "text",
+      "text" : "?"
+    }
+  ],
+  "identifier" : "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/tryDropSuffix(_:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "tryDropSuffix(_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/authscope\/scope\/trydropsuffix(_:)"
 },
 "doc://AuthScope/documentation/AuthScope/Scope/underestimatedCount-5dqfv": {
   "abstract" : [

@@ -65,6 +65,26 @@
                 "path" : "\/documentation\/authscope\/invalidaccessrangeerror\/rawvalue",
                 "title" : "let rawValue: String",
                 "type" : "property"
+              },
+              {
+                "title" : "Default Implementations",
+                "type" : "groupMarker"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Instance Properties",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/authscope\/invalidaccessrangeerror\/halfwidthcornerquoted",
+                    "title" : "var halfWidthCornerQuoted: String",
+                    "type" : "property"
+                  }
+                ],
+                "path" : "\/documentation\/authscope\/invalidaccessrangeerror\/customstringconvertible-implementations",
+                "title" : "CustomStringConvertible Implementations",
+                "type" : "symbol"
               }
             ],
             "path" : "\/documentation\/authscope\/invalidaccessrangeerror",
@@ -290,6 +310,16 @@
                     "type" : "groupMarker"
                   },
                   {
+                    "path" : "\/documentation\/authscope\/scope\/convertbyoffset(_:in:)-45yvn",
+                    "title" : "func convertByOffset<C>(Self.Index, in: C) -> C.Index",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/authscope\/scope\/convertbyoffset(_:in:)-93sn3",
+                    "title" : "func convertByOffset<C>(Range<Self.Index>, in: C) -> Range<C.Index>",
+                    "type" : "method"
+                  },
+                  {
                     "path" : "\/documentation\/authscope\/scope\/distance(from:to:)",
                     "title" : "func distance(from: Self.Index, to: Self.Index) -> Int",
                     "type" : "method"
@@ -317,6 +347,11 @@
                   {
                     "path" : "\/documentation\/authscope\/scope\/firstindex(where:)",
                     "title" : "func firstIndex(where: (Self.Element) throws -> Bool) rethrows -> Self.Index?",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/authscope\/scope\/firstrange(of:)",
+                    "title" : "func firstRange<C>(of: C) -> Range<Self.Index>?",
                     "type" : "method"
                   },
                   {
@@ -350,6 +385,11 @@
                     "type" : "method"
                   },
                   {
+                    "path" : "\/documentation\/authscope\/scope\/index(atoffset:)",
+                    "title" : "func index(atOffset: Int) -> Self.Index",
+                    "type" : "method"
+                  },
+                  {
                     "path" : "\/documentation\/authscope\/scope\/index(of:)",
                     "title" : "func index(of: Self.Element) -> Self.Index?",
                     "type" : "method"
@@ -362,6 +402,21 @@
                   {
                     "path" : "\/documentation\/authscope\/scope\/map(_:)-11ra4",
                     "title" : "func map<T>((Self.Element) throws -> T) rethrows -> [T]",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/authscope\/scope\/offset(of:)",
+                    "title" : "func offset(of: Self.Index) -> Int",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/authscope\/scope\/offset(ofindex:)",
+                    "title" : "func offset(ofIndex: Self.Index) -> Int",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/authscope\/scope\/offsets(of:)",
+                    "title" : "func offsets(of: Range<Self.Index>) -> Range<Int>",
                     "type" : "method"
                   },
                   {
@@ -395,6 +450,16 @@
                     "type" : "method"
                   },
                   {
+                    "path" : "\/documentation\/authscope\/scope\/ranges(of:)",
+                    "title" : "func ranges<C>(of: C) -> [Range<Self.Index>]",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/authscope\/scope\/split(around:)",
+                    "title" : "func split(around: Range<Self.Index>) -> (prefix: Self.SubSequence, Self.SubSequence, suffix: Self.SubSequence)",
+                    "type" : "method"
+                  },
+                  {
                     "path" : "\/documentation\/authscope\/scope\/split(maxsplits:omittingemptysubsequences:whereseparator:)",
                     "title" : "func split(maxSplits: Int, omittingEmptySubsequences: Bool, whereSeparator: (Self.Element) throws -> Bool) rethrows -> [Self.SubSequence]",
                     "type" : "method"
@@ -412,6 +477,26 @@
                   {
                     "path" : "\/documentation\/authscope\/scope\/suffix(from:)",
                     "title" : "func suffix(from: Self.Index) -> Self.SubSequence",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/authscope\/scope\/trimmingprefix(_:)",
+                    "title" : "func trimmingPrefix<Prefix>(Prefix) -> Self.SubSequence",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/authscope\/scope\/trimmingprefix(while:)",
+                    "title" : "func trimmingPrefix(while: (Self.Element) throws -> Bool) rethrows -> Self.SubSequence",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/authscope\/scope\/trydropprefix(_:)",
+                    "title" : "func tryDropPrefix<C>(C) -> Self.SubSequence?",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/authscope\/scope\/trydropsuffix(_:)",
+                    "title" : "func tryDropSuffix<C>(C) -> Self.SubSequence?",
                     "type" : "method"
                   },
                   {
@@ -477,6 +562,11 @@
                   {
                     "path" : "\/documentation\/authscope\/scope\/description",
                     "title" : "var description: String",
+                    "type" : "property"
+                  },
+                  {
+                    "path" : "\/documentation\/authscope\/scope\/halfwidthcornerquoted",
+                    "title" : "var halfWidthCornerQuoted: String",
                     "type" : "property"
                   }
                 ],
@@ -578,8 +668,18 @@
                     "type" : "groupMarker"
                   },
                   {
+                    "path" : "\/documentation\/authscope\/scope\/all(_:)",
+                    "title" : "func all((Self.Element) -> Bool) -> Bool",
+                    "type" : "method"
+                  },
+                  {
                     "path" : "\/documentation\/authscope\/scope\/allsatisfy(_:)",
                     "title" : "func allSatisfy((Self.Element) throws -> Bool) rethrows -> Bool",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/authscope\/scope\/any(_:)",
+                    "title" : "func any((Self.Element) -> Bool) -> Bool",
                     "type" : "method"
                   },
                   {
@@ -680,6 +780,11 @@
                   {
                     "path" : "\/documentation\/authscope\/scope\/min(by:)",
                     "title" : "func min(by: (Self.Element, Self.Element) throws -> Bool) rethrows -> Self.Element?",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/authscope\/scope\/none(_:)",
+                    "title" : "func none((Self.Element) -> Bool) -> Bool",
                     "type" : "method"
                   },
                   {
