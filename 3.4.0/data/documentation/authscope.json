@@ -1,0 +1,177 @@
+{
+  "hierarchy" : {
+    "paths" : [
+      [
+
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "swift",
+    "url" : "doc:\/\/AuthScope\/documentation\/AuthScope"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "externalID" : "AuthScope",
+    "modules" : [
+      {
+        "name" : "AuthScope"
+      }
+    ],
+    "role" : "collection",
+    "roleHeading" : "Framework",
+    "symbolKind" : "module",
+    "title" : "AuthScope"
+  },
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "topicSections" : [
+    {
+      "identifiers" : [
+        "doc:\/\/AuthScope\/documentation\/AuthScope\/AccessRangeProtocol"
+      ],
+      "title" : "Protocols"
+    },
+    {
+      "identifiers" : [
+        "doc:\/\/AuthScope\/documentation\/AuthScope\/InvalidAccessRangeError",
+        "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope"
+      ],
+      "title" : "Structures"
+    }
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/authscope"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "swift"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://AuthScope/documentation/AuthScope": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/AuthScope\/documentation\/AuthScope",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "AuthScope",
+  "type" : "topic",
+  "url" : "\/documentation\/authscope"
+},
+"doc://AuthScope/documentation/AuthScope/AccessRangeProtocol": {
+  "abstract" : [
+    {
+      "text" : "Describes an access range type. Typically an enum.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "protocol"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "AccessRangeProtocol"
+    }
+  ],
+  "identifier" : "doc:\/\/AuthScope\/documentation\/AuthScope\/AccessRangeProtocol",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "AccessRangeProtocol"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "AccessRangeProtocol",
+  "type" : "topic",
+  "url" : "\/documentation\/authscope\/accessrangeprotocol"
+},
+"doc://AuthScope/documentation/AuthScope/InvalidAccessRangeError": {
+  "abstract" : [
+    {
+      "text" : "The error thrown when an access range is initialized with an invalid raw value.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "struct"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "InvalidAccessRangeError"
+    }
+  ],
+  "identifier" : "doc:\/\/AuthScope\/documentation\/AuthScope\/InvalidAccessRangeError",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "InvalidAccessRangeError"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "InvalidAccessRangeError",
+  "type" : "topic",
+  "url" : "\/documentation\/authscope\/invalidaccessrangeerror"
+},
+"doc://AuthScope/documentation/AuthScope/Scope": {
+  "abstract" : [
+    {
+      "text" : "A set of access ranges.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "struct"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "Scope"
+    }
+  ],
+  "identifier" : "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "Scope"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "Scope",
+  "type" : "topic",
+  "url" : "\/documentation\/authscope\/scope"
+}
+}
+}
