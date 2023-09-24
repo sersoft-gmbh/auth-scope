@@ -41,13 +41,6 @@
     {
       "generated" : true,
       "identifiers" : [
-        "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/isEmpty-4y8oc"
-      ],
-      "title" : "Instance Properties"
-    },
-    {
-      "generated" : true,
-      "identifiers" : [
         "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/formIntersection(_:)",
         "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/formSymmetricDifference(_:)",
         "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/formUnion(_:)",
@@ -129,14 +122,7 @@
 },
 "doc://AuthScope/documentation/AuthScope/Scope/formIntersection(_:)": {
   "abstract" : [
-    {
-      "text" : "See ",
-      "type" : "text"
-    },
-    {
-      "code" : "Swift\/SetAlgebra.formIntersection(_:)",
-      "type" : "codeVoice"
-    }
+
   ],
   "conformance" : {
     "availabilityPrefix" : [
@@ -214,14 +200,7 @@
 },
 "doc://AuthScope/documentation/AuthScope/Scope/formSymmetricDifference(_:)": {
   "abstract" : [
-    {
-      "text" : "See ",
-      "type" : "text"
-    },
-    {
-      "code" : "Swift\/SetAlgebra\/formSymmetricDifference(_:)",
-      "type" : "codeVoice"
-    }
+
   ],
   "conformance" : {
     "availabilityPrefix" : [
@@ -299,14 +278,7 @@
 },
 "doc://AuthScope/documentation/AuthScope/Scope/formUnion(_:)": {
   "abstract" : [
-    {
-      "text" : "See ",
-      "type" : "text"
-    },
-    {
-      "code" : "Swift\/SetAlgebra\/formUnion(_:)",
-      "type" : "codeVoice"
-    }
+
   ],
   "conformance" : {
     "availabilityPrefix" : [
@@ -504,14 +476,7 @@
 },
 "doc://AuthScope/documentation/AuthScope/Scope/insert(_:)": {
   "abstract" : [
-    {
-      "text" : "See ",
-      "type" : "text"
-    },
-    {
-      "code" : "Swift\/SetAlgebra\/insert(_:)",
-      "type" : "codeVoice"
-    }
+
   ],
   "conformance" : {
     "availabilityPrefix" : [
@@ -639,14 +604,7 @@
 },
 "doc://AuthScope/documentation/AuthScope/Scope/intersection(_:)": {
   "abstract" : [
-    {
-      "text" : "See ",
-      "type" : "text"
-    },
-    {
-      "code" : "Swift\/SetAlgebra\/intersection(_:)",
-      "type" : "codeVoice"
-    }
+
   ],
   "conformance" : {
     "availabilityPrefix" : [
@@ -799,43 +757,6 @@
   "title" : "isDisjoint(with:)",
   "type" : "topic",
   "url" : "\/documentation\/authscope\/scope\/isdisjoint(with:)"
-},
-"doc://AuthScope/documentation/AuthScope/Scope/isEmpty-4y8oc": {
-  "abstract" : [
-    {
-      "text" : "A Boolean value that indicates whether the set has no elements.",
-      "type" : "text"
-    }
-  ],
-  "fragments" : [
-    {
-      "kind" : "keyword",
-      "text" : "var"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "identifier",
-      "text" : "isEmpty"
-    },
-    {
-      "kind" : "text",
-      "text" : ": "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:Sb",
-      "text" : "Bool"
-    }
-  ],
-  "identifier" : "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/isEmpty-4y8oc",
-  "kind" : "symbol",
-  "role" : "symbol",
-  "title" : "isEmpty",
-  "type" : "topic",
-  "url" : "\/documentation\/authscope\/scope\/isempty-4y8oc"
 },
 "doc://AuthScope/documentation/AuthScope/Scope/isStrictSubset(of:)": {
   "abstract" : [
@@ -1083,14 +1004,7 @@
 },
 "doc://AuthScope/documentation/AuthScope/Scope/remove(_:)": {
   "abstract" : [
-    {
-      "text" : "See ",
-      "type" : "text"
-    },
-    {
-      "code" : "Swift\/SetAlgebra\/remove(_:)",
-      "type" : "codeVoice"
-    }
+
   ],
   "conformance" : {
     "availabilityPrefix" : [
@@ -1293,14 +1207,7 @@
 },
 "doc://AuthScope/documentation/AuthScope/Scope/symmetricDifference(_:)": {
   "abstract" : [
-    {
-      "text" : "See ",
-      "type" : "text"
-    },
-    {
-      "code" : "Swift\/SetAlgebra\/symmetricDifference(_:)",
-      "type" : "codeVoice"
-    }
+
   ],
   "conformance" : {
     "availabilityPrefix" : [
@@ -1395,14 +1302,7 @@
 },
 "doc://AuthScope/documentation/AuthScope/Scope/union(_:)": {
   "abstract" : [
-    {
-      "text" : "See ",
-      "type" : "text"
-    },
-    {
-      "code" : "Swift\/SetAlgebra\/union(_:)",
-      "type" : "codeVoice"
-    }
+
   ],
   "conformance" : {
     "availabilityPrefix" : [
@@ -1497,14 +1397,7 @@
 },
 "doc://AuthScope/documentation/AuthScope/Scope/update(with:)": {
   "abstract" : [
-    {
-      "text" : "See ",
-      "type" : "text"
-    },
-    {
-      "code" : "Swift\/SetAlgebra\/update(with:)",
-      "type" : "codeVoice"
-    }
+
   ],
   "conformance" : {
     "availabilityPrefix" : [

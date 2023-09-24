@@ -144,18 +144,21 @@
     {
       "identifiers" : [
         "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/init()",
-        "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/init(accessRanges:)-1j8vf",
         "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/init(accessRanges:)-639db",
         "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/init(accessRanges:)-85vzj",
+        "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/init(accessRanges:)-887z6",
         "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/init(scopeString:)"
       ],
       "title" : "Initializers"
     },
     {
       "identifiers" : [
-        "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/containsAllRegExp",
-        "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/containsAnyRegExp",
-        "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/exactMatchRegExp",
+        "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/containsAllRegex",
+        "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/containsAllRegexPattern",
+        "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/containsAnyRegex",
+        "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/containsAnyRegexPattern",
+        "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/exactMatchRegex",
+        "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/exactMatchRegexPattern",
         "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/scopeString"
       ],
       "title" : "Instance Properties"
@@ -507,10 +510,10 @@
   "type" : "topic",
   "url" : "\/documentation\/authscope\/scope\/all"
 },
-"doc://AuthScope/documentation/AuthScope/Scope/containsAllRegExp": {
+"doc://AuthScope/documentation/AuthScope/Scope/containsAllRegex": {
   "abstract" : [
     {
-      "text" : "Returns a regular expression string that matches a string that has at least the access ranges in self (but can have more).",
+      "text" : "Returns a regular expression pattern that matches a string that has at least the access ranges in self (but can have more).",
       "type" : "text"
     }
   ],
@@ -557,7 +560,7 @@
     },
     {
       "kind" : "identifier",
-      "text" : "containsAllRegExp"
+      "text" : "containsAllRegex"
     },
     {
       "kind" : "text",
@@ -565,21 +568,34 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:SS",
-      "text" : "String"
+      "preciseIdentifier" : "s:17_StringProcessing5RegexV",
+      "text" : "Regex"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Ss",
+      "text" : "Substring"
+    },
+    {
+      "kind" : "text",
+      "text" : ">"
     }
   ],
-  "identifier" : "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/containsAllRegExp",
+  "identifier" : "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/containsAllRegex",
   "kind" : "symbol",
   "role" : "symbol",
-  "title" : "containsAllRegExp",
+  "title" : "containsAllRegex",
   "type" : "topic",
-  "url" : "\/documentation\/authscope\/scope\/containsallregexp"
+  "url" : "\/documentation\/authscope\/scope\/containsallregex"
 },
-"doc://AuthScope/documentation/AuthScope/Scope/containsAnyRegExp": {
+"doc://AuthScope/documentation/AuthScope/Scope/containsAllRegexPattern": {
   "abstract" : [
     {
-      "text" : "Returns a regular expression string that matches a string that has at least one of access ranges in self (but not all).",
+      "text" : "Returns a regular expression pattern that matches a string that has at least the access ranges in self (but can have more).",
       "type" : "text"
     }
   ],
@@ -626,7 +642,7 @@
     },
     {
       "kind" : "identifier",
-      "text" : "containsAnyRegExp"
+      "text" : "containsAllRegexPattern"
     },
     {
       "kind" : "text",
@@ -638,14 +654,165 @@
       "text" : "String"
     }
   ],
-  "identifier" : "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/containsAnyRegExp",
+  "identifier" : "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/containsAllRegexPattern",
   "kind" : "symbol",
   "role" : "symbol",
-  "title" : "containsAnyRegExp",
+  "title" : "containsAllRegexPattern",
   "type" : "topic",
-  "url" : "\/documentation\/authscope\/scope\/containsanyregexp"
+  "url" : "\/documentation\/authscope\/scope\/containsallregexpattern"
 },
-"doc://AuthScope/documentation/AuthScope/Scope/exactMatchRegExp": {
+"doc://AuthScope/documentation/AuthScope/Scope/containsAnyRegex": {
+  "abstract" : [
+    {
+      "text" : "Returns a regular expression pattern that matches a string that has at least one of access ranges in self (but not all).",
+      "type" : "text"
+    }
+  ],
+  "conformance" : {
+    "availabilityPrefix" : [
+      {
+        "text" : "Available when",
+        "type" : "text"
+      }
+    ],
+    "conformancePrefix" : [
+      {
+        "text" : "Conforms when",
+        "type" : "text"
+      }
+    ],
+    "constraints" : [
+      {
+        "code" : "AccessRange",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : " conforms to ",
+        "type" : "text"
+      },
+      {
+        "code" : "AccessRangeProtocol",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : ".",
+        "type" : "text"
+      }
+    ]
+  },
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "containsAnyRegex"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:17_StringProcessing5RegexV",
+      "text" : "Regex"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Ss",
+      "text" : "Substring"
+    },
+    {
+      "kind" : "text",
+      "text" : ">"
+    }
+  ],
+  "identifier" : "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/containsAnyRegex",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "containsAnyRegex",
+  "type" : "topic",
+  "url" : "\/documentation\/authscope\/scope\/containsanyregex"
+},
+"doc://AuthScope/documentation/AuthScope/Scope/containsAnyRegexPattern": {
+  "abstract" : [
+    {
+      "text" : "Returns a regular expression pattern that matches a string that has at least one of access ranges in self (but not all).",
+      "type" : "text"
+    }
+  ],
+  "conformance" : {
+    "availabilityPrefix" : [
+      {
+        "text" : "Available when",
+        "type" : "text"
+      }
+    ],
+    "conformancePrefix" : [
+      {
+        "text" : "Conforms when",
+        "type" : "text"
+      }
+    ],
+    "constraints" : [
+      {
+        "code" : "AccessRange",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : " conforms to ",
+        "type" : "text"
+      },
+      {
+        "code" : "AccessRangeProtocol",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : ".",
+        "type" : "text"
+      }
+    ]
+  },
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "containsAnyRegexPattern"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:SS",
+      "text" : "String"
+    }
+  ],
+  "identifier" : "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/containsAnyRegexPattern",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "containsAnyRegexPattern",
+  "type" : "topic",
+  "url" : "\/documentation\/authscope\/scope\/containsanyregexpattern"
+},
+"doc://AuthScope/documentation/AuthScope/Scope/exactMatchRegex": {
   "abstract" : [
     {
       "text" : "Returns a regular expression string that matches a string that has exactly the access ranges in self (not more, not less).",
@@ -695,7 +862,89 @@
     },
     {
       "kind" : "identifier",
-      "text" : "exactMatchRegExp"
+      "text" : "exactMatchRegex"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:17_StringProcessing5RegexV",
+      "text" : "Regex"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Ss",
+      "text" : "Substring"
+    },
+    {
+      "kind" : "text",
+      "text" : ">"
+    }
+  ],
+  "identifier" : "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/exactMatchRegex",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "exactMatchRegex",
+  "type" : "topic",
+  "url" : "\/documentation\/authscope\/scope\/exactmatchregex"
+},
+"doc://AuthScope/documentation/AuthScope/Scope/exactMatchRegexPattern": {
+  "abstract" : [
+    {
+      "text" : "Returns a regular expression pattern that matches a string that has exactly the access ranges in self (not more, not less).",
+      "type" : "text"
+    }
+  ],
+  "conformance" : {
+    "availabilityPrefix" : [
+      {
+        "text" : "Available when",
+        "type" : "text"
+      }
+    ],
+    "conformancePrefix" : [
+      {
+        "text" : "Conforms when",
+        "type" : "text"
+      }
+    ],
+    "constraints" : [
+      {
+        "code" : "AccessRange",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : " conforms to ",
+        "type" : "text"
+      },
+      {
+        "code" : "AccessRangeProtocol",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : ".",
+        "type" : "text"
+      }
+    ]
+  },
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "exactMatchRegexPattern"
     },
     {
       "kind" : "text",
@@ -707,12 +956,12 @@
       "text" : "String"
     }
   ],
-  "identifier" : "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/exactMatchRegExp",
+  "identifier" : "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/exactMatchRegexPattern",
   "kind" : "symbol",
   "role" : "symbol",
-  "title" : "exactMatchRegExp",
+  "title" : "exactMatchRegexPattern",
   "type" : "topic",
-  "url" : "\/documentation\/authscope\/scope\/exactmatchregexp"
+  "url" : "\/documentation\/authscope\/scope\/exactmatchregexpattern"
 },
 "doc://AuthScope/documentation/AuthScope/Scope/filter(_:)": {
   "abstract" : [
@@ -860,54 +1109,6 @@
   "type" : "topic",
   "url" : "\/documentation\/authscope\/scope\/init()"
 },
-"doc://AuthScope/documentation/AuthScope/Scope/init(accessRanges:)-1j8vf": {
-  "abstract" : [
-    {
-      "text" : "Creates a new scope with the given collection of access ranges.",
-      "type" : "text"
-    }
-  ],
-  "fragments" : [
-    {
-      "kind" : "identifier",
-      "text" : "init"
-    },
-    {
-      "kind" : "text",
-      "text" : "<"
-    },
-    {
-      "kind" : "genericParameter",
-      "text" : "C"
-    },
-    {
-      "kind" : "text",
-      "text" : ">("
-    },
-    {
-      "kind" : "externalParam",
-      "text" : "accessRanges"
-    },
-    {
-      "kind" : "text",
-      "text" : ": "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "text" : "C"
-    },
-    {
-      "kind" : "text",
-      "text" : ")"
-    }
-  ],
-  "identifier" : "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/init(accessRanges:)-1j8vf",
-  "kind" : "symbol",
-  "role" : "symbol",
-  "title" : "init(accessRanges:)",
-  "type" : "topic",
-  "url" : "\/documentation\/authscope\/scope\/init(accessranges:)-1j8vf"
-},
 "doc://AuthScope/documentation/AuthScope/Scope/init(accessRanges:)-639db": {
   "abstract" : [
     {
@@ -1005,6 +1206,55 @@
   "type" : "topic",
   "url" : "\/documentation\/authscope\/scope\/init(accessranges:)-85vzj"
 },
+"doc://AuthScope/documentation/AuthScope/Scope/init(accessRanges:)-887z6": {
+  "abstract" : [
+    {
+      "text" : "Creates a new scope with the given collection of access ranges.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "init"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "accessRanges"
+    },
+    {
+      "kind" : "text",
+      "text" : ": some "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:ST",
+      "text" : "Sequence"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "AccessRange"
+    },
+    {
+      "kind" : "text",
+      "text" : ">)"
+    }
+  ],
+  "identifier" : "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/init(accessRanges:)-887z6",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "init(accessRanges:)",
+  "type" : "topic",
+  "url" : "\/documentation\/authscope\/scope\/init(accessranges:)-887z6"
+},
 "doc://AuthScope/documentation/AuthScope/Scope/init(scopeString:)": {
   "abstract" : [
     {
@@ -1051,15 +1301,7 @@
     },
     {
       "kind" : "text",
-      "text" : "<"
-    },
-    {
-      "kind" : "genericParameter",
-      "text" : "ScopeString"
-    },
-    {
-      "kind" : "text",
-      "text" : ">("
+      "text" : "("
     },
     {
       "kind" : "externalParam",
@@ -1067,11 +1309,12 @@
     },
     {
       "kind" : "text",
-      "text" : ": "
+      "text" : ": some "
     },
     {
       "kind" : "typeIdentifier",
-      "text" : "ScopeString"
+      "preciseIdentifier" : "s:Sy",
+      "text" : "StringProtocol"
     },
     {
       "kind" : "text",

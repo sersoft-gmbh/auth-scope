@@ -90,7 +90,10 @@
     ],
     "modules" : [
       {
-        "name" : "AuthScope"
+        "name" : "AuthScope",
+        "relatedModules" : [
+          "Swift"
+        ]
       }
     ],
     "role" : "symbol",
@@ -291,7 +294,7 @@
         {
           "inlineContent" : [
             {
-              "text" : "The sorting algorithm is not guaranteed to be stable. A stable sort",
+              "text" : "The sorting algorithm is guaranteed to be stable. A stable sort",
               "type" : "text"
             },
             {
@@ -299,7 +302,7 @@
               "type" : "text"
             },
             {
-              "text" : "preserves the relative order of elements that compare equal.",
+              "text" : "preserves the relative order of elements that compare as equal.",
               "type" : "text"
             }
           ],

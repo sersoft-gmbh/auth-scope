@@ -19,7 +19,7 @@
                     "children" : [
                       {
                         "path" : "\/documentation\/authscope\/accessrangeprotocol\/init(validating:)-9g808",
-                        "title" : "init<S>(validating: S) throws",
+                        "title" : "init(validating: some StringProtocol) throws",
                         "type" : "init"
                       }
                     ],
@@ -28,7 +28,7 @@
                   }
                 ],
                 "path" : "\/documentation\/authscope\/accessrangeprotocol\/init(validating:)-1tsjf",
-                "title" : "init<S>(validating: S) throws",
+                "title" : "init(validating: some StringProtocol) throws",
                 "type" : "init"
               }
             ],
@@ -65,26 +65,6 @@
                 "path" : "\/documentation\/authscope\/invalidaccessrangeerror\/rawvalue",
                 "title" : "let rawValue: String",
                 "type" : "property"
-              },
-              {
-                "title" : "Default Implementations",
-                "type" : "groupMarker"
-              },
-              {
-                "children" : [
-                  {
-                    "title" : "Instance Properties",
-                    "type" : "groupMarker"
-                  },
-                  {
-                    "path" : "\/documentation\/authscope\/invalidaccessrangeerror\/halfwidthcornerquoted",
-                    "title" : "var halfWidthCornerQuoted: String",
-                    "type" : "property"
-                  }
-                ],
-                "path" : "\/documentation\/authscope\/invalidaccessrangeerror\/customstringconvertible-implementations",
-                "title" : "CustomStringConvertible Implementations",
-                "type" : "symbol"
               }
             ],
             "path" : "\/documentation\/authscope\/invalidaccessrangeerror",
@@ -103,11 +83,6 @@
                 "type" : "init"
               },
               {
-                "path" : "\/documentation\/authscope\/scope\/init(accessranges:)-1j8vf",
-                "title" : "init<C>(accessRanges: C)",
-                "type" : "init"
-              },
-              {
                 "path" : "\/documentation\/authscope\/scope\/init(accessranges:)-639db",
                 "title" : "init(accessRanges: Set<AccessRange>)",
                 "type" : "init"
@@ -118,8 +93,13 @@
                 "type" : "init"
               },
               {
+                "path" : "\/documentation\/authscope\/scope\/init(accessranges:)-887z6",
+                "title" : "init(accessRanges: some Sequence<AccessRange>)",
+                "type" : "init"
+              },
+              {
                 "path" : "\/documentation\/authscope\/scope\/init(scopestring:)",
-                "title" : "init<ScopeString>(scopeString: ScopeString) throws",
+                "title" : "init(scopeString: some StringProtocol) throws",
                 "type" : "init"
               },
               {
@@ -127,18 +107,33 @@
                 "type" : "groupMarker"
               },
               {
-                "path" : "\/documentation\/authscope\/scope\/containsallregexp",
-                "title" : "var containsAllRegExp: String",
+                "path" : "\/documentation\/authscope\/scope\/containsallregex",
+                "title" : "var containsAllRegex: Regex<Substring>",
                 "type" : "property"
               },
               {
-                "path" : "\/documentation\/authscope\/scope\/containsanyregexp",
-                "title" : "var containsAnyRegExp: String",
+                "path" : "\/documentation\/authscope\/scope\/containsallregexpattern",
+                "title" : "var containsAllRegexPattern: String",
                 "type" : "property"
               },
               {
-                "path" : "\/documentation\/authscope\/scope\/exactmatchregexp",
-                "title" : "var exactMatchRegExp: String",
+                "path" : "\/documentation\/authscope\/scope\/containsanyregex",
+                "title" : "var containsAnyRegex: Regex<Substring>",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/authscope\/scope\/containsanyregexpattern",
+                "title" : "var containsAnyRegexPattern: String",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/authscope\/scope\/exactmatchregex",
+                "title" : "var exactMatchRegex: Regex<Substring>",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/authscope\/scope\/exactmatchregexpattern",
+                "title" : "var exactMatchRegexPattern: String",
                 "type" : "property"
               },
               {
@@ -286,12 +281,7 @@
                     "type" : "property"
                   },
                   {
-                    "path" : "\/documentation\/authscope\/scope\/isempty-2cvhy",
-                    "title" : "var isEmpty: Bool",
-                    "type" : "property"
-                  },
-                  {
-                    "path" : "\/documentation\/authscope\/scope\/isempty-6gobh",
+                    "path" : "\/documentation\/authscope\/scope\/isempty",
                     "title" : "var isEmpty: Bool",
                     "type" : "property"
                   },
@@ -301,23 +291,13 @@
                     "type" : "property"
                   },
                   {
-                    "path" : "\/documentation\/authscope\/scope\/underestimatedcount-5dqfv",
+                    "path" : "\/documentation\/authscope\/scope\/underestimatedcount",
                     "title" : "var underestimatedCount: Int",
                     "type" : "property"
                   },
                   {
                     "title" : "Instance Methods",
                     "type" : "groupMarker"
-                  },
-                  {
-                    "path" : "\/documentation\/authscope\/scope\/convertbyoffset(_:in:)-45yvn",
-                    "title" : "func convertByOffset<C>(Self.Index, in: C) -> C.Index",
-                    "type" : "method"
-                  },
-                  {
-                    "path" : "\/documentation\/authscope\/scope\/convertbyoffset(_:in:)-93sn3",
-                    "title" : "func convertByOffset<C>(Range<Self.Index>, in: C) -> Range<C.Index>",
-                    "type" : "method"
                   },
                   {
                     "path" : "\/documentation\/authscope\/scope\/distance(from:to:)",
@@ -385,11 +365,6 @@
                     "type" : "method"
                   },
                   {
-                    "path" : "\/documentation\/authscope\/scope\/index(atoffset:)",
-                    "title" : "func index(atOffset: Int) -> Self.Index",
-                    "type" : "method"
-                  },
-                  {
                     "path" : "\/documentation\/authscope\/scope\/index(of:)",
                     "title" : "func index(of: Self.Element) -> Self.Index?",
                     "type" : "method"
@@ -402,21 +377,6 @@
                   {
                     "path" : "\/documentation\/authscope\/scope\/map(_:)-11ra4",
                     "title" : "func map<T>((Self.Element) throws -> T) rethrows -> [T]",
-                    "type" : "method"
-                  },
-                  {
-                    "path" : "\/documentation\/authscope\/scope\/offset(of:)",
-                    "title" : "func offset(of: Self.Index) -> Int",
-                    "type" : "method"
-                  },
-                  {
-                    "path" : "\/documentation\/authscope\/scope\/offset(ofindex:)",
-                    "title" : "func offset(ofIndex: Self.Index) -> Int",
-                    "type" : "method"
-                  },
-                  {
-                    "path" : "\/documentation\/authscope\/scope\/offsets(of:)",
-                    "title" : "func offsets(of: Range<Self.Index>) -> Range<Int>",
                     "type" : "method"
                   },
                   {
@@ -455,11 +415,6 @@
                     "type" : "method"
                   },
                   {
-                    "path" : "\/documentation\/authscope\/scope\/split(around:)",
-                    "title" : "func split(around: Range<Self.Index>) -> (prefix: Self.SubSequence, Self.SubSequence, suffix: Self.SubSequence)",
-                    "type" : "method"
-                  },
-                  {
                     "path" : "\/documentation\/authscope\/scope\/split(maxsplits:omittingemptysubsequences:whereseparator:)",
                     "title" : "func split(maxSplits: Int, omittingEmptySubsequences: Bool, whereSeparator: (Self.Element) throws -> Bool) rethrows -> [Self.SubSequence]",
                     "type" : "method"
@@ -490,47 +445,13 @@
                     "type" : "method"
                   },
                   {
-                    "path" : "\/documentation\/authscope\/scope\/trydropprefix(_:)",
-                    "title" : "func tryDropPrefix<C>(C) -> Self.SubSequence?",
-                    "type" : "method"
-                  },
-                  {
-                    "path" : "\/documentation\/authscope\/scope\/trydropsuffix(_:)",
-                    "title" : "func tryDropSuffix<C>(C) -> Self.SubSequence?",
-                    "type" : "method"
-                  },
-                  {
                     "title" : "Subscripts",
                     "type" : "groupMarker"
                   },
                   {
-                    "path" : "\/documentation\/authscope\/scope\/subscript(_:)-1r4y1",
+                    "path" : "\/documentation\/authscope\/scope\/subscript(_:)",
                     "title" : "subscript(Scope<AccessRange>.Index) -> Scope<AccessRange>.Element",
                     "type" : "subscript"
-                  },
-                  {
-                    "path" : "\/documentation\/authscope\/scope\/subscript(_:)-2ia4z",
-                    "title" : "subscript((UnboundedRange_) -> ()) -> Self.SubSequence",
-                    "type" : "subscript"
-                  },
-                  {
-                    "path" : "\/documentation\/authscope\/scope\/subscript(_:)-78xdy",
-                    "title" : "subscript(Range<Self.Index>) -> Slice<Self>",
-                    "type" : "subscript"
-                  },
-                  {
-                    "path" : "\/documentation\/authscope\/scope\/subscript(_:)-94013",
-                    "title" : "subscript<R>(R) -> Self.SubSequence",
-                    "type" : "subscript"
-                  },
-                  {
-                    "title" : "Type Aliases",
-                    "type" : "groupMarker"
-                  },
-                  {
-                    "path" : "\/documentation\/authscope\/scope\/element",
-                    "title" : "Scope.Element",
-                    "type" : "typealias"
                   }
                 ],
                 "path" : "\/documentation\/authscope\/scope\/collection-implementations",
@@ -562,11 +483,6 @@
                   {
                     "path" : "\/documentation\/authscope\/scope\/description",
                     "title" : "var description: String",
-                    "type" : "property"
-                  },
-                  {
-                    "path" : "\/documentation\/authscope\/scope\/halfwidthcornerquoted",
-                    "title" : "var halfWidthCornerQuoted: String",
                     "type" : "property"
                   }
                 ],
@@ -659,27 +575,12 @@
                     "type" : "property"
                   },
                   {
-                    "path" : "\/documentation\/authscope\/scope\/underestimatedcount-9389q",
-                    "title" : "var underestimatedCount: Int",
-                    "type" : "property"
-                  },
-                  {
                     "title" : "Instance Methods",
                     "type" : "groupMarker"
                   },
                   {
-                    "path" : "\/documentation\/authscope\/scope\/all(_:)",
-                    "title" : "func all((Self.Element) -> Bool) -> Bool",
-                    "type" : "method"
-                  },
-                  {
                     "path" : "\/documentation\/authscope\/scope\/allsatisfy(_:)",
                     "title" : "func allSatisfy((Self.Element) throws -> Bool) rethrows -> Bool",
-                    "type" : "method"
-                  },
-                  {
-                    "path" : "\/documentation\/authscope\/scope\/any(_:)",
-                    "title" : "func any((Self.Element) -> Bool) -> Bool",
                     "type" : "method"
                   },
                   {
@@ -783,11 +684,6 @@
                     "type" : "method"
                   },
                   {
-                    "path" : "\/documentation\/authscope\/scope\/none(_:)",
-                    "title" : "func none((Self.Element) -> Bool) -> Bool",
-                    "type" : "method"
-                  },
-                  {
                     "path" : "\/documentation\/authscope\/scope\/reduce(_:_:)",
                     "title" : "func reduce<Result>(Result, (Result, Self.Element) throws -> Result) rethrows -> Result",
                     "type" : "method"
@@ -836,6 +732,15 @@
                     "path" : "\/documentation\/authscope\/scope\/withcontiguousstorageifavailable(_:)",
                     "title" : "func withContiguousStorageIfAvailable<R>((UnsafeBufferPointer<Self.Element>) throws -> R) rethrows -> R?",
                     "type" : "method"
+                  },
+                  {
+                    "title" : "Type Aliases",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/authscope\/scope\/element",
+                    "title" : "Scope.Element",
+                    "type" : "typealias"
                   }
                 ],
                 "path" : "\/documentation\/authscope\/scope\/sequence-implementations",
@@ -857,15 +762,6 @@
                     "path" : "\/documentation\/authscope\/scope\/init(arrayliteral:)-4sqa",
                     "title" : "init(arrayLiteral: Self.Element...)",
                     "type" : "init"
-                  },
-                  {
-                    "title" : "Instance Properties",
-                    "type" : "groupMarker"
-                  },
-                  {
-                    "path" : "\/documentation\/authscope\/scope\/isempty-4y8oc",
-                    "title" : "var isEmpty: Bool",
-                    "type" : "property"
                   },
                   {
                     "title" : "Instance Methods",
@@ -971,6 +867,6 @@
   "schemaVersion" : {
     "major" : 0,
     "minor" : 1,
-    "patch" : 0
+    "patch" : 1
   }
 }

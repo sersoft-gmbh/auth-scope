@@ -1,14 +1,4 @@
 {
-  "abstract" : [
-    {
-      "text" : "See ",
-      "type" : "text"
-    },
-    {
-      "code" : "Swift\/ExpressibleByArrayLiteral\/init(arrayLiteral:)",
-      "type" : "codeVoice"
-    }
-  ],
   "hierarchy" : {
     "paths" : [
       [
@@ -258,14 +248,7 @@
 },
 "doc://AuthScope/documentation/AuthScope/Scope/init(arrayLiteral:)-50qke": {
   "abstract" : [
-    {
-      "text" : "See ",
-      "type" : "text"
-    },
-    {
-      "code" : "Swift\/ExpressibleByArrayLiteral\/init(arrayLiteral:)",
-      "type" : "codeVoice"
-    }
+
   ],
   "conformance" : {
     "availabilityPrefix" : [

@@ -99,14 +99,7 @@
 },
 "doc://AuthScope/documentation/AuthScope/Scope/init(from:)": {
   "abstract" : [
-    {
-      "text" : "See: ",
-      "type" : "text"
-    },
-    {
-      "code" : "Swift\/Decodable\/init(from:)",
-      "type" : "codeVoice"
-    }
+
   ],
   "conformance" : {
     "availabilityPrefix" : [

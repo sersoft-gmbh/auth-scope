@@ -1,14 +1,4 @@
 {
-  "abstract" : [
-    {
-      "text" : "See: ",
-      "type" : "text"
-    },
-    {
-      "code" : "Swift\/CustomStringConvertible\/description",
-      "type" : "codeVoice"
-    }
-  ],
   "hierarchy" : {
     "paths" : [
       [
@@ -176,14 +166,7 @@
 },
 "doc://AuthScope/documentation/AuthScope/InvalidAccessRangeError/description": {
   "abstract" : [
-    {
-      "text" : "See: ",
-      "type" : "text"
-    },
-    {
-      "code" : "Swift\/CustomStringConvertible\/description",
-      "type" : "codeVoice"
-    }
+
   ],
   "fragments" : [
     {

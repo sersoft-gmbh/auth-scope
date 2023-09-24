@@ -345,23 +345,7 @@
 },
 "doc://AuthScope/documentation/AuthScope/Scope/Index/_(_:_:)-2s4ww": {
   "abstract" : [
-    {
-      "text" : "See ``Swift\/Comparable\/<(",
-      "type" : "text"
-    },
-    {
-      "inlineContent" : [
-        {
-          "text" : ":",
-          "type" : "text"
-        }
-      ],
-      "type" : "emphasis"
-    },
-    {
-      "text" : ":)`",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {

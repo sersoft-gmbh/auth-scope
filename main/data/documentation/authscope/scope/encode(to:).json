@@ -1,14 +1,4 @@
 {
-  "abstract" : [
-    {
-      "text" : "See: ",
-      "type" : "text"
-    },
-    {
-      "code" : "Swift\/Encodable\/encode(to:)",
-      "type" : "codeVoice"
-    }
-  ],
   "hierarchy" : {
     "paths" : [
       [
@@ -249,14 +239,7 @@
 },
 "doc://AuthScope/documentation/AuthScope/Scope/encode(to:)": {
   "abstract" : [
-    {
-      "text" : "See: ",
-      "type" : "text"
-    },
-    {
-      "code" : "Swift\/Encodable\/encode(to:)",
-      "type" : "codeVoice"
-    }
+
   ],
   "conformance" : {
     "availabilityPrefix" : [

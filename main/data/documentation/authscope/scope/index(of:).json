@@ -122,7 +122,10 @@
     ],
     "modules" : [
       {
-        "name" : "AuthScope"
+        "name" : "AuthScope",
+        "relatedModules" : [
+          "Swift"
+        ]
       }
     ],
     "platforms" : [

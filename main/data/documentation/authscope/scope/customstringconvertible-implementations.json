@@ -33,8 +33,7 @@
     {
       "generated" : true,
       "identifiers" : [
-        "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/description",
-        "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/halfWidthCornerQuoted"
+        "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/description"
       ],
       "title" : "Instance Properties"
     }
@@ -100,14 +99,7 @@
 },
 "doc://AuthScope/documentation/AuthScope/Scope/description": {
   "abstract" : [
-    {
-      "text" : "See ",
-      "type" : "text"
-    },
-    {
-      "code" : "Swift\/CustomStringConvertible\/description",
-      "type" : "codeVoice"
-    }
+
   ],
   "conformance" : {
     "availabilityPrefix" : [
@@ -170,40 +162,6 @@
   "title" : "description",
   "type" : "topic",
   "url" : "\/documentation\/authscope\/scope\/description"
-},
-"doc://AuthScope/documentation/AuthScope/Scope/halfWidthCornerQuoted": {
-  "abstract" : [
-
-  ],
-  "fragments" : [
-    {
-      "kind" : "keyword",
-      "text" : "var"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "identifier",
-      "text" : "halfWidthCornerQuoted"
-    },
-    {
-      "kind" : "text",
-      "text" : ": "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:SS",
-      "text" : "String"
-    }
-  ],
-  "identifier" : "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/halfWidthCornerQuoted",
-  "kind" : "symbol",
-  "role" : "symbol",
-  "title" : "halfWidthCornerQuoted",
-  "type" : "topic",
-  "url" : "\/documentation\/authscope\/scope\/halfwidthcornerquoted"
 }
 }
 }
