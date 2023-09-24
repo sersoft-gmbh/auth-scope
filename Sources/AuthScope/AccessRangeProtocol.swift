@@ -6,12 +6,10 @@ public struct InvalidAccessRangeError: Error, CustomStringConvertible, CustomDeb
     /// The type of the access range that was used to validate above's ``rawValue``.
     public let accessRangeType: Any.Type
 
-    /// See: ``Swift/CustomStringConvertible/description``
     public var description: String {
         "The value '\(rawValue)' is not a valid scope access range!"
     }
 
-    /// See: ``Swift/CustomDebugStringConvertible/debugDescription``
     public var debugDescription: String {
         "The value '\(rawValue)' is not a valid scope access range of \(accessRangeType)!"
     }
@@ -23,12 +21,17 @@ where RawValue == String
 {
     /// Creates an access range with the given raw value or throws an error (typically ``InvalidAccessRangeError``) if it's not a valid raw value.
     /// - Parameter rawValue: The raw value to use for the access range.
-    /// - Throws: Any error (typically `InvalidAccessRangeError`) if it's not a vaild raw value.
-    init<S: StringProtocol>(validating string: S) throws
+    /// - Throws: Any error (typically ``InvalidAccessRangeError``) if it's not a vaild raw value.
+    init(validating string: some StringProtocol) throws
 }
 
 extension AccessRangeProtocol {
-    public init<S: StringProtocol>(validating string: S) throws {
+    @inlinable
+    internal init?(string: some StringProtocol) {
+        self.init(rawValue: RawValue(string))
+    }
+
+    public init(validating string: some StringProtocol) throws {
         let rawValue = RawValue(string)
         guard let accessRange = Self(rawValue: rawValue)
         else { throw InvalidAccessRangeError(rawValue: rawValue, accessRangeType: Self.self) }

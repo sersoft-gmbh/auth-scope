@@ -14,7 +14,7 @@ Handle authentication scopes with ease.
 
 Add the following package dependency to your `Package.swift`:
 ```swift
-.package(url: "https://github.com/sersoft-gmbh/auth-scope.git", from: "3.0.0"),
+.package(url: "https://github.com/sersoft-gmbh/auth-scope", from: "4.0.0"),
 ```
 
 ## Usage
@@ -55,11 +55,13 @@ usersScope == recreatedScope // true
 
 `Scope` is also `Codable` and encodes/decodes itself as its scope string.
 
-Last but not least, Scope also provides some useful regular expression patterns, that can be used to perform matches on a string basis. This is not recommended if your scopes are available as Swift types, but can be useful if you have to match scopes e.g. in a database.
+Last but not least, `Scope` also provides some useful regular expression patterns, that can be used to perform matches on a string basis. This is not recommended if your scopes are available as Swift types, but can be useful if you have to match scopes e.g. in a database.
 There are currently three regular expression patterns that are provided:
--   `exactMatchRegExp`: Returns a pattern that matches a scope string that contains **exactly** the same access ranges. Not more and not less.
--   `containsAllRegExp`: Returns a pattern that matches a scope string that contains **all** access ranges, but is allowed to contain more.
--   `containsAnyRegExp`: Returns a pattern that matches a scope string that contains **any** access ranges. A match is made as soon as one access range is contained.
+-   `exactMatchRegexPattern`: Returns a pattern that matches a scope string that contains **exactly** the same access ranges. Not more and not less.
+-   `containsAllRegexPattern`: Returns a pattern that matches a scope string that contains **all** access ranges, but is allowed to contain more.
+-   `containsAnyRegexPattern`: Returns a pattern that matches a scope string that contains **any** access ranges. A match is made as soon as one access range is contained.
+
+For all these patterns, a `Regex` is available as well.
 
 ## Documentation
 

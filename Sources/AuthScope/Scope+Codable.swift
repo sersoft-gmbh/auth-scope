@@ -1,11 +1,11 @@
 extension Scope: Decodable {
-    /// See: ``Swift/Decodable/init(from:)``
-    public init(from decoder: Decoder) throws {
-        let scopeString = try decoder.singleValueContainer().decode(String.self)
+    public init(from decoder: any Decoder) throws {
+        let container = try decoder.singleValueContainer()
+        let scopeString = try container.decode(String.self)
         do {
             try self.init(scopeString: scopeString)
         } catch {
-            throw DecodingError.dataCorrupted(.init(codingPath: decoder.codingPath,
+            throw DecodingError.dataCorrupted(.init(codingPath: container.codingPath,
                                                     debugDescription: "Invalid scope string '\(scopeString)'",
                                                     underlyingError: error))
         }
@@ -13,8 +13,7 @@ extension Scope: Decodable {
 }
 
 extension Scope: Encodable {
-    /// See: ``Swift/Encodable/encode(to:)``
-    public func encode(to encoder: Encoder) throws {
+    public func encode(to encoder: any Encoder) throws {
         var container = encoder.singleValueContainer()
         try container.encode(scopeString)
     }

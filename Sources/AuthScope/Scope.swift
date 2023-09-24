@@ -13,7 +13,7 @@ public struct Scope<AccessRange: AccessRangeProtocol>: Hashable, Sendable {
     /// Creates a new scope with the given collection of access ranges.
     /// - Parameter accessRanges: A collection access ranges to use in the new scope.
     @inlinable
-    public init<C: Collection>(accessRanges: C) where C.Element == AccessRange {
+    public init(accessRanges: some Sequence<AccessRange>) {
         self.init(accessRanges: Set(accessRanges))
     }
 

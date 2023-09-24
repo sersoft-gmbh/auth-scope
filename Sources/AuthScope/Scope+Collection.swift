@@ -1,5 +1,4 @@
 extension Scope: Collection {
-    /// See: ``Swift/Collection/Element``
     public typealias Element = AccessRange
 
     /// The index type of ``Scope``.
@@ -13,30 +12,24 @@ extension Scope: Collection {
             self.setIndex = setIndex
         }
 
-        /// See ``Swift/Comparable/<(_:_:)`
         @inlinable
         public static func <(lhs: Self, rhs: Self) -> Bool {
             lhs.setIndex < rhs.setIndex
         }
     }
 
-    /// See ``Swift/Collection/isEmpty``
     @inlinable
     public var isEmpty: Bool { accessRanges.isEmpty }
 
-    /// See ``Swift/Collection/startIndex``
     @inlinable
     public var startIndex: Index { .init(setIndex: accessRanges.startIndex) }
 
-    /// See ``Swift/Collection/endIndex``
     @inlinable
     public var endIndex: Index { .init(setIndex: accessRanges.endIndex) }
 
-    /// See ``Swift/Collection/subscript(position:)``
     @inlinable
     public subscript(position: Index) -> Element { accessRanges[position.setIndex] }
 
-    /// See ``Swift/Collection/index(after:)``
     @inlinable
     public func index(after i: Index) -> Index { .init(setIndex: accessRanges.index(after: i.setIndex)) }
 
