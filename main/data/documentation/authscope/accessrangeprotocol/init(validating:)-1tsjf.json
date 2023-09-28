@@ -147,7 +147,7 @@
               "type" : "paragraph"
             }
           ],
-          "name" : "rawValue"
+          "name" : "string"
         }
       ]
     },
