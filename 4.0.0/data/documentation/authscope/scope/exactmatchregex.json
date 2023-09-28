@@ -1,0 +1,368 @@
+{
+  "abstract" : [
+    {
+      "text" : "Returns a regular expression string that matches a string that has exactly the access ranges in self (not more, not less).",
+      "type" : "text"
+    }
+  ],
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/AuthScope\/documentation\/AuthScope",
+        "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "swift",
+    "url" : "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/exactMatchRegex"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "conformance" : {
+      "availabilityPrefix" : [
+        {
+          "text" : "Available when",
+          "type" : "text"
+        }
+      ],
+      "conformancePrefix" : [
+        {
+          "text" : "Conforms when",
+          "type" : "text"
+        }
+      ],
+      "constraints" : [
+        {
+          "code" : "AccessRange",
+          "type" : "codeVoice"
+        },
+        {
+          "text" : " conforms to ",
+          "type" : "text"
+        },
+        {
+          "code" : "AccessRangeProtocol",
+          "type" : "codeVoice"
+        },
+        {
+          "text" : ".",
+          "type" : "text"
+        }
+      ]
+    },
+    "extendedModule" : "AuthScope",
+    "externalID" : "s:9AuthScope0B0V15exactMatchRegex17_StringProcessing0E0VySsGvp",
+    "fragments" : [
+      {
+        "kind" : "keyword",
+        "text" : "var"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
+      },
+      {
+        "kind" : "identifier",
+        "text" : "exactMatchRegex"
+      },
+      {
+        "kind" : "text",
+        "text" : ": "
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:17_StringProcessing5RegexV",
+        "text" : "Regex"
+      },
+      {
+        "kind" : "text",
+        "text" : "<"
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:Ss",
+        "text" : "Substring"
+      },
+      {
+        "kind" : "text",
+        "text" : ">"
+      }
+    ],
+    "modules" : [
+      {
+        "name" : "AuthScope"
+      }
+    ],
+    "platforms" : [
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "16.0",
+        "name" : "iOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "13.0",
+        "name" : "macOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "16.0",
+        "name" : "tvOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "9.0",
+        "name" : "watchOS",
+        "unavailable" : false
+      }
+    ],
+    "role" : "symbol",
+    "roleHeading" : "Instance Property",
+    "symbolKind" : "property",
+    "title" : "exactMatchRegex"
+  },
+  "primaryContentSections" : [
+    {
+      "declarations" : [
+        {
+          "languages" : [
+            "swift"
+          ],
+          "platforms" : [
+            "Linux"
+          ],
+          "tokens" : [
+            {
+              "kind" : "keyword",
+              "text" : "var"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "identifier",
+              "text" : "exactMatchRegex"
+            },
+            {
+              "kind" : "text",
+              "text" : ": "
+            },
+            {
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:17_StringProcessing5RegexV",
+              "text" : "Regex"
+            },
+            {
+              "kind" : "text",
+              "text" : "<"
+            },
+            {
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:Ss",
+              "text" : "Substring"
+            },
+            {
+              "kind" : "text",
+              "text" : "> { "
+            },
+            {
+              "kind" : "keyword",
+              "text" : "get"
+            },
+            {
+              "kind" : "text",
+              "text" : " }"
+            }
+          ]
+        }
+      ],
+      "kind" : "declarations"
+    },
+    {
+      "content" : [
+        {
+          "anchor" : "discussion",
+          "level" : 2,
+          "text" : "Discussion",
+          "type" : "heading"
+        },
+        {
+          "content" : [
+            {
+              "inlineContent" : [
+                {
+                  "text" : "The order of the access ranges in the string is irrelevant.",
+                  "type" : "text"
+                }
+              ],
+              "type" : "paragraph"
+            }
+          ],
+          "name" : "Note",
+          "style" : "note",
+          "type" : "aside"
+        }
+      ],
+      "kind" : "content"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/authscope\/scope\/exactmatchregex"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "swift"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://AuthScope/documentation/AuthScope": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/AuthScope\/documentation\/AuthScope",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "AuthScope",
+  "type" : "topic",
+  "url" : "\/documentation\/authscope"
+},
+"doc://AuthScope/documentation/AuthScope/Scope": {
+  "abstract" : [
+    {
+      "text" : "A set of access ranges.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "struct"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "Scope"
+    }
+  ],
+  "identifier" : "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "Scope"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "Scope",
+  "type" : "topic",
+  "url" : "\/documentation\/authscope\/scope"
+},
+"doc://AuthScope/documentation/AuthScope/Scope/exactMatchRegex": {
+  "abstract" : [
+    {
+      "text" : "Returns a regular expression string that matches a string that has exactly the access ranges in self (not more, not less).",
+      "type" : "text"
+    }
+  ],
+  "conformance" : {
+    "availabilityPrefix" : [
+      {
+        "text" : "Available when",
+        "type" : "text"
+      }
+    ],
+    "conformancePrefix" : [
+      {
+        "text" : "Conforms when",
+        "type" : "text"
+      }
+    ],
+    "constraints" : [
+      {
+        "code" : "AccessRange",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : " conforms to ",
+        "type" : "text"
+      },
+      {
+        "code" : "AccessRangeProtocol",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : ".",
+        "type" : "text"
+      }
+    ]
+  },
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "exactMatchRegex"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:17_StringProcessing5RegexV",
+      "text" : "Regex"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Ss",
+      "text" : "Substring"
+    },
+    {
+      "kind" : "text",
+      "text" : ">"
+    }
+  ],
+  "identifier" : "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/exactMatchRegex",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "exactMatchRegex",
+  "type" : "topic",
+  "url" : "\/documentation\/authscope\/scope\/exactmatchregex"
+}
+}
+}

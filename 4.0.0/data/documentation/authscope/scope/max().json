@@ -1,0 +1,428 @@
+{
+  "abstract" : [
+    {
+      "text" : "Returns the maximum element in the sequence.",
+      "type" : "text"
+    }
+  ],
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/AuthScope\/documentation\/AuthScope",
+        "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope",
+        "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/Sequence-Implementations"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "swift",
+    "url" : "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/max()"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "conformance" : {
+      "availabilityPrefix" : [
+        {
+          "text" : "Available when",
+          "type" : "text"
+        }
+      ],
+      "conformancePrefix" : [
+        {
+          "text" : "Conforms when",
+          "type" : "text"
+        }
+      ],
+      "constraints" : [
+        {
+          "code" : "Element",
+          "type" : "codeVoice"
+        },
+        {
+          "text" : " conforms to ",
+          "type" : "text"
+        },
+        {
+          "code" : "Comparable",
+          "type" : "codeVoice"
+        },
+        {
+          "text" : ".",
+          "type" : "text"
+        }
+      ]
+    },
+    "extendedModule" : "Swift",
+    "externalID" : "s:STsSL7ElementRpzrlE3maxABSgyF::SYNTHESIZED::s:9AuthScope0B0V",
+    "fragments" : [
+      {
+        "kind" : "keyword",
+        "text" : "func"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
+      },
+      {
+        "kind" : "identifier",
+        "text" : "max"
+      },
+      {
+        "kind" : "text",
+        "text" : "() -> "
+      },
+      {
+        "kind" : "typeIdentifier",
+        "text" : "Self"
+      },
+      {
+        "kind" : "text",
+        "text" : "."
+      },
+      {
+        "kind" : "typeIdentifier",
+        "text" : "Element"
+      },
+      {
+        "kind" : "text",
+        "text" : "?"
+      }
+    ],
+    "modules" : [
+      {
+        "name" : "AuthScope",
+        "relatedModules" : [
+          "Swift"
+        ]
+      }
+    ],
+    "role" : "symbol",
+    "roleHeading" : "Instance Method",
+    "symbolKind" : "method",
+    "title" : "max()"
+  },
+  "primaryContentSections" : [
+    {
+      "declarations" : [
+        {
+          "languages" : [
+            "swift"
+          ],
+          "platforms" : [
+            "Linux"
+          ],
+          "tokens" : [
+            {
+              "kind" : "attribute",
+              "text" : "@warn_unqualified_access"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "keyword",
+              "text" : "func"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "identifier",
+              "text" : "max"
+            },
+            {
+              "kind" : "text",
+              "text" : "() -> "
+            },
+            {
+              "kind" : "typeIdentifier",
+              "text" : "Self"
+            },
+            {
+              "kind" : "text",
+              "text" : "."
+            },
+            {
+              "kind" : "typeIdentifier",
+              "text" : "Element"
+            },
+            {
+              "kind" : "text",
+              "text" : "?"
+            }
+          ]
+        }
+      ],
+      "kind" : "declarations"
+    },
+    {
+      "content" : [
+        {
+          "anchor" : "return-value",
+          "level" : 2,
+          "text" : "Return Value",
+          "type" : "heading"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "The sequence’s maximum element. If the sequence has no",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "elements, returns ",
+              "type" : "text"
+            },
+            {
+              "code" : "nil",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : ".",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        }
+      ],
+      "kind" : "content"
+    },
+    {
+      "content" : [
+        {
+          "anchor" : "discussion",
+          "level" : 2,
+          "text" : "Discussion",
+          "type" : "heading"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "This example finds the largest value in an array of height measurements.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "code" : [
+            "let heights = [67.5, 65.7, 64.3, 61.1, 58.5, 60.3, 64.9]",
+            "let greatestHeight = heights.max()",
+            "print(greatestHeight)",
+            "\/\/ Prints \"Optional(67.5)\""
+          ],
+          "syntax" : null,
+          "type" : "codeListing"
+        },
+        {
+          "content" : [
+            {
+              "inlineContent" : [
+                {
+                  "text" : "O(",
+                  "type" : "text"
+                },
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "n",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "emphasis"
+                },
+                {
+                  "text" : "), where ",
+                  "type" : "text"
+                },
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "n",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "emphasis"
+                },
+                {
+                  "text" : " is the length of the sequence.",
+                  "type" : "text"
+                }
+              ],
+              "type" : "paragraph"
+            }
+          ],
+          "name" : "Complexity",
+          "style" : "note",
+          "type" : "aside"
+        }
+      ],
+      "kind" : "content"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/authscope\/scope\/max()"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "swift"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://AuthScope/documentation/AuthScope": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/AuthScope\/documentation\/AuthScope",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "AuthScope",
+  "type" : "topic",
+  "url" : "\/documentation\/authscope"
+},
+"doc://AuthScope/documentation/AuthScope/Scope": {
+  "abstract" : [
+    {
+      "text" : "A set of access ranges.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "struct"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "Scope"
+    }
+  ],
+  "identifier" : "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "Scope"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "Scope",
+  "type" : "topic",
+  "url" : "\/documentation\/authscope\/scope"
+},
+"doc://AuthScope/documentation/AuthScope/Scope/Sequence-Implementations": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/Sequence-Implementations",
+  "kind" : "article",
+  "role" : "collectionGroup",
+  "title" : "Sequence Implementations",
+  "type" : "topic",
+  "url" : "\/documentation\/authscope\/scope\/sequence-implementations"
+},
+"doc://AuthScope/documentation/AuthScope/Scope/max()": {
+  "abstract" : [
+    {
+      "text" : "Returns the maximum element in the sequence.",
+      "type" : "text"
+    }
+  ],
+  "conformance" : {
+    "availabilityPrefix" : [
+      {
+        "text" : "Available when",
+        "type" : "text"
+      }
+    ],
+    "conformancePrefix" : [
+      {
+        "text" : "Conforms when",
+        "type" : "text"
+      }
+    ],
+    "constraints" : [
+      {
+        "code" : "Element",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : " conforms to ",
+        "type" : "text"
+      },
+      {
+        "code" : "Comparable",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : ".",
+        "type" : "text"
+      }
+    ]
+  },
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "max"
+    },
+    {
+      "kind" : "text",
+      "text" : "() -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Element"
+    },
+    {
+      "kind" : "text",
+      "text" : "?"
+    }
+  ],
+  "identifier" : "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/max()",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "max()",
+  "type" : "topic",
+  "url" : "\/documentation\/authscope\/scope\/max()"
+}
+}
+}

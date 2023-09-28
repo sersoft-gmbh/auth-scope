@@ -1,0 +1,279 @@
+{
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/AuthScope\/documentation\/AuthScope",
+        "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope",
+        "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/CustomDebugStringConvertible-Implementations"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "swift",
+    "url" : "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/debugDescription"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "conformance" : {
+      "availabilityPrefix" : [
+        {
+          "text" : "Available when",
+          "type" : "text"
+        }
+      ],
+      "conformancePrefix" : [
+        {
+          "text" : "Conforms when",
+          "type" : "text"
+        }
+      ],
+      "constraints" : [
+        {
+          "code" : "AccessRange",
+          "type" : "codeVoice"
+        },
+        {
+          "text" : " conforms to ",
+          "type" : "text"
+        },
+        {
+          "code" : "AccessRangeProtocol",
+          "type" : "codeVoice"
+        },
+        {
+          "text" : ".",
+          "type" : "text"
+        }
+      ]
+    },
+    "extendedModule" : "AuthScope",
+    "externalID" : "s:9AuthScope0B0V16debugDescriptionSSvp",
+    "fragments" : [
+      {
+        "kind" : "keyword",
+        "text" : "var"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
+      },
+      {
+        "kind" : "identifier",
+        "text" : "debugDescription"
+      },
+      {
+        "kind" : "text",
+        "text" : ": "
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:SS",
+        "text" : "String"
+      }
+    ],
+    "modules" : [
+      {
+        "name" : "AuthScope"
+      }
+    ],
+    "role" : "symbol",
+    "roleHeading" : "Instance Property",
+    "symbolKind" : "property",
+    "title" : "debugDescription"
+  },
+  "primaryContentSections" : [
+    {
+      "declarations" : [
+        {
+          "languages" : [
+            "swift"
+          ],
+          "platforms" : [
+            "Linux"
+          ],
+          "tokens" : [
+            {
+              "kind" : "keyword",
+              "text" : "var"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "identifier",
+              "text" : "debugDescription"
+            },
+            {
+              "kind" : "text",
+              "text" : ": "
+            },
+            {
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:SS",
+              "text" : "String"
+            },
+            {
+              "kind" : "text",
+              "text" : " { "
+            },
+            {
+              "kind" : "keyword",
+              "text" : "get"
+            },
+            {
+              "kind" : "text",
+              "text" : " }"
+            }
+          ]
+        }
+      ],
+      "kind" : "declarations"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/authscope\/scope\/debugdescription"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "swift"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://AuthScope/documentation/AuthScope": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/AuthScope\/documentation\/AuthScope",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "AuthScope",
+  "type" : "topic",
+  "url" : "\/documentation\/authscope"
+},
+"doc://AuthScope/documentation/AuthScope/Scope": {
+  "abstract" : [
+    {
+      "text" : "A set of access ranges.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "struct"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "Scope"
+    }
+  ],
+  "identifier" : "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "Scope"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "Scope",
+  "type" : "topic",
+  "url" : "\/documentation\/authscope\/scope"
+},
+"doc://AuthScope/documentation/AuthScope/Scope/CustomDebugStringConvertible-Implementations": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/CustomDebugStringConvertible-Implementations",
+  "kind" : "article",
+  "role" : "collectionGroup",
+  "title" : "CustomDebugStringConvertible Implementations",
+  "type" : "topic",
+  "url" : "\/documentation\/authscope\/scope\/customdebugstringconvertible-implementations"
+},
+"doc://AuthScope/documentation/AuthScope/Scope/debugDescription": {
+  "abstract" : [
+
+  ],
+  "conformance" : {
+    "availabilityPrefix" : [
+      {
+        "text" : "Available when",
+        "type" : "text"
+      }
+    ],
+    "conformancePrefix" : [
+      {
+        "text" : "Conforms when",
+        "type" : "text"
+      }
+    ],
+    "constraints" : [
+      {
+        "code" : "AccessRange",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : " conforms to ",
+        "type" : "text"
+      },
+      {
+        "code" : "AccessRangeProtocol",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : ".",
+        "type" : "text"
+      }
+    ]
+  },
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "debugDescription"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:SS",
+      "text" : "String"
+    }
+  ],
+  "identifier" : "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/debugDescription",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "debugDescription",
+  "type" : "topic",
+  "url" : "\/documentation\/authscope\/scope\/debugdescription"
+}
+}
+}

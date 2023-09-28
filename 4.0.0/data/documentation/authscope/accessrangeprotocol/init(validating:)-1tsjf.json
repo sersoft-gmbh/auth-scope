@@ -1,0 +1,391 @@
+{
+  "abstract" : [
+    {
+      "text" : "Creates an access range with the given raw value or throws an error (typically ",
+      "type" : "text"
+    },
+    {
+      "identifier" : "doc:\/\/AuthScope\/documentation\/AuthScope\/InvalidAccessRangeError",
+      "isActive" : true,
+      "type" : "reference"
+    },
+    {
+      "text" : ") if it’s not a valid raw value.",
+      "type" : "text"
+    }
+  ],
+  "defaultImplementationsSections" : [
+    {
+      "identifiers" : [
+        "doc:\/\/AuthScope\/documentation\/AuthScope\/AccessRangeProtocol\/init(validating:)-9g808"
+      ],
+      "title" : "AccessRangeProtocol Implementations"
+    }
+  ],
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/AuthScope\/documentation\/AuthScope",
+        "doc:\/\/AuthScope\/documentation\/AuthScope\/AccessRangeProtocol"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "swift",
+    "url" : "doc:\/\/AuthScope\/documentation\/AuthScope\/AccessRangeProtocol\/init(validating:)-1tsjf"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "externalID" : "s:9AuthScope19AccessRangeProtocolP10validatingxqd___tKcSyRd__lufc",
+    "fragments" : [
+      {
+        "kind" : "identifier",
+        "text" : "init"
+      },
+      {
+        "kind" : "text",
+        "text" : "("
+      },
+      {
+        "kind" : "externalParam",
+        "text" : "validating"
+      },
+      {
+        "kind" : "text",
+        "text" : ": some "
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:Sy",
+        "text" : "StringProtocol"
+      },
+      {
+        "kind" : "text",
+        "text" : ") "
+      },
+      {
+        "kind" : "keyword",
+        "text" : "throws"
+      }
+    ],
+    "modules" : [
+      {
+        "name" : "AuthScope"
+      }
+    ],
+    "required" : true,
+    "role" : "symbol",
+    "roleHeading" : "Initializer",
+    "symbolKind" : "init",
+    "title" : "init(validating:)"
+  },
+  "primaryContentSections" : [
+    {
+      "declarations" : [
+        {
+          "languages" : [
+            "swift"
+          ],
+          "platforms" : [
+            "Linux"
+          ],
+          "tokens" : [
+            {
+              "kind" : "keyword",
+              "text" : "init"
+            },
+            {
+              "kind" : "text",
+              "text" : "("
+            },
+            {
+              "kind" : "externalParam",
+              "text" : "validating"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "internalParam",
+              "text" : "string"
+            },
+            {
+              "kind" : "text",
+              "text" : ": some "
+            },
+            {
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:Sy",
+              "text" : "StringProtocol"
+            },
+            {
+              "kind" : "text",
+              "text" : ") "
+            },
+            {
+              "kind" : "keyword",
+              "text" : "throws"
+            }
+          ]
+        }
+      ],
+      "kind" : "declarations"
+    },
+    {
+      "kind" : "parameters",
+      "parameters" : [
+        {
+          "content" : [
+            {
+              "inlineContent" : [
+                {
+                  "text" : "The raw value to use for the access range.",
+                  "type" : "text"
+                }
+              ],
+              "type" : "paragraph"
+            }
+          ],
+          "name" : "string"
+        }
+      ]
+    },
+    {
+      "content" : [
+        {
+          "anchor" : "discussion",
+          "level" : 2,
+          "text" : "Discussion",
+          "type" : "heading"
+        },
+        {
+          "content" : [
+            {
+              "inlineContent" : [
+                {
+                  "text" : "Any error (typically ",
+                  "type" : "text"
+                },
+                {
+                  "identifier" : "doc:\/\/AuthScope\/documentation\/AuthScope\/InvalidAccessRangeError",
+                  "isActive" : true,
+                  "type" : "reference"
+                },
+                {
+                  "text" : ") if it’s not a vaild raw value.",
+                  "type" : "text"
+                }
+              ],
+              "type" : "paragraph"
+            }
+          ],
+          "name" : "Throws",
+          "style" : "note",
+          "type" : "aside"
+        }
+      ],
+      "kind" : "content"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/authscope\/accessrangeprotocol\/init(validating:)-1tsjf"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "swift"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://AuthScope/documentation/AuthScope": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/AuthScope\/documentation\/AuthScope",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "AuthScope",
+  "type" : "topic",
+  "url" : "\/documentation\/authscope"
+},
+"doc://AuthScope/documentation/AuthScope/AccessRangeProtocol": {
+  "abstract" : [
+    {
+      "text" : "Describes an access range type. Typically an enum.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "protocol"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "AccessRangeProtocol"
+    }
+  ],
+  "identifier" : "doc:\/\/AuthScope\/documentation\/AuthScope\/AccessRangeProtocol",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "AccessRangeProtocol"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "AccessRangeProtocol",
+  "type" : "topic",
+  "url" : "\/documentation\/authscope\/accessrangeprotocol"
+},
+"doc://AuthScope/documentation/AuthScope/AccessRangeProtocol/init(validating:)-1tsjf": {
+  "abstract" : [
+    {
+      "text" : "Creates an access range with the given raw value or throws an error (typically ",
+      "type" : "text"
+    },
+    {
+      "identifier" : "doc:\/\/AuthScope\/documentation\/AuthScope\/InvalidAccessRangeError",
+      "isActive" : true,
+      "type" : "reference"
+    },
+    {
+      "text" : ") if it’s not a valid raw value.",
+      "type" : "text"
+    }
+  ],
+  "defaultImplementations" : 1,
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "init"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "validating"
+    },
+    {
+      "kind" : "text",
+      "text" : ": some "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sy",
+      "text" : "StringProtocol"
+    },
+    {
+      "kind" : "text",
+      "text" : ") "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "throws"
+    }
+  ],
+  "identifier" : "doc:\/\/AuthScope\/documentation\/AuthScope\/AccessRangeProtocol\/init(validating:)-1tsjf",
+  "kind" : "symbol",
+  "required" : true,
+  "role" : "symbol",
+  "title" : "init(validating:)",
+  "type" : "topic",
+  "url" : "\/documentation\/authscope\/accessrangeprotocol\/init(validating:)-1tsjf"
+},
+"doc://AuthScope/documentation/AuthScope/AccessRangeProtocol/init(validating:)-9g808": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "init"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "validating"
+    },
+    {
+      "kind" : "text",
+      "text" : ": some "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sy",
+      "text" : "StringProtocol"
+    },
+    {
+      "kind" : "text",
+      "text" : ") "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "throws"
+    }
+  ],
+  "identifier" : "doc:\/\/AuthScope\/documentation\/AuthScope\/AccessRangeProtocol\/init(validating:)-9g808",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "init(validating:)",
+  "type" : "topic",
+  "url" : "\/documentation\/authscope\/accessrangeprotocol\/init(validating:)-9g808"
+},
+"doc://AuthScope/documentation/AuthScope/InvalidAccessRangeError": {
+  "abstract" : [
+    {
+      "text" : "The error thrown when an access range is initialized with an invalid raw value.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "struct"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "InvalidAccessRangeError"
+    }
+  ],
+  "identifier" : "doc:\/\/AuthScope\/documentation\/AuthScope\/InvalidAccessRangeError",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "InvalidAccessRangeError"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "InvalidAccessRangeError",
+  "type" : "topic",
+  "url" : "\/documentation\/authscope\/invalidaccessrangeerror"
+}
+}
+}

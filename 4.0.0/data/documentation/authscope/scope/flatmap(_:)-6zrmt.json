@@ -1,0 +1,390 @@
+{
+  "deprecationSummary" : [
+    {
+      "inlineContent" : [
+        {
+          "text" : "Please use compactMap(_:) for the case where closure returns an optional value",
+          "type" : "text"
+        }
+      ],
+      "type" : "paragraph"
+    }
+  ],
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/AuthScope\/documentation\/AuthScope",
+        "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope",
+        "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/Sequence-Implementations"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "swift",
+    "url" : "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/flatMap(_:)-6zrmt"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "extendedModule" : "Swift",
+    "externalID" : "s:STsE7flatMapySayqd__Gqd__Sg7ElementQzKXEKlF::SYNTHESIZED::s:9AuthScope0B0V",
+    "fragments" : [
+      {
+        "kind" : "keyword",
+        "text" : "func"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
+      },
+      {
+        "kind" : "identifier",
+        "text" : "flatMap"
+      },
+      {
+        "kind" : "text",
+        "text" : "<"
+      },
+      {
+        "kind" : "genericParameter",
+        "text" : "ElementOfResult"
+      },
+      {
+        "kind" : "text",
+        "text" : ">(("
+      },
+      {
+        "kind" : "typeIdentifier",
+        "text" : "Self"
+      },
+      {
+        "kind" : "text",
+        "text" : "."
+      },
+      {
+        "kind" : "typeIdentifier",
+        "text" : "Element"
+      },
+      {
+        "kind" : "text",
+        "text" : ") "
+      },
+      {
+        "kind" : "keyword",
+        "text" : "throws"
+      },
+      {
+        "kind" : "text",
+        "text" : " -> "
+      },
+      {
+        "kind" : "typeIdentifier",
+        "text" : "ElementOfResult"
+      },
+      {
+        "kind" : "text",
+        "text" : "?) "
+      },
+      {
+        "kind" : "keyword",
+        "text" : "rethrows"
+      },
+      {
+        "kind" : "text",
+        "text" : " -> ["
+      },
+      {
+        "kind" : "typeIdentifier",
+        "text" : "ElementOfResult"
+      },
+      {
+        "kind" : "text",
+        "text" : "]"
+      }
+    ],
+    "modules" : [
+      {
+        "name" : "AuthScope",
+        "relatedModules" : [
+          "Swift"
+        ]
+      }
+    ],
+    "platforms" : [
+
+    ],
+    "role" : "symbol",
+    "roleHeading" : "Instance Method",
+    "symbolKind" : "method",
+    "title" : "flatMap(_:)"
+  },
+  "primaryContentSections" : [
+    {
+      "declarations" : [
+        {
+          "languages" : [
+            "swift"
+          ],
+          "platforms" : [
+            "Linux"
+          ],
+          "tokens" : [
+            {
+              "kind" : "keyword",
+              "text" : "func"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "identifier",
+              "text" : "flatMap"
+            },
+            {
+              "kind" : "text",
+              "text" : "<"
+            },
+            {
+              "kind" : "genericParameter",
+              "text" : "ElementOfResult"
+            },
+            {
+              "kind" : "text",
+              "text" : ">("
+            },
+            {
+              "kind" : "externalParam",
+              "text" : "_"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "internalParam",
+              "text" : "transform"
+            },
+            {
+              "kind" : "text",
+              "text" : ": ("
+            },
+            {
+              "kind" : "typeIdentifier",
+              "text" : "Self"
+            },
+            {
+              "kind" : "text",
+              "text" : "."
+            },
+            {
+              "kind" : "typeIdentifier",
+              "text" : "Element"
+            },
+            {
+              "kind" : "text",
+              "text" : ") "
+            },
+            {
+              "kind" : "keyword",
+              "text" : "throws"
+            },
+            {
+              "kind" : "text",
+              "text" : " -> "
+            },
+            {
+              "kind" : "typeIdentifier",
+              "text" : "ElementOfResult"
+            },
+            {
+              "kind" : "text",
+              "text" : "?) "
+            },
+            {
+              "kind" : "keyword",
+              "text" : "rethrows"
+            },
+            {
+              "kind" : "text",
+              "text" : " -> ["
+            },
+            {
+              "kind" : "typeIdentifier",
+              "text" : "ElementOfResult"
+            },
+            {
+              "kind" : "text",
+              "text" : "]"
+            }
+          ]
+        }
+      ],
+      "kind" : "declarations"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/authscope\/scope\/flatmap(_:)-6zrmt"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "swift"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://AuthScope/documentation/AuthScope": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/AuthScope\/documentation\/AuthScope",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "AuthScope",
+  "type" : "topic",
+  "url" : "\/documentation\/authscope"
+},
+"doc://AuthScope/documentation/AuthScope/Scope": {
+  "abstract" : [
+    {
+      "text" : "A set of access ranges.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "struct"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "Scope"
+    }
+  ],
+  "identifier" : "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "Scope"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "Scope",
+  "type" : "topic",
+  "url" : "\/documentation\/authscope\/scope"
+},
+"doc://AuthScope/documentation/AuthScope/Scope/Sequence-Implementations": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/Sequence-Implementations",
+  "kind" : "article",
+  "role" : "collectionGroup",
+  "title" : "Sequence Implementations",
+  "type" : "topic",
+  "url" : "\/documentation\/authscope\/scope\/sequence-implementations"
+},
+"doc://AuthScope/documentation/AuthScope/Scope/flatMap(_:)-6zrmt": {
+  "abstract" : [
+
+  ],
+  "deprecated" : true,
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "flatMap"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "genericParameter",
+      "text" : "ElementOfResult"
+    },
+    {
+      "kind" : "text",
+      "text" : ">(("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Element"
+    },
+    {
+      "kind" : "text",
+      "text" : ") "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "throws"
+    },
+    {
+      "kind" : "text",
+      "text" : " -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "ElementOfResult"
+    },
+    {
+      "kind" : "text",
+      "text" : "?) "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "rethrows"
+    },
+    {
+      "kind" : "text",
+      "text" : " -> ["
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "ElementOfResult"
+    },
+    {
+      "kind" : "text",
+      "text" : "]"
+    }
+  ],
+  "identifier" : "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/flatMap(_:)-6zrmt",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "flatMap(_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/authscope\/scope\/flatmap(_:)-6zrmt"
+}
+}
+}
