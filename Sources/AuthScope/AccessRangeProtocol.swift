@@ -20,7 +20,7 @@ public protocol AccessRangeProtocol: Sendable, RawRepresentable, Hashable
 where RawValue == String
 {
     /// Creates an access range with the given raw value or throws an error (typically ``InvalidAccessRangeError``) if it's not a valid raw value.
-    /// - Parameter rawValue: The raw value to use for the access range.
+    /// - Parameter string: The raw value to use for the access range.
     /// - Throws: Any error (typically ``InvalidAccessRangeError``) if it's not a vaild raw value.
     init(validating string: some StringProtocol) throws
 }

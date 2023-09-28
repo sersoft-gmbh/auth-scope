@@ -7,7 +7,7 @@ extension Scope {
     public var scopeString: String {
         accessRanges.lazy.map(\.rawValue).joined(separator: String(Scope.stringSeparator))
     }
-    
+
     /// Creates a new scope from a given scope string. Throws an error if the string contains invalid access ranges.
     ///
     /// - Parameter scopeString: The scope string (e.g. created by `scopeString` of an existing scope) to parse.

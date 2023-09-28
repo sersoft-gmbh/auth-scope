@@ -1,13 +1,6 @@
 import XCTest
 import AuthScope
 
-fileprivate extension Scope {
-    // necessary because it generates the same order as the underlying set
-    var regexGroupString: String {
-        lazy.map(\.rawValue).joined(separator: "|")
-    }
-}
-
 final class Scope_RegularExpressionsTests: XCTestCase {
     func testScopeExactMatchRegex() throws {
         guard #available(macOS 13, iOS 16, tvOS 16, watchOS 9, *)
@@ -15,7 +8,9 @@ final class Scope_RegularExpressionsTests: XCTestCase {
         let scope: Scope<TestAccessRange> = [.a, .b, .c]
         XCTAssertNotNil(try scope.exactMatchRegex.wholeMatch(in: scope.scopeString))
         XCTAssertNil(try scope.exactMatchRegex.wholeMatch(in: "A a X"))
-//        XCTAssertNil(try scope.exactMatchRegex.wholeMatch(in: "a a a"))
+        XCTAssertNil(try scope.exactMatchRegex.wholeMatch(in: "a a a"))
+        XCTAssertNil(try Scope<TestAccessRange>().exactMatchRegex.firstMatch(in: "a b c"))
+        XCTAssertNotNil(try Scope<TestAccessRange>().exactMatchRegex.firstMatch(in: ""))
     }
 
     func testScopeContainsAllRegex() throws {
@@ -24,11 +19,13 @@ final class Scope_RegularExpressionsTests: XCTestCase {
         let scope: Scope<TestAccessRange> = [.a, .b, .c]
         XCTAssertNotNil(try scope.containsAllRegex.firstMatch(in: scope.scopeString))
         XCTAssertNil(try scope.containsAllRegex.firstMatch(in: "A a X Y"))
-//        XCTAssertNil(try scope.containsAllRegex.firstMatch(in: "a a a"))
-//        XCTAssertNil(try scope.containsAllRegex.firstMatch(in: "A a X b x"))
+        XCTAssertNil(try scope.containsAllRegex.firstMatch(in: "a a a"))
+        XCTAssertNil(try scope.containsAllRegex.firstMatch(in: "A a X b x"))
         XCTAssertNotNil(try scope.containsAllRegex.firstMatch(in: "a b c d"))
         XCTAssertNotNil(try scope.containsAllRegex.firstMatch(in: "X a b c d"))
         XCTAssertNotNil(try scope.containsAllRegex.firstMatch(in: "X a b c d Y"))
+        XCTAssertNotNil(try Scope<TestAccessRange>().containsAllRegex.firstMatch(in: "a b c"))
+        XCTAssertNotNil(try Scope<TestAccessRange>().containsAllRegex.firstMatch(in: ""))
     }
 
     func testScopeContainsAnyRegex() throws {
@@ -43,37 +40,34 @@ final class Scope_RegularExpressionsTests: XCTestCase {
         XCTAssertNotNil(try scope.containsAnyRegex.firstMatch(in: "c"))
         XCTAssertNotNil(try scope.containsAnyRegex.firstMatch(in: "x c"))
         XCTAssertNil(try scope.containsAnyRegex.firstMatch(in: "X Y Z"))
+        XCTAssertNotNil(try Scope<TestAccessRange>().containsAnyRegex.firstMatch(in: "a b c"))
+        XCTAssertNotNil(try Scope<TestAccessRange>().containsAnyRegex.firstMatch(in: ""))
     }
 
     func testScopeExactMatchRegexPattern() throws {
         let scope: Scope<TestAccessRange> = [.a, .b, .c]
-        let groupString = scope.regexGroupString
-        XCTAssertEqual(scope.exactMatchRegexPattern, "^(?:\(groupString)) (?:\(groupString)) (?:\(groupString))$")
         let regex = try NSRegularExpression(pattern: scope.exactMatchRegexPattern)
         XCTAssertNotNil(regex.wholeMatch(in: scope.scopeString))
         XCTAssertNil(regex.wholeMatch(in: "A a X"))
-//        XCTAssertNil(regex.wholeMatch(in: "a a a"))
+        XCTAssertNil(regex.wholeMatch(in: "a a a"))
+        XCTAssertEqual(Scope<TestAccessRange>().exactMatchRegexPattern, "^$")
     }
     
     func testScopeContainsAllRegexPattern() throws {
         let scope: Scope<TestAccessRange> = [.a, .b, .c]
-        let groupString = scope.regexGroupString
-        XCTAssertEqual(scope.containsAllRegexPattern,
-                       "^(?:[^ ]+ )*(?:\(groupString)) (?:[^ ]+ )*(?:\(groupString)) (?:[^ ]+ )*(?:\(groupString))(?: (?:[^ ]+(?: |$))+|$)")
         let regex = try NSRegularExpression(pattern: scope.containsAllRegexPattern)
         XCTAssertNotNil(regex.firstMatch(in: scope.scopeString))
         XCTAssertNil(regex.firstMatch(in: "A a X Y"))
-//        XCTAssertNil(regex.firstMatch(in: "a a a"))
-//        XCTAssertNil(regex.firstMatch(in: "A a X b x"))
+        XCTAssertNil(regex.firstMatch(in: "a a a"))
+        XCTAssertNil(regex.firstMatch(in: "A a X b x"))
         XCTAssertNotNil(regex.firstMatch(in: "a b c d"))
         XCTAssertNotNil(regex.firstMatch(in: "X a b c d"))
         XCTAssertNotNil(regex.firstMatch(in: "X a b c d Y"))
+        XCTAssertEqual(Scope<TestAccessRange>().containsAllRegexPattern, "^.*$")
     }
 
     func testScopeContainsAnyRegexPattern() throws {
         let scope: Scope<TestAccessRange> = [.a, .b, .c]
-        let groupString = scope.regexGroupString
-        XCTAssertEqual(scope.containsAnyRegexPattern, "(?:^| )(?:\(groupString))(?: |$)")
         let regex = try NSRegularExpression(pattern: scope.containsAnyRegexPattern)
         XCTAssertNotNil(regex.firstMatch(in: scope.scopeString))
         XCTAssertNotNil(regex.firstMatch(in: "A a X"))
@@ -83,6 +77,7 @@ final class Scope_RegularExpressionsTests: XCTestCase {
         XCTAssertNotNil(regex.firstMatch(in: "c"))
         XCTAssertNotNil(regex.firstMatch(in: "x c"))
         XCTAssertNil(regex.firstMatch(in: "X Y Z"))
+        XCTAssertEqual(Scope<TestAccessRange>().containsAnyRegexPattern, "^.*$")
     }
 }
 
