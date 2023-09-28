@@ -2,6 +2,11 @@ import XCTest
 @testable import AuthScope
 
 final class Scope_CollectionTests: XCTestCase {
+    func testIndexComparison() {
+        let scope: Scope<TestAccessRange> = [.a, .b, .c]
+        XCTAssertTrue(scope.startIndex < scope.endIndex)
+    }
+
     func testScopeIsEmpty() {
         XCTAssertTrue(Scope<TestAccessRange>().isEmpty)
         XCTAssertFalse(Scope<TestAccessRange>(accessRanges: .a, .b, .c).isEmpty)
