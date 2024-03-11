@@ -151,8 +151,9 @@
                   "type" : "text"
                 },
                 {
-                  "code" : "scopeString",
-                  "type" : "codeVoice"
+                  "identifier" : "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/scopeString",
+                  "isActive" : true,
+                  "type" : "reference"
                 },
                 {
                   "text" : " of an existing scope) to parse.",
@@ -448,6 +449,75 @@
   "title" : "init(scopeString:)",
   "type" : "topic",
   "url" : "\/documentation\/authscope\/scope\/init(scopestring:)"
+},
+"doc://AuthScope/documentation/AuthScope/Scope/scopeString": {
+  "abstract" : [
+    {
+      "text" : "A string containing all access ranges in self seperated by space.",
+      "type" : "text"
+    }
+  ],
+  "conformance" : {
+    "availabilityPrefix" : [
+      {
+        "text" : "Available when",
+        "type" : "text"
+      }
+    ],
+    "conformancePrefix" : [
+      {
+        "text" : "Conforms when",
+        "type" : "text"
+      }
+    ],
+    "constraints" : [
+      {
+        "code" : "AccessRange",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : " conforms to ",
+        "type" : "text"
+      },
+      {
+        "code" : "AccessRangeProtocol",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : ".",
+        "type" : "text"
+      }
+    ]
+  },
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "scopeString"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:SS",
+      "text" : "String"
+    }
+  ],
+  "identifier" : "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/scopeString",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "scopeString",
+  "type" : "topic",
+  "url" : "\/documentation\/authscope\/scope\/scopestring"
 }
 }
 }

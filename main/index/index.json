@@ -48,7 +48,7 @@
               },
               {
                 "path" : "\/documentation\/authscope\/invalidaccessrangeerror\/accessrangetype",
-                "title" : "let accessRangeType: Any.Type",
+                "title" : "let accessRangeType: any Any.Type",
                 "type" : "property"
               },
               {
@@ -498,7 +498,7 @@
                   },
                   {
                     "path" : "\/documentation\/authscope\/scope\/init(from:)",
-                    "title" : "init(from: Decoder) throws",
+                    "title" : "init(from: any Decoder) throws",
                     "type" : "init"
                   }
                 ],
@@ -514,7 +514,7 @@
                   },
                   {
                     "path" : "\/documentation\/authscope\/scope\/encode(to:)",
-                    "title" : "func encode(to: Encoder) throws",
+                    "title" : "func encode(to: any Encoder) throws",
                     "type" : "method"
                   }
                 ],
