@@ -10,7 +10,7 @@ extension Scope {
 
     /// Creates a new scope from a given scope string. Throws an error if the string contains invalid access ranges.
     ///
-    /// - Parameter scopeString: The scope string (e.g. created by `scopeString` of an existing scope) to parse.
+    /// - Parameter scopeString: The scope string (e.g. created by ``Scope/scopeString`` of an existing scope) to parse.
     /// - Throws: An error if at least one of the access ranges in the scope string is invalid.
     /// - SeeAlso: ``AccessRangeProtocol/init(validating:)``
     public init(scopeString: some StringProtocol) throws {
