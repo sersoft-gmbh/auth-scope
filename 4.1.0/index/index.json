@@ -1,0 +1,872 @@
+{
+  "interfaceLanguages" : {
+    "swift" : [
+      {
+        "children" : [
+          {
+            "title" : "Protocols",
+            "type" : "groupMarker"
+          },
+          {
+            "children" : [
+              {
+                "title" : "Initializers",
+                "type" : "groupMarker"
+              },
+              {
+                "children" : [
+                  {
+                    "children" : [
+                      {
+                        "path" : "\/documentation\/authscope\/accessrangeprotocol\/init(validating:)-9g808",
+                        "title" : "init(validating: some StringProtocol) throws",
+                        "type" : "init"
+                      }
+                    ],
+                    "title" : "AccessRangeProtocol Implementations",
+                    "type" : "groupMarker"
+                  }
+                ],
+                "path" : "\/documentation\/authscope\/accessrangeprotocol\/init(validating:)-1tsjf",
+                "title" : "init(validating: some StringProtocol) throws",
+                "type" : "init"
+              }
+            ],
+            "path" : "\/documentation\/authscope\/accessrangeprotocol",
+            "title" : "AccessRangeProtocol",
+            "type" : "protocol"
+          },
+          {
+            "title" : "Structures",
+            "type" : "groupMarker"
+          },
+          {
+            "children" : [
+              {
+                "title" : "Instance Properties",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/authscope\/invalidaccessrangeerror\/accessrangetype",
+                "title" : "let accessRangeType: any Any.Type",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/authscope\/invalidaccessrangeerror\/debugdescription",
+                "title" : "var debugDescription: String",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/authscope\/invalidaccessrangeerror\/description",
+                "title" : "var description: String",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/authscope\/invalidaccessrangeerror\/rawvalue",
+                "title" : "let rawValue: String",
+                "type" : "property"
+              }
+            ],
+            "path" : "\/documentation\/authscope\/invalidaccessrangeerror",
+            "title" : "InvalidAccessRangeError",
+            "type" : "struct"
+          },
+          {
+            "children" : [
+              {
+                "title" : "Initializers",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/authscope\/scope\/init()",
+                "title" : "init()",
+                "type" : "init"
+              },
+              {
+                "path" : "\/documentation\/authscope\/scope\/init(accessranges:)-639db",
+                "title" : "init(accessRanges: Set<AccessRange>)",
+                "type" : "init"
+              },
+              {
+                "path" : "\/documentation\/authscope\/scope\/init(accessranges:)-85vzj",
+                "title" : "init(accessRanges: AccessRange...)",
+                "type" : "init"
+              },
+              {
+                "path" : "\/documentation\/authscope\/scope\/init(accessranges:)-887z6",
+                "title" : "init(accessRanges: some Sequence<AccessRange>)",
+                "type" : "init"
+              },
+              {
+                "path" : "\/documentation\/authscope\/scope\/init(scopestring:)",
+                "title" : "init(scopeString: some StringProtocol) throws",
+                "type" : "init"
+              },
+              {
+                "title" : "Instance Properties",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/authscope\/scope\/containsallregex",
+                "title" : "var containsAllRegex: Regex<Substring>",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/authscope\/scope\/containsallregexpattern",
+                "title" : "var containsAllRegexPattern: String",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/authscope\/scope\/containsanyregex",
+                "title" : "var containsAnyRegex: Regex<Substring>",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/authscope\/scope\/containsanyregexpattern",
+                "title" : "var containsAnyRegexPattern: String",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/authscope\/scope\/exactmatchregex",
+                "title" : "var exactMatchRegex: Regex<Substring>",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/authscope\/scope\/exactmatchregexpattern",
+                "title" : "var exactMatchRegexPattern: String",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/authscope\/scope\/scopestring",
+                "title" : "var scopeString: String",
+                "type" : "property"
+              },
+              {
+                "title" : "Instance Methods",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/authscope\/scope\/filter(_:)",
+                "title" : "func filter((AccessRange) throws -> Bool) rethrows -> Scope<AccessRange>",
+                "type" : "method"
+              },
+              {
+                "title" : "Type Properties",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/authscope\/scope\/all",
+                "title" : "static var all: Scope<AccessRange>",
+                "type" : "property"
+              },
+              {
+                "title" : "Default Implementations",
+                "type" : "groupMarker"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Structures",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "children" : [
+                      {
+                        "title" : "Operators",
+                        "type" : "groupMarker"
+                      },
+                      {
+                        "path" : "\/documentation\/authscope\/scope\/index\/_(_:_:)-2s4ww",
+                        "title" : "static func < (Scope<AccessRange>.Index, Scope<AccessRange>.Index) -> Bool",
+                        "type" : "op"
+                      },
+                      {
+                        "title" : "Default Implementations",
+                        "type" : "groupMarker"
+                      },
+                      {
+                        "children" : [
+                          {
+                            "title" : "Operators",
+                            "type" : "groupMarker"
+                          },
+                          {
+                            "path" : "\/documentation\/authscope\/scope\/index\/'...(_:)-1ammh",
+                            "title" : "static func ... (Self) -> PartialRangeFrom<Self>",
+                            "type" : "op"
+                          },
+                          {
+                            "path" : "\/documentation\/authscope\/scope\/index\/'...(_:)-6xcce",
+                            "title" : "static func ... (Self) -> PartialRangeThrough<Self>",
+                            "type" : "op"
+                          },
+                          {
+                            "path" : "\/documentation\/authscope\/scope\/index\/'...(_:_:)",
+                            "title" : "static func ... (Self, Self) -> ClosedRange<Self>",
+                            "type" : "op"
+                          },
+                          {
+                            "path" : "\/documentation\/authscope\/scope\/index\/'.._(_:)",
+                            "title" : "static func ..< (Self) -> PartialRangeUpTo<Self>",
+                            "type" : "op"
+                          },
+                          {
+                            "path" : "\/documentation\/authscope\/scope\/index\/'.._(_:_:)",
+                            "title" : "static func ..< (Self, Self) -> Range<Self>",
+                            "type" : "op"
+                          },
+                          {
+                            "path" : "\/documentation\/authscope\/scope\/index\/_(_:_:)-2jelz",
+                            "title" : "static func > (Self, Self) -> Bool",
+                            "type" : "op"
+                          },
+                          {
+                            "path" : "\/documentation\/authscope\/scope\/index\/_=(_:_:)-1twsd",
+                            "title" : "static func >= (Self, Self) -> Bool",
+                            "type" : "op"
+                          },
+                          {
+                            "path" : "\/documentation\/authscope\/scope\/index\/_=(_:_:)-3ptn8",
+                            "title" : "static func <= (Self, Self) -> Bool",
+                            "type" : "op"
+                          }
+                        ],
+                        "path" : "\/documentation\/authscope\/scope\/index\/comparable-implementations",
+                        "title" : "Comparable Implementations",
+                        "type" : "symbol"
+                      },
+                      {
+                        "children" : [
+                          {
+                            "title" : "Operators",
+                            "type" : "groupMarker"
+                          },
+                          {
+                            "path" : "\/documentation\/authscope\/scope\/index\/!=(_:_:)",
+                            "title" : "static func != (Self, Self) -> Bool",
+                            "type" : "op"
+                          }
+                        ],
+                        "path" : "\/documentation\/authscope\/scope\/index\/equatable-implementations",
+                        "title" : "Equatable Implementations",
+                        "type" : "symbol"
+                      }
+                    ],
+                    "path" : "\/documentation\/authscope\/scope\/index",
+                    "title" : "Scope.Index",
+                    "type" : "struct"
+                  },
+                  {
+                    "title" : "Instance Properties",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/authscope\/scope\/count",
+                    "title" : "var count: Int",
+                    "type" : "property"
+                  },
+                  {
+                    "path" : "\/documentation\/authscope\/scope\/endindex",
+                    "title" : "var endIndex: Scope<AccessRange>.Index",
+                    "type" : "property"
+                  },
+                  {
+                    "path" : "\/documentation\/authscope\/scope\/first",
+                    "title" : "var first: Self.Element?",
+                    "type" : "property"
+                  },
+                  {
+                    "path" : "\/documentation\/authscope\/scope\/indices",
+                    "title" : "var indices: DefaultIndices<Self>",
+                    "type" : "property"
+                  },
+                  {
+                    "path" : "\/documentation\/authscope\/scope\/isempty",
+                    "title" : "var isEmpty: Bool",
+                    "type" : "property"
+                  },
+                  {
+                    "path" : "\/documentation\/authscope\/scope\/startindex",
+                    "title" : "var startIndex: Scope<AccessRange>.Index",
+                    "type" : "property"
+                  },
+                  {
+                    "path" : "\/documentation\/authscope\/scope\/underestimatedcount",
+                    "title" : "var underestimatedCount: Int",
+                    "type" : "property"
+                  },
+                  {
+                    "title" : "Instance Methods",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/authscope\/scope\/distance(from:to:)",
+                    "title" : "func distance(from: Self.Index, to: Self.Index) -> Int",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/authscope\/scope\/drop(while:)",
+                    "title" : "func drop(while: (Self.Element) throws -> Bool) rethrows -> Self.SubSequence",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/authscope\/scope\/dropfirst(_:)",
+                    "title" : "func dropFirst(Int) -> Self.SubSequence",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/authscope\/scope\/droplast(_:)",
+                    "title" : "func dropLast(Int) -> Self.SubSequence",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/authscope\/scope\/firstindex(of:)",
+                    "title" : "func firstIndex(of: Self.Element) -> Self.Index?",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/authscope\/scope\/firstindex(where:)",
+                    "title" : "func firstIndex(where: (Self.Element) throws -> Bool) rethrows -> Self.Index?",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/authscope\/scope\/firstrange(of:)",
+                    "title" : "func firstRange<C>(of: C) -> Range<Self.Index>?",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/authscope\/scope\/formindex(_:offsetby:)",
+                    "title" : "func formIndex(inout Self.Index, offsetBy: Int)",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/authscope\/scope\/formindex(_:offsetby:limitedby:)",
+                    "title" : "func formIndex(inout Self.Index, offsetBy: Int, limitedBy: Self.Index) -> Bool",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/authscope\/scope\/formindex(after:)",
+                    "title" : "func formIndex(after: inout Self.Index)",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/authscope\/scope\/index(_:offsetby:)",
+                    "title" : "func index(Self.Index, offsetBy: Int) -> Self.Index",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/authscope\/scope\/index(_:offsetby:limitedby:)",
+                    "title" : "func index(Self.Index, offsetBy: Int, limitedBy: Self.Index) -> Self.Index?",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/authscope\/scope\/index(after:)",
+                    "title" : "func index(after: Scope<AccessRange>.Index) -> Scope<AccessRange>.Index",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/authscope\/scope\/index(of:)",
+                    "title" : "func index(of: Self.Element) -> Self.Index?",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/authscope\/scope\/makeiterator()",
+                    "title" : "func makeIterator() -> IndexingIterator<Self>",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/authscope\/scope\/map(_:)-11ra4",
+                    "title" : "func map<T>((Self.Element) throws -> T) rethrows -> [T]",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/authscope\/scope\/prefix(_:)",
+                    "title" : "func prefix(Int) -> Self.SubSequence",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/authscope\/scope\/prefix(through:)",
+                    "title" : "func prefix(through: Self.Index) -> Self.SubSequence",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/authscope\/scope\/prefix(upto:)",
+                    "title" : "func prefix(upTo: Self.Index) -> Self.SubSequence",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/authscope\/scope\/prefix(while:)",
+                    "title" : "func prefix(while: (Self.Element) throws -> Bool) rethrows -> Self.SubSequence",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/authscope\/scope\/randomelement()",
+                    "title" : "func randomElement() -> Self.Element?",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/authscope\/scope\/randomelement(using:)",
+                    "title" : "func randomElement<T>(using: inout T) -> Self.Element?",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/authscope\/scope\/ranges(of:)",
+                    "title" : "func ranges<C>(of: C) -> [Range<Self.Index>]",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/authscope\/scope\/split(maxsplits:omittingemptysubsequences:whereseparator:)",
+                    "title" : "func split(maxSplits: Int, omittingEmptySubsequences: Bool, whereSeparator: (Self.Element) throws -> Bool) rethrows -> [Self.SubSequence]",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/authscope\/scope\/split(separator:maxsplits:omittingemptysubsequences:)",
+                    "title" : "func split(separator: Self.Element, maxSplits: Int, omittingEmptySubsequences: Bool) -> [Self.SubSequence]",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/authscope\/scope\/suffix(_:)",
+                    "title" : "func suffix(Int) -> Self.SubSequence",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/authscope\/scope\/suffix(from:)",
+                    "title" : "func suffix(from: Self.Index) -> Self.SubSequence",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/authscope\/scope\/trimmingprefix(_:)",
+                    "title" : "func trimmingPrefix<Prefix>(Prefix) -> Self.SubSequence",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/authscope\/scope\/trimmingprefix(while:)",
+                    "title" : "func trimmingPrefix(while: (Self.Element) throws -> Bool) rethrows -> Self.SubSequence",
+                    "type" : "method"
+                  },
+                  {
+                    "title" : "Subscripts",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/authscope\/scope\/subscript(_:)",
+                    "title" : "subscript(Scope<AccessRange>.Index) -> Scope<AccessRange>.Element",
+                    "type" : "subscript"
+                  }
+                ],
+                "path" : "\/documentation\/authscope\/scope\/collection-implementations",
+                "title" : "Collection Implementations",
+                "type" : "symbol"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Instance Properties",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/authscope\/scope\/debugdescription",
+                    "title" : "var debugDescription: String",
+                    "type" : "property"
+                  }
+                ],
+                "path" : "\/documentation\/authscope\/scope\/customdebugstringconvertible-implementations",
+                "title" : "CustomDebugStringConvertible Implementations",
+                "type" : "symbol"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Instance Properties",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/authscope\/scope\/description",
+                    "title" : "var description: String",
+                    "type" : "property"
+                  }
+                ],
+                "path" : "\/documentation\/authscope\/scope\/customstringconvertible-implementations",
+                "title" : "CustomStringConvertible Implementations",
+                "type" : "symbol"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Initializers",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/authscope\/scope\/init(from:)",
+                    "title" : "init(from: any Decoder) throws",
+                    "type" : "init"
+                  }
+                ],
+                "path" : "\/documentation\/authscope\/scope\/decodable-implementations",
+                "title" : "Decodable Implementations",
+                "type" : "symbol"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Instance Methods",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/authscope\/scope\/encode(to:)",
+                    "title" : "func encode(to: any Encoder) throws",
+                    "type" : "method"
+                  }
+                ],
+                "path" : "\/documentation\/authscope\/scope\/encodable-implementations",
+                "title" : "Encodable Implementations",
+                "type" : "symbol"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Operators",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/authscope\/scope\/!=(_:_:)",
+                    "title" : "static func != (Self, Self) -> Bool",
+                    "type" : "op"
+                  }
+                ],
+                "path" : "\/documentation\/authscope\/scope\/equatable-implementations",
+                "title" : "Equatable Implementations",
+                "type" : "symbol"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Initializers",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/authscope\/scope\/init(arrayliteral:)-50qke",
+                    "title" : "init(arrayLiteral: Scope<AccessRange>.ArrayLiteralElement...)",
+                    "type" : "init"
+                  },
+                  {
+                    "title" : "Type Aliases",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/authscope\/scope\/arrayliteralelement",
+                    "title" : "Scope.ArrayLiteralElement",
+                    "type" : "typealias"
+                  }
+                ],
+                "path" : "\/documentation\/authscope\/scope\/expressiblebyarrayliteral-implementations",
+                "title" : "ExpressibleByArrayLiteral Implementations",
+                "type" : "symbol"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Instance Properties",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/authscope\/scope\/lazy",
+                    "title" : "var lazy: LazySequence<Self>",
+                    "type" : "property"
+                  },
+                  {
+                    "title" : "Instance Methods",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/authscope\/scope\/allsatisfy(_:)",
+                    "title" : "func allSatisfy((Self.Element) throws -> Bool) rethrows -> Bool",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/authscope\/scope\/compactmap(_:)",
+                    "title" : "func compactMap<ElementOfResult>((Self.Element) throws -> ElementOfResult?) rethrows -> [ElementOfResult]",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/authscope\/scope\/contains(_:)",
+                    "title" : "func contains(Self.Element) -> Bool",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/authscope\/scope\/contains(where:)",
+                    "title" : "func contains(where: (Self.Element) throws -> Bool) rethrows -> Bool",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/authscope\/scope\/elementsequal(_:)",
+                    "title" : "func elementsEqual<OtherSequence>(OtherSequence) -> Bool",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/authscope\/scope\/elementsequal(_:by:)",
+                    "title" : "func elementsEqual<OtherSequence>(OtherSequence, by: (Self.Element, OtherSequence.Element) throws -> Bool) rethrows -> Bool",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/authscope\/scope\/enumerated()",
+                    "title" : "func enumerated() -> EnumeratedSequence<Self>",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/authscope\/scope\/first(where:)",
+                    "title" : "func first(where: (Self.Element) throws -> Bool) rethrows -> Self.Element?",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/authscope\/scope\/flatmap(_:)-3zt15",
+                    "title" : "func flatMap<SegmentOfResult>((Self.Element) throws -> SegmentOfResult) rethrows -> [SegmentOfResult.Element]",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/authscope\/scope\/flatmap(_:)-6zrmt",
+                    "title" : "func flatMap<ElementOfResult>((Self.Element) throws -> ElementOfResult?) rethrows -> [ElementOfResult]",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/authscope\/scope\/foreach(_:)",
+                    "title" : "func forEach((Self.Element) throws -> Void) rethrows",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/authscope\/scope\/joined()",
+                    "title" : "func joined() -> FlattenSequence<Self>",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/authscope\/scope\/joined(separator:)-6zgtz",
+                    "title" : "func joined<Separator>(separator: Separator) -> JoinedSequence<Self>",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/authscope\/scope\/joined(separator:)-7cg2u",
+                    "title" : "func joined(separator: String) -> String",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/authscope\/scope\/lexicographicallyprecedes(_:)",
+                    "title" : "func lexicographicallyPrecedes<OtherSequence>(OtherSequence) -> Bool",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/authscope\/scope\/lexicographicallyprecedes(_:by:)",
+                    "title" : "func lexicographicallyPrecedes<OtherSequence>(OtherSequence, by: (Self.Element, Self.Element) throws -> Bool) rethrows -> Bool",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/authscope\/scope\/map(_:)-2z7bq",
+                    "title" : "func map<T>((Self.Element) throws -> T) rethrows -> [T]",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/authscope\/scope\/max()",
+                    "title" : "func max() -> Self.Element?",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/authscope\/scope\/max(by:)",
+                    "title" : "func max(by: (Self.Element, Self.Element) throws -> Bool) rethrows -> Self.Element?",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/authscope\/scope\/min()",
+                    "title" : "func min() -> Self.Element?",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/authscope\/scope\/min(by:)",
+                    "title" : "func min(by: (Self.Element, Self.Element) throws -> Bool) rethrows -> Self.Element?",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/authscope\/scope\/reduce(_:_:)",
+                    "title" : "func reduce<Result>(Result, (Result, Self.Element) throws -> Result) rethrows -> Result",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/authscope\/scope\/reduce(into:_:)",
+                    "title" : "func reduce<Result>(into: Result, (inout Result, Self.Element) throws -> ()) rethrows -> Result",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/authscope\/scope\/reversed()",
+                    "title" : "func reversed() -> [Self.Element]",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/authscope\/scope\/shuffled()",
+                    "title" : "func shuffled() -> [Self.Element]",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/authscope\/scope\/shuffled(using:)",
+                    "title" : "func shuffled<T>(using: inout T) -> [Self.Element]",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/authscope\/scope\/sorted()",
+                    "title" : "func sorted() -> [Self.Element]",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/authscope\/scope\/sorted(by:)",
+                    "title" : "func sorted(by: (Self.Element, Self.Element) throws -> Bool) rethrows -> [Self.Element]",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/authscope\/scope\/starts(with:)",
+                    "title" : "func starts<PossiblePrefix>(with: PossiblePrefix) -> Bool",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/authscope\/scope\/starts(with:by:)",
+                    "title" : "func starts<PossiblePrefix>(with: PossiblePrefix, by: (Self.Element, PossiblePrefix.Element) throws -> Bool) rethrows -> Bool",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/authscope\/scope\/withcontiguousstorageifavailable(_:)",
+                    "title" : "func withContiguousStorageIfAvailable<R>((UnsafeBufferPointer<Self.Element>) throws -> R) rethrows -> R?",
+                    "type" : "method"
+                  },
+                  {
+                    "title" : "Type Aliases",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/authscope\/scope\/element",
+                    "title" : "Scope.Element",
+                    "type" : "typealias"
+                  }
+                ],
+                "path" : "\/documentation\/authscope\/scope\/sequence-implementations",
+                "title" : "Sequence Implementations",
+                "type" : "symbol"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Initializers",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/authscope\/scope\/init(_:)",
+                    "title" : "init<S>(S)",
+                    "type" : "init"
+                  },
+                  {
+                    "path" : "\/documentation\/authscope\/scope\/init(arrayliteral:)-4sqa",
+                    "title" : "init(arrayLiteral: Self.Element...)",
+                    "type" : "init"
+                  },
+                  {
+                    "title" : "Instance Methods",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/authscope\/scope\/formintersection(_:)",
+                    "title" : "func formIntersection(Scope<AccessRange>)",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/authscope\/scope\/formsymmetricdifference(_:)",
+                    "title" : "func formSymmetricDifference(Scope<AccessRange>)",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/authscope\/scope\/formunion(_:)",
+                    "title" : "func formUnion(Scope<AccessRange>)",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/authscope\/scope\/insert(_:)",
+                    "title" : "func insert(Scope<AccessRange>.Element) -> (inserted: Bool, memberAfterInsert: Scope<AccessRange>.Element)",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/authscope\/scope\/intersection(_:)",
+                    "title" : "func intersection(Scope<AccessRange>) -> Scope<AccessRange>",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/authscope\/scope\/isdisjoint(with:)",
+                    "title" : "func isDisjoint(with: Self) -> Bool",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/authscope\/scope\/isstrictsubset(of:)",
+                    "title" : "func isStrictSubset(of: Self) -> Bool",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/authscope\/scope\/isstrictsuperset(of:)",
+                    "title" : "func isStrictSuperset(of: Self) -> Bool",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/authscope\/scope\/issubset(of:)",
+                    "title" : "func isSubset(of: Self) -> Bool",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/authscope\/scope\/issuperset(of:)",
+                    "title" : "func isSuperset(of: Self) -> Bool",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/authscope\/scope\/remove(_:)",
+                    "title" : "func remove(Scope<AccessRange>.Element) -> Scope<AccessRange>.Element?",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/authscope\/scope\/subtract(_:)",
+                    "title" : "func subtract(Self)",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/authscope\/scope\/subtracting(_:)",
+                    "title" : "func subtracting(Self) -> Self",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/authscope\/scope\/symmetricdifference(_:)",
+                    "title" : "func symmetricDifference(Scope<AccessRange>) -> Scope<AccessRange>",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/authscope\/scope\/union(_:)",
+                    "title" : "func union(Scope<AccessRange>) -> Scope<AccessRange>",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/authscope\/scope\/update(with:)",
+                    "title" : "func update(with: Scope<AccessRange>.Element) -> Scope<AccessRange>.Element?",
+                    "type" : "method"
+                  }
+                ],
+                "path" : "\/documentation\/authscope\/scope\/setalgebra-implementations",
+                "title" : "SetAlgebra Implementations",
+                "type" : "symbol"
+              }
+            ],
+            "path" : "\/documentation\/authscope\/scope",
+            "title" : "Scope",
+            "type" : "struct"
+          }
+        ],
+        "path" : "\/documentation\/authscope",
+        "title" : "AuthScope",
+        "type" : "module"
+      }
+    ]
+  },
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 1,
+    "patch" : 1
+  }
+}
