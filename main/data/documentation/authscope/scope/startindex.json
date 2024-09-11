@@ -93,6 +93,10 @@
         "name" : "AuthScope"
       }
     ],
+    "remoteSource" : {
+      "fileName" : "Scope+Collection.swift",
+      "url" : "https:\/\/github.com\/sersoft-gmbh\/auth-scope\/Sources\/AuthScope\/Scope+Collection.swift#L25"
+    },
     "role" : "symbol",
     "roleHeading" : "Instance Property",
     "symbolKind" : "property",

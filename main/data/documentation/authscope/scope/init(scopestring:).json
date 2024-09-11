@@ -89,6 +89,10 @@
         "name" : "AuthScope"
       }
     ],
+    "remoteSource" : {
+      "fileName" : "Scope+ScopeString.swift",
+      "url" : "https:\/\/github.com\/sersoft-gmbh\/auth-scope\/Sources\/AuthScope\/Scope+ScopeString.swift#L16"
+    },
     "role" : "symbol",
     "roleHeading" : "Initializer",
     "symbolKind" : "init",

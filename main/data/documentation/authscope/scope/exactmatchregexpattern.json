@@ -81,6 +81,10 @@
         "name" : "AuthScope"
       }
     ],
+    "remoteSource" : {
+      "fileName" : "Scope+RegularExpressions.swift",
+      "url" : "https:\/\/github.com\/sersoft-gmbh\/auth-scope\/Sources\/AuthScope\/Scope+RegularExpressions.swift#L93"
+    },
     "role" : "symbol",
     "roleHeading" : "Instance Property",
     "symbolKind" : "property",

@@ -76,6 +76,10 @@
         "name" : "AuthScope"
       }
     ],
+    "remoteSource" : {
+      "fileName" : "Scope+CustomStringConvertible.swift",
+      "url" : "https:\/\/github.com\/sersoft-gmbh\/auth-scope\/Sources\/AuthScope\/Scope+CustomStringConvertible.swift#L2"
+    },
     "role" : "symbol",
     "roleHeading" : "Instance Property",
     "symbolKind" : "property",

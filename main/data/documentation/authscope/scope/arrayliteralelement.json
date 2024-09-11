@@ -73,6 +73,10 @@
         "text" : "ArrayLiteralElement"
       }
     ],
+    "remoteSource" : {
+      "fileName" : "Scope+SetAlgebra.swift",
+      "url" : "https:\/\/github.com\/sersoft-gmbh\/auth-scope\/Sources\/AuthScope\/Scope+SetAlgebra.swift#L2"
+    },
     "role" : "symbol",
     "roleHeading" : "Type Alias",
     "symbolKind" : "typealias",

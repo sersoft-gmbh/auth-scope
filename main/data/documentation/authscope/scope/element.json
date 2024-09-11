@@ -73,6 +73,10 @@
         "text" : "Element"
       }
     ],
+    "remoteSource" : {
+      "fileName" : "Scope+Collection.swift",
+      "url" : "https:\/\/github.com\/sersoft-gmbh\/auth-scope\/Sources\/AuthScope\/Scope+Collection.swift#L2"
+    },
     "role" : "symbol",
     "roleHeading" : "Type Alias",
     "symbolKind" : "typealias",

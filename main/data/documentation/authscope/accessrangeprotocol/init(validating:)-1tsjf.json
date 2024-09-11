@@ -73,6 +73,10 @@
         "name" : "AuthScope"
       }
     ],
+    "remoteSource" : {
+      "fileName" : "AccessRangeProtocol.swift",
+      "url" : "https:\/\/github.com\/sersoft-gmbh\/auth-scope\/Sources\/AuthScope\/AccessRangeProtocol.swift#L25"
+    },
     "required" : true,
     "role" : "symbol",
     "roleHeading" : "Initializer",

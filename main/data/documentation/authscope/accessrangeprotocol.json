@@ -44,6 +44,10 @@
         "text" : "AccessRangeProtocol"
       }
     ],
+    "remoteSource" : {
+      "fileName" : "AccessRangeProtocol.swift",
+      "url" : "https:\/\/github.com\/sersoft-gmbh\/auth-scope\/Sources\/AuthScope\/AccessRangeProtocol.swift#L19"
+    },
     "role" : "symbol",
     "roleHeading" : "Protocol",
     "symbolKind" : "protocol",
