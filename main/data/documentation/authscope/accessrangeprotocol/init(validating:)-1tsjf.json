@@ -16,6 +16,7 @@
   ],
   "defaultImplementationsSections" : [
     {
+      "anchor" : "AccessRangeProtocol-Implementations",
       "identifiers" : [
         "doc:\/\/AuthScope\/documentation\/AuthScope\/AccessRangeProtocol\/init(validating:)-9g808"
       ],

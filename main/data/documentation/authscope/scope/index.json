@@ -137,6 +137,7 @@
   "relationshipsSections" : [
     {
       "identifiers" : [
+        "doc:\/\/AuthScope\/s15BitwiseCopyableP",
         "doc:\/\/AuthScope\/SL",
         "doc:\/\/AuthScope\/SQ",
         "doc:\/\/AuthScope\/s8SendableP"
@@ -156,12 +157,15 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Operators",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/Index\/_(_:_:)-2s4ww"
       ],
       "title" : "Operators"
     },
     {
+      "anchor" : "Default-Implementations",
       "generated" : true,
       "identifiers" : [
         "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/Index\/Comparable-Implementations",
@@ -444,6 +448,11 @@
   "title" : "<(_:_:)",
   "type" : "topic",
   "url" : "\/documentation\/authscope\/scope\/index\/_(_:_:)-2s4ww"
+},
+"doc://AuthScope/s15BitwiseCopyableP": {
+  "identifier" : "doc:\/\/AuthScope\/s15BitwiseCopyableP",
+  "title" : "Swift.BitwiseCopyable",
+  "type" : "unresolvable"
 },
 "doc://AuthScope/s8SendableP": {
   "identifier" : "doc:\/\/AuthScope\/s8SendableP",

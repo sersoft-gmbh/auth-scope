@@ -1,7 +1,7 @@
 {
   "abstract" : [
     {
-      "text" : "Returns an array containing the results of mapping the given closure",
+      "text" : "Returns the indices of all the elements that are equal to the given",
       "type" : "text"
     },
     {
@@ -9,7 +9,7 @@
       "type" : "text"
     },
     {
-      "text" : "over the sequence’s elements.",
+      "text" : "element.",
       "type" : "text"
     }
   ],
@@ -18,18 +18,50 @@
       [
         "doc:\/\/AuthScope\/documentation\/AuthScope",
         "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope",
-        "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/Sequence-Implementations"
+        "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/Collection-Implementations"
       ]
     ]
   },
   "identifier" : {
     "interfaceLanguage" : "swift",
-    "url" : "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/map(_:)-2z7bq"
+    "url" : "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/indices(of:)"
   },
   "kind" : "symbol",
   "metadata" : {
+    "conformance" : {
+      "availabilityPrefix" : [
+        {
+          "text" : "Available when",
+          "type" : "text"
+        }
+      ],
+      "conformancePrefix" : [
+        {
+          "text" : "Conforms when",
+          "type" : "text"
+        }
+      ],
+      "constraints" : [
+        {
+          "code" : "Element",
+          "type" : "codeVoice"
+        },
+        {
+          "text" : " conforms to ",
+          "type" : "text"
+        },
+        {
+          "code" : "Equatable",
+          "type" : "codeVoice"
+        },
+        {
+          "text" : ".",
+          "type" : "text"
+        }
+      ]
+    },
     "extendedModule" : "Swift",
-    "externalID" : "s:STsE3mapySayqd__Gqd__7ElementQzKXEKlF::SYNTHESIZED::s:9AuthScope0B0V",
+    "externalID" : "s:SlsSQ7ElementRpzrlE7indices2ofs8RangeSetVy5IndexQzGAB_tF::SYNTHESIZED::s:9AuthScope0B0V",
     "fragments" : [
       {
         "kind" : "keyword",
@@ -41,19 +73,19 @@
       },
       {
         "kind" : "identifier",
-        "text" : "map"
+        "text" : "indices"
       },
       {
         "kind" : "text",
-        "text" : "<"
+        "text" : "("
       },
       {
-        "kind" : "genericParameter",
-        "text" : "T"
+        "kind" : "externalParam",
+        "text" : "of"
       },
       {
         "kind" : "text",
-        "text" : ">(("
+        "text" : ": "
       },
       {
         "kind" : "typeIdentifier",
@@ -70,39 +102,33 @@
       },
       {
         "kind" : "text",
-        "text" : ") "
-      },
-      {
-        "kind" : "keyword",
-        "text" : "throws"
-      },
-      {
-        "kind" : "text",
-        "text" : " -> "
+        "text" : ") -> "
       },
       {
         "kind" : "typeIdentifier",
-        "text" : "T"
+        "preciseIdentifier" : "s:s8RangeSetV",
+        "text" : "RangeSet"
       },
       {
         "kind" : "text",
-        "text" : ") "
-      },
-      {
-        "kind" : "keyword",
-        "text" : "rethrows"
-      },
-      {
-        "kind" : "text",
-        "text" : " -> ["
+        "text" : "<"
       },
       {
         "kind" : "typeIdentifier",
-        "text" : "T"
+        "text" : "Self"
       },
       {
         "kind" : "text",
-        "text" : "]"
+        "text" : "."
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:Sl5IndexQa",
+        "text" : "Index"
+      },
+      {
+        "kind" : "text",
+        "text" : ">"
       }
     ],
     "modules" : [
@@ -113,10 +139,47 @@
         ]
       }
     ],
+    "platforms" : [
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "18.0",
+        "name" : "iOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "15.0",
+        "name" : "macOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "18.0",
+        "name" : "tvOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "2.0",
+        "name" : "visionOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "11.0",
+        "name" : "watchOS",
+        "unavailable" : false
+      }
+    ],
     "role" : "symbol",
     "roleHeading" : "Instance Method",
     "symbolKind" : "method",
-    "title" : "map(_:)"
+    "title" : "indices(of:)"
   },
   "primaryContentSections" : [
     {
@@ -139,23 +202,15 @@
             },
             {
               "kind" : "identifier",
-              "text" : "map"
+              "text" : "indices"
             },
             {
               "kind" : "text",
-              "text" : "<"
-            },
-            {
-              "kind" : "genericParameter",
-              "text" : "T"
-            },
-            {
-              "kind" : "text",
-              "text" : ">("
+              "text" : "("
             },
             {
               "kind" : "externalParam",
-              "text" : "_"
+              "text" : "of"
             },
             {
               "kind" : "text",
@@ -163,11 +218,11 @@
             },
             {
               "kind" : "internalParam",
-              "text" : "transform"
+              "text" : "element"
             },
             {
               "kind" : "text",
-              "text" : ": ("
+              "text" : ": "
             },
             {
               "kind" : "typeIdentifier",
@@ -184,39 +239,33 @@
             },
             {
               "kind" : "text",
-              "text" : ") "
-            },
-            {
-              "kind" : "keyword",
-              "text" : "throws"
-            },
-            {
-              "kind" : "text",
-              "text" : " -> "
+              "text" : ") -> "
             },
             {
               "kind" : "typeIdentifier",
-              "text" : "T"
+              "preciseIdentifier" : "s:s8RangeSetV",
+              "text" : "RangeSet"
             },
             {
               "kind" : "text",
-              "text" : ") "
-            },
-            {
-              "kind" : "keyword",
-              "text" : "rethrows"
-            },
-            {
-              "kind" : "text",
-              "text" : " -> ["
+              "text" : "<"
             },
             {
               "kind" : "typeIdentifier",
-              "text" : "T"
+              "text" : "Self"
             },
             {
               "kind" : "text",
-              "text" : "]"
+              "text" : "."
+            },
+            {
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:Sl5IndexQa",
+              "text" : "Index"
+            },
+            {
+              "kind" : "text",
+              "text" : ">"
             }
           ]
         }
@@ -231,38 +280,14 @@
             {
               "inlineContent" : [
                 {
-                  "text" : "A mapping closure. ",
-                  "type" : "text"
-                },
-                {
-                  "code" : "transform",
-                  "type" : "codeVoice"
-                },
-                {
-                  "text" : " accepts an",
-                  "type" : "text"
-                },
-                {
-                  "text" : " ",
-                  "type" : "text"
-                },
-                {
-                  "text" : "element of this sequence as its parameter and returns a transformed",
-                  "type" : "text"
-                },
-                {
-                  "text" : " ",
-                  "type" : "text"
-                },
-                {
-                  "text" : "value of the same or of a different type.",
+                  "text" : "An element to look for in the collection.",
                   "type" : "text"
                 }
               ],
               "type" : "paragraph"
             }
           ],
-          "name" : "transform"
+          "name" : "element"
         }
       ]
     },
@@ -277,7 +302,7 @@
         {
           "inlineContent" : [
             {
-              "text" : "An array containing the transformed elements of this",
+              "text" : "A set of the indices of the elements that are equal to",
               "type" : "text"
             },
             {
@@ -285,7 +310,11 @@
               "type" : "text"
             },
             {
-              "text" : "sequence.",
+              "code" : "element",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : ".",
               "type" : "text"
             }
           ],
@@ -305,15 +334,7 @@
         {
           "inlineContent" : [
             {
-              "text" : "In this example, ",
-              "type" : "text"
-            },
-            {
-              "code" : "map",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : " is used first to convert the names in the array",
+              "text" : "For example, you can use this method to find all the places that a",
               "type" : "text"
             },
             {
@@ -321,7 +342,7 @@
               "type" : "text"
             },
             {
-              "text" : "to lowercase strings and then to count their characters.",
+              "text" : "particular letter occurs in a string.",
               "type" : "text"
             }
           ],
@@ -329,11 +350,9 @@
         },
         {
           "code" : [
-            "let cast = [\"Vivien\", \"Marlon\", \"Kim\", \"Karl\"]",
-            "let lowercaseNames = cast.map { $0.lowercased() }",
-            "\/\/ 'lowercaseNames' == [\"vivien\", \"marlon\", \"kim\", \"karl\"]",
-            "let letterCounts = cast.map { $0.count }",
-            "\/\/ 'letterCounts' == [6, 6, 3, 4]"
+            "let str = \"Fresh cheese in a breeze\"",
+            "let allTheEs = str.indices(of: \"e\")",
+            "\/\/ str[allTheEs].count == 7"
           ],
           "syntax" : null,
           "type" : "codeListing"
@@ -369,7 +388,7 @@
                   "type" : "emphasis"
                 },
                 {
-                  "text" : " is the length of the sequence.",
+                  "text" : " is the length of the collection.",
                   "type" : "text"
                 }
               ],
@@ -395,7 +414,7 @@
   "variants" : [
     {
       "paths" : [
-        "\/documentation\/authscope\/scope\/map(_:)-2z7bq"
+        "\/documentation\/authscope\/scope\/indices(of:)"
       ],
       "traits" : [
         {
@@ -451,21 +470,21 @@
   "type" : "topic",
   "url" : "\/documentation\/authscope\/scope"
 },
-"doc://AuthScope/documentation/AuthScope/Scope/Sequence-Implementations": {
+"doc://AuthScope/documentation/AuthScope/Scope/Collection-Implementations": {
   "abstract" : [
 
   ],
-  "identifier" : "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/Sequence-Implementations",
+  "identifier" : "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/Collection-Implementations",
   "kind" : "article",
   "role" : "collectionGroup",
-  "title" : "Sequence Implementations",
+  "title" : "Collection Implementations",
   "type" : "topic",
-  "url" : "\/documentation\/authscope\/scope\/sequence-implementations"
+  "url" : "\/documentation\/authscope\/scope\/collection-implementations"
 },
-"doc://AuthScope/documentation/AuthScope/Scope/map(_:)-2z7bq": {
+"doc://AuthScope/documentation/AuthScope/Scope/indices(of:)": {
   "abstract" : [
     {
-      "text" : "Returns an array containing the results of mapping the given closure",
+      "text" : "Returns the indices of all the elements that are equal to the given",
       "type" : "text"
     },
     {
@@ -473,10 +492,42 @@
       "type" : "text"
     },
     {
-      "text" : "over the sequence’s elements.",
+      "text" : "element.",
       "type" : "text"
     }
   ],
+  "conformance" : {
+    "availabilityPrefix" : [
+      {
+        "text" : "Available when",
+        "type" : "text"
+      }
+    ],
+    "conformancePrefix" : [
+      {
+        "text" : "Conforms when",
+        "type" : "text"
+      }
+    ],
+    "constraints" : [
+      {
+        "code" : "Element",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : " conforms to ",
+        "type" : "text"
+      },
+      {
+        "code" : "Equatable",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : ".",
+        "type" : "text"
+      }
+    ]
+  },
   "fragments" : [
     {
       "kind" : "keyword",
@@ -488,19 +539,19 @@
     },
     {
       "kind" : "identifier",
-      "text" : "map"
+      "text" : "indices"
     },
     {
       "kind" : "text",
-      "text" : "<"
+      "text" : "("
     },
     {
-      "kind" : "genericParameter",
-      "text" : "T"
+      "kind" : "externalParam",
+      "text" : "of"
     },
     {
       "kind" : "text",
-      "text" : ">(("
+      "text" : ": "
     },
     {
       "kind" : "typeIdentifier",
@@ -517,47 +568,41 @@
     },
     {
       "kind" : "text",
-      "text" : ") "
-    },
-    {
-      "kind" : "keyword",
-      "text" : "throws"
-    },
-    {
-      "kind" : "text",
-      "text" : " -> "
+      "text" : ") -> "
     },
     {
       "kind" : "typeIdentifier",
-      "text" : "T"
+      "preciseIdentifier" : "s:s8RangeSetV",
+      "text" : "RangeSet"
     },
     {
       "kind" : "text",
-      "text" : ") "
-    },
-    {
-      "kind" : "keyword",
-      "text" : "rethrows"
-    },
-    {
-      "kind" : "text",
-      "text" : " -> ["
+      "text" : "<"
     },
     {
       "kind" : "typeIdentifier",
-      "text" : "T"
+      "text" : "Self"
     },
     {
       "kind" : "text",
-      "text" : "]"
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sl5IndexQa",
+      "text" : "Index"
+    },
+    {
+      "kind" : "text",
+      "text" : ">"
     }
   ],
-  "identifier" : "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/map(_:)-2z7bq",
+  "identifier" : "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/indices(of:)",
   "kind" : "symbol",
   "role" : "symbol",
-  "title" : "map(_:)",
+  "title" : "indices(of:)",
   "type" : "topic",
-  "url" : "\/documentation\/authscope\/scope\/map(_:)-2z7bq"
+  "url" : "\/documentation\/authscope\/scope\/indices(of:)"
 }
 }
 }

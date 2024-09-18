@@ -1,4 +1,7 @@
 {
+  "includedArchiveIdentifiers" : [
+    "AuthScope"
+  ],
   "interfaceLanguages" : {
     "swift" : [
       {
@@ -370,13 +373,23 @@
                     "type" : "method"
                   },
                   {
+                    "path" : "\/documentation\/authscope\/scope\/indices(of:)",
+                    "title" : "func indices(of: Self.Element) -> RangeSet<Self.Index>",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/authscope\/scope\/indices(where:)",
+                    "title" : "func indices(where: (Self.Element) throws -> Bool) rethrows -> RangeSet<Self.Index>",
+                    "type" : "method"
+                  },
+                  {
                     "path" : "\/documentation\/authscope\/scope\/makeiterator()",
                     "title" : "func makeIterator() -> IndexingIterator<Self>",
                     "type" : "method"
                   },
                   {
-                    "path" : "\/documentation\/authscope\/scope\/map(_:)-11ra4",
-                    "title" : "func map<T>((Self.Element) throws -> T) rethrows -> [T]",
+                    "path" : "\/documentation\/authscope\/scope\/map(_:)-15c2i",
+                    "title" : "func map<T, E>((Self.Element) throws(E) -> T) throws(E) -> [T]",
                     "type" : "method"
                   },
                   {
@@ -412,6 +425,11 @@
                   {
                     "path" : "\/documentation\/authscope\/scope\/ranges(of:)",
                     "title" : "func ranges<C>(of: C) -> [Range<Self.Index>]",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/authscope\/scope\/removingsubranges(_:)",
+                    "title" : "func removingSubranges(RangeSet<Self.Index>) -> DiscontiguousSlice<Self>",
                     "type" : "method"
                   },
                   {
@@ -599,6 +617,11 @@
                     "type" : "method"
                   },
                   {
+                    "path" : "\/documentation\/authscope\/scope\/count(where:)",
+                    "title" : "func count<E>(where: (Self.Element) throws(E) -> Bool) throws(E) -> Int",
+                    "type" : "method"
+                  },
+                  {
                     "path" : "\/documentation\/authscope\/scope\/elementsequal(_:)",
                     "title" : "func elementsEqual<OtherSequence>(OtherSequence) -> Bool",
                     "type" : "method"
@@ -659,8 +682,8 @@
                     "type" : "method"
                   },
                   {
-                    "path" : "\/documentation\/authscope\/scope\/map(_:)-2z7bq",
-                    "title" : "func map<T>((Self.Element) throws -> T) rethrows -> [T]",
+                    "path" : "\/documentation\/authscope\/scope\/map(_:)-9z43b",
+                    "title" : "func map<T, E>((Self.Element) throws(E) -> T) throws(E) -> [T]",
                     "type" : "method"
                   },
                   {
@@ -867,6 +890,6 @@
   "schemaVersion" : {
     "major" : 0,
     "minor" : 1,
-    "patch" : 1
+    "patch" : 2
   }
 }

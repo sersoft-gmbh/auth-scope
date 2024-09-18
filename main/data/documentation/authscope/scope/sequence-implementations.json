@@ -32,6 +32,7 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Instance-Properties",
       "generated" : true,
       "identifiers" : [
         "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/lazy"
@@ -39,12 +40,14 @@
       "title" : "Instance Properties"
     },
     {
+      "anchor" : "Instance-Methods",
       "generated" : true,
       "identifiers" : [
         "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/allSatisfy(_:)",
         "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/compactMap(_:)",
         "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/contains(_:)",
         "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/contains(where:)",
+        "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/count(where:)",
         "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/elementsEqual(_:)",
         "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/elementsEqual(_:by:)",
         "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/enumerated()",
@@ -57,7 +60,7 @@
         "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/joined(separator:)-7cg2u",
         "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/lexicographicallyPrecedes(_:)",
         "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/lexicographicallyPrecedes(_:by:)",
-        "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/map(_:)-2z7bq",
+        "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/map(_:)-9z43b",
         "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/max()",
         "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/max(by:)",
         "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/min()",
@@ -76,6 +79,7 @@
       "title" : "Instance Methods"
     },
     {
+      "anchor" : "Type-Aliases",
       "generated" : true,
       "identifiers" : [
         "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/Element"
@@ -585,6 +589,125 @@
   "title" : "contains(where:)",
   "type" : "topic",
   "url" : "\/documentation\/authscope\/scope\/contains(where:)"
+},
+"doc://AuthScope/documentation/AuthScope/Scope/count(where:)": {
+  "abstract" : [
+    {
+      "text" : "Returns the number of elements in the sequence that satisfy the given",
+      "type" : "text"
+    },
+    {
+      "text" : " ",
+      "type" : "text"
+    },
+    {
+      "text" : "predicate.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "count"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "genericParameter",
+      "text" : "E"
+    },
+    {
+      "kind" : "text",
+      "text" : ">("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "where"
+    },
+    {
+      "kind" : "text",
+      "text" : ": ("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:ST7ElementQa",
+      "text" : "Element"
+    },
+    {
+      "kind" : "text",
+      "text" : ") "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "throws"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "E"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    },
+    {
+      "kind" : "text",
+      "text" : ") "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "throws"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "E"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Si",
+      "text" : "Int"
+    }
+  ],
+  "identifier" : "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/count(where:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "count(where:)",
+  "type" : "topic",
+  "url" : "\/documentation\/authscope\/scope\/count(where:)"
 },
 "doc://AuthScope/documentation/AuthScope/Scope/elementsEqual(_:)": {
   "abstract" : [
@@ -1333,6 +1456,38 @@
       "type" : "text"
     }
   ],
+  "conformance" : {
+    "availabilityPrefix" : [
+      {
+        "text" : "Available when",
+        "type" : "text"
+      }
+    ],
+    "conformancePrefix" : [
+      {
+        "text" : "Conforms when",
+        "type" : "text"
+      }
+    ],
+    "constraints" : [
+      {
+        "code" : "Element",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : " conforms to ",
+        "type" : "text"
+      },
+      {
+        "code" : "Sequence",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : ".",
+        "type" : "text"
+      }
+    ]
+  },
   "fragments" : [
     {
       "kind" : "keyword",
@@ -1390,6 +1545,38 @@
       "type" : "text"
     }
   ],
+  "conformance" : {
+    "availabilityPrefix" : [
+      {
+        "text" : "Available when",
+        "type" : "text"
+      }
+    ],
+    "conformancePrefix" : [
+      {
+        "text" : "Conforms when",
+        "type" : "text"
+      }
+    ],
+    "constraints" : [
+      {
+        "code" : "Element",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : " conforms to ",
+        "type" : "text"
+      },
+      {
+        "code" : "Sequence",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : ".",
+        "type" : "text"
+      }
+    ]
+  },
   "fragments" : [
     {
       "kind" : "keyword",
@@ -1876,7 +2063,7 @@
   "type" : "topic",
   "url" : "\/documentation\/authscope\/scope\/lexicographicallyprecedes(_:by:)"
 },
-"doc://AuthScope/documentation/AuthScope/Scope/map(_:)-2z7bq": {
+"doc://AuthScope/documentation/AuthScope/Scope/map(_:)-9z43b": {
   "abstract" : [
     {
       "text" : "Returns an array containing the results of mapping the given closure",
@@ -1914,6 +2101,14 @@
     },
     {
       "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "genericParameter",
+      "text" : "E"
+    },
+    {
+      "kind" : "text",
       "text" : ">(("
     },
     {
@@ -1939,7 +2134,15 @@
     },
     {
       "kind" : "text",
-      "text" : " -> "
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "E"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
     },
     {
       "kind" : "typeIdentifier",
@@ -1951,11 +2154,19 @@
     },
     {
       "kind" : "keyword",
-      "text" : "rethrows"
+      "text" : "throws"
     },
     {
       "kind" : "text",
-      "text" : " -> ["
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "E"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> ["
     },
     {
       "kind" : "typeIdentifier",
@@ -1966,12 +2177,12 @@
       "text" : "]"
     }
   ],
-  "identifier" : "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/map(_:)-2z7bq",
+  "identifier" : "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/map(_:)-9z43b",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "map(_:)",
   "type" : "topic",
-  "url" : "\/documentation\/authscope\/scope\/map(_:)-2z7bq"
+  "url" : "\/documentation\/authscope\/scope\/map(_:)-9z43b"
 },
 "doc://AuthScope/documentation/AuthScope/Scope/max()": {
   "abstract" : [

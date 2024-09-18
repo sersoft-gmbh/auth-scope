@@ -18,18 +18,18 @@
       [
         "doc:\/\/AuthScope\/documentation\/AuthScope",
         "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope",
-        "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/Collection-Implementations"
+        "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/Sequence-Implementations"
       ]
     ]
   },
   "identifier" : {
     "interfaceLanguage" : "swift",
-    "url" : "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/map(_:)-11ra4"
+    "url" : "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/map(_:)-9z43b"
   },
   "kind" : "symbol",
   "metadata" : {
     "extendedModule" : "Swift",
-    "externalID" : "s:SlsE3mapySayqd__Gqd__7ElementQzKXEKlF::SYNTHESIZED::s:9AuthScope0B0V",
+    "externalID" : "s:STsE3mapySayqd__Gqd__7ElementQzqd_0_YKXEqd_0_YKs5ErrorRd_0_r0_lF::SYNTHESIZED::s:9AuthScope0B0V",
     "fragments" : [
       {
         "kind" : "keyword",
@@ -50,6 +50,14 @@
       {
         "kind" : "genericParameter",
         "text" : "T"
+      },
+      {
+        "kind" : "text",
+        "text" : ", "
+      },
+      {
+        "kind" : "genericParameter",
+        "text" : "E"
       },
       {
         "kind" : "text",
@@ -78,7 +86,15 @@
       },
       {
         "kind" : "text",
-        "text" : " -> "
+        "text" : "("
+      },
+      {
+        "kind" : "typeIdentifier",
+        "text" : "E"
+      },
+      {
+        "kind" : "text",
+        "text" : ") -> "
       },
       {
         "kind" : "typeIdentifier",
@@ -90,11 +106,19 @@
       },
       {
         "kind" : "keyword",
-        "text" : "rethrows"
+        "text" : "throws"
       },
       {
         "kind" : "text",
-        "text" : " -> ["
+        "text" : "("
+      },
+      {
+        "kind" : "typeIdentifier",
+        "text" : "E"
+      },
+      {
+        "kind" : "text",
+        "text" : ") -> ["
       },
       {
         "kind" : "typeIdentifier",
@@ -151,6 +175,14 @@
             },
             {
               "kind" : "text",
+              "text" : ", "
+            },
+            {
+              "kind" : "genericParameter",
+              "text" : "E"
+            },
+            {
+              "kind" : "text",
               "text" : ">("
             },
             {
@@ -192,7 +224,15 @@
             },
             {
               "kind" : "text",
-              "text" : " -> "
+              "text" : "("
+            },
+            {
+              "kind" : "typeIdentifier",
+              "text" : "E"
+            },
+            {
+              "kind" : "text",
+              "text" : ") -> "
             },
             {
               "kind" : "typeIdentifier",
@@ -204,11 +244,19 @@
             },
             {
               "kind" : "keyword",
-              "text" : "rethrows"
+              "text" : "throws"
             },
             {
               "kind" : "text",
-              "text" : " -> ["
+              "text" : "("
+            },
+            {
+              "kind" : "typeIdentifier",
+              "text" : "E"
+            },
+            {
+              "kind" : "text",
+              "text" : ") -> ["
             },
             {
               "kind" : "typeIdentifier",
@@ -216,7 +264,28 @@
             },
             {
               "kind" : "text",
-              "text" : "]"
+              "text" : "] "
+            },
+            {
+              "kind" : "keyword",
+              "text" : "where"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "typeIdentifier",
+              "text" : "E"
+            },
+            {
+              "kind" : "text",
+              "text" : " : "
+            },
+            {
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:s5ErrorP",
+              "text" : "Error"
             }
           ]
         }
@@ -337,6 +406,48 @@
           ],
           "syntax" : null,
           "type" : "codeListing"
+        },
+        {
+          "content" : [
+            {
+              "inlineContent" : [
+                {
+                  "text" : "O(",
+                  "type" : "text"
+                },
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "n",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "emphasis"
+                },
+                {
+                  "text" : "), where ",
+                  "type" : "text"
+                },
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "n",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "emphasis"
+                },
+                {
+                  "text" : " is the length of the sequence.",
+                  "type" : "text"
+                }
+              ],
+              "type" : "paragraph"
+            }
+          ],
+          "name" : "Complexity",
+          "style" : "note",
+          "type" : "aside"
         }
       ],
       "kind" : "content"
@@ -353,7 +464,7 @@
   "variants" : [
     {
       "paths" : [
-        "\/documentation\/authscope\/scope\/map(_:)-11ra4"
+        "\/documentation\/authscope\/scope\/map(_:)-9z43b"
       ],
       "traits" : [
         {
@@ -409,18 +520,18 @@
   "type" : "topic",
   "url" : "\/documentation\/authscope\/scope"
 },
-"doc://AuthScope/documentation/AuthScope/Scope/Collection-Implementations": {
+"doc://AuthScope/documentation/AuthScope/Scope/Sequence-Implementations": {
   "abstract" : [
 
   ],
-  "identifier" : "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/Collection-Implementations",
+  "identifier" : "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/Sequence-Implementations",
   "kind" : "article",
   "role" : "collectionGroup",
-  "title" : "Collection Implementations",
+  "title" : "Sequence Implementations",
   "type" : "topic",
-  "url" : "\/documentation\/authscope\/scope\/collection-implementations"
+  "url" : "\/documentation\/authscope\/scope\/sequence-implementations"
 },
-"doc://AuthScope/documentation/AuthScope/Scope/map(_:)-11ra4": {
+"doc://AuthScope/documentation/AuthScope/Scope/map(_:)-9z43b": {
   "abstract" : [
     {
       "text" : "Returns an array containing the results of mapping the given closure",
@@ -458,6 +569,14 @@
     },
     {
       "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "genericParameter",
+      "text" : "E"
+    },
+    {
+      "kind" : "text",
       "text" : ">(("
     },
     {
@@ -483,7 +602,15 @@
     },
     {
       "kind" : "text",
-      "text" : " -> "
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "E"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
     },
     {
       "kind" : "typeIdentifier",
@@ -495,11 +622,19 @@
     },
     {
       "kind" : "keyword",
-      "text" : "rethrows"
+      "text" : "throws"
     },
     {
       "kind" : "text",
-      "text" : " -> ["
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "E"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> ["
     },
     {
       "kind" : "typeIdentifier",
@@ -510,12 +645,12 @@
       "text" : "]"
     }
   ],
-  "identifier" : "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/map(_:)-11ra4",
+  "identifier" : "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/map(_:)-9z43b",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "map(_:)",
   "type" : "topic",
-  "url" : "\/documentation\/authscope\/scope\/map(_:)-11ra4"
+  "url" : "\/documentation\/authscope\/scope\/map(_:)-9z43b"
 }
 }
 }

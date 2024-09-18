@@ -459,7 +459,7 @@
         {
           "inlineContent" : [
             {
-              "text" : "The predicate must be a ",
+              "text" : "The predicate must be an ",
               "type" : "text"
             },
             {

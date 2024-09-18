@@ -105,6 +105,8 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Instance-Properties",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/AuthScope\/documentation\/AuthScope\/InvalidAccessRangeError\/accessRangeType",
         "doc:\/\/AuthScope\/documentation\/AuthScope\/InvalidAccessRangeError\/debugDescription",
