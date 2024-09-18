@@ -7,3 +7,8 @@ extension Scope: CustomStringConvertible, CustomDebugStringConvertible {
         "Scope<\(AccessRange.self)> { \(accessRanges.lazy.map(\.rawValue).sorted().joined(separator: ", ")) }"
     }
 }
+
+#if swift(>=6.0)
+@DebugDescription
+extension Scope {}
+#endif
