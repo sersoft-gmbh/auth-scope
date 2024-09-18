@@ -1,0 +1,353 @@
+{
+  "abstract" : [
+    {
+      "text" : "The error thrown when an access range is initialized with an invalid raw value.",
+      "type" : "text"
+    }
+  ],
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/AuthScope\/documentation\/AuthScope"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "swift",
+    "url" : "doc:\/\/AuthScope\/documentation\/AuthScope\/InvalidAccessRangeError"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "externalID" : "s:9AuthScope23InvalidAccessRangeErrorV",
+    "fragments" : [
+      {
+        "kind" : "keyword",
+        "text" : "struct"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
+      },
+      {
+        "kind" : "identifier",
+        "text" : "InvalidAccessRangeError"
+      }
+    ],
+    "modules" : [
+      {
+        "name" : "AuthScope"
+      }
+    ],
+    "navigatorTitle" : [
+      {
+        "kind" : "identifier",
+        "text" : "InvalidAccessRangeError"
+      }
+    ],
+    "remoteSource" : {
+      "fileName" : "AccessRangeProtocol.swift",
+      "url" : "https:\/\/github.com\/sersoft-gmbh\/auth-scope\/Sources\/AuthScope\/AccessRangeProtocol.swift#L2"
+    },
+    "role" : "symbol",
+    "roleHeading" : "Structure",
+    "symbolKind" : "struct",
+    "title" : "InvalidAccessRangeError"
+  },
+  "primaryContentSections" : [
+    {
+      "declarations" : [
+        {
+          "languages" : [
+            "swift"
+          ],
+          "platforms" : [
+            "Linux"
+          ],
+          "tokens" : [
+            {
+              "kind" : "keyword",
+              "text" : "struct"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "identifier",
+              "text" : "InvalidAccessRangeError"
+            }
+          ]
+        }
+      ],
+      "kind" : "declarations"
+    }
+  ],
+  "relationshipsSections" : [
+    {
+      "identifiers" : [
+        "doc:\/\/AuthScope\/s28CustomDebugStringConvertibleP",
+        "doc:\/\/AuthScope\/s23CustomStringConvertibleP",
+        "doc:\/\/AuthScope\/s5ErrorP",
+        "doc:\/\/AuthScope\/s8SendableP"
+      ],
+      "kind" : "relationships",
+      "title" : "Conforms To",
+      "type" : "conformsTo"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "topicSections" : [
+    {
+      "anchor" : "Instance-Properties",
+      "generated" : true,
+      "identifiers" : [
+        "doc:\/\/AuthScope\/documentation\/AuthScope\/InvalidAccessRangeError\/accessRangeType",
+        "doc:\/\/AuthScope\/documentation\/AuthScope\/InvalidAccessRangeError\/debugDescription",
+        "doc:\/\/AuthScope\/documentation\/AuthScope\/InvalidAccessRangeError\/description",
+        "doc:\/\/AuthScope\/documentation\/AuthScope\/InvalidAccessRangeError\/rawValue"
+      ],
+      "title" : "Instance Properties"
+    }
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/authscope\/invalidaccessrangeerror"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "swift"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://AuthScope/documentation/AuthScope": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/AuthScope\/documentation\/AuthScope",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "AuthScope",
+  "type" : "topic",
+  "url" : "\/documentation\/authscope"
+},
+"doc://AuthScope/documentation/AuthScope/InvalidAccessRangeError": {
+  "abstract" : [
+    {
+      "text" : "The error thrown when an access range is initialized with an invalid raw value.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "struct"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "InvalidAccessRangeError"
+    }
+  ],
+  "identifier" : "doc:\/\/AuthScope\/documentation\/AuthScope\/InvalidAccessRangeError",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "InvalidAccessRangeError"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "InvalidAccessRangeError",
+  "type" : "topic",
+  "url" : "\/documentation\/authscope\/invalidaccessrangeerror"
+},
+"doc://AuthScope/documentation/AuthScope/InvalidAccessRangeError/accessRangeType": {
+  "abstract" : [
+    {
+      "text" : "The type of the access range that was used to validate above’s ",
+      "type" : "text"
+    },
+    {
+      "identifier" : "doc:\/\/AuthScope\/documentation\/AuthScope\/InvalidAccessRangeError\/rawValue",
+      "isActive" : true,
+      "type" : "reference"
+    },
+    {
+      "text" : ".",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "let"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "accessRangeType"
+    },
+    {
+      "kind" : "text",
+      "text" : ": any "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "Any"
+    },
+    {
+      "kind" : "text",
+      "text" : ".Type"
+    }
+  ],
+  "identifier" : "doc:\/\/AuthScope\/documentation\/AuthScope\/InvalidAccessRangeError\/accessRangeType",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "accessRangeType",
+  "type" : "topic",
+  "url" : "\/documentation\/authscope\/invalidaccessrangeerror\/accessrangetype"
+},
+"doc://AuthScope/documentation/AuthScope/InvalidAccessRangeError/debugDescription": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "debugDescription"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:SS",
+      "text" : "String"
+    }
+  ],
+  "identifier" : "doc:\/\/AuthScope\/documentation\/AuthScope\/InvalidAccessRangeError\/debugDescription",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "debugDescription",
+  "type" : "topic",
+  "url" : "\/documentation\/authscope\/invalidaccessrangeerror\/debugdescription"
+},
+"doc://AuthScope/documentation/AuthScope/InvalidAccessRangeError/description": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "description"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:SS",
+      "text" : "String"
+    }
+  ],
+  "identifier" : "doc:\/\/AuthScope\/documentation\/AuthScope\/InvalidAccessRangeError\/description",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "description",
+  "type" : "topic",
+  "url" : "\/documentation\/authscope\/invalidaccessrangeerror\/description"
+},
+"doc://AuthScope/documentation/AuthScope/InvalidAccessRangeError/rawValue": {
+  "abstract" : [
+    {
+      "text" : "The raw value of the access range that didn’t pass validation.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "let"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "rawValue"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:SS",
+      "text" : "String"
+    }
+  ],
+  "identifier" : "doc:\/\/AuthScope\/documentation\/AuthScope\/InvalidAccessRangeError\/rawValue",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "rawValue",
+  "type" : "topic",
+  "url" : "\/documentation\/authscope\/invalidaccessrangeerror\/rawvalue"
+},
+"doc://AuthScope/s23CustomStringConvertibleP": {
+  "identifier" : "doc:\/\/AuthScope\/s23CustomStringConvertibleP",
+  "title" : "Swift.CustomStringConvertible",
+  "type" : "unresolvable"
+},
+"doc://AuthScope/s28CustomDebugStringConvertibleP": {
+  "identifier" : "doc:\/\/AuthScope\/s28CustomDebugStringConvertibleP",
+  "title" : "Swift.CustomDebugStringConvertible",
+  "type" : "unresolvable"
+},
+"doc://AuthScope/s5ErrorP": {
+  "identifier" : "doc:\/\/AuthScope\/s5ErrorP",
+  "title" : "Swift.Error",
+  "type" : "unresolvable"
+},
+"doc://AuthScope/s8SendableP": {
+  "identifier" : "doc:\/\/AuthScope\/s8SendableP",
+  "title" : "Swift.Sendable",
+  "type" : "unresolvable"
+}
+}
+}
