@@ -4,14 +4,13 @@
       [
         "doc:\/\/AuthScope\/documentation\/AuthScope",
         "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope",
-        "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/Collection-Implementations",
         "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/Index"
       ]
     ]
   },
   "identifier" : {
     "interfaceLanguage" : "swift",
-    "url" : "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/Index\/_(_:_:)-2s4ww"
+    "url" : "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/Index\/_(_:_:)"
   },
   "kind" : "symbol",
   "metadata" : {
@@ -110,7 +109,7 @@
     ],
     "remoteSource" : {
       "fileName" : "Scope+Collection.swift",
-      "url" : "https:\/\/github.com\/sersoft-gmbh\/auth-scope\/Sources\/AuthScope\/Scope+Collection.swift#L16"
+      "url" : "https:\/\/github.com\/sersoft-gmbh\/auth-scope\/blob\/refs\/heads\/main\/Sources\/AuthScope\/Scope+Collection.swift#L16"
     },
     "role" : "symbol",
     "roleHeading" : "Operator",
@@ -250,7 +249,7 @@
   "variants" : [
     {
       "paths" : [
-        "\/documentation\/authscope\/scope\/index\/_(_:_:)-2s4ww"
+        "\/documentation\/authscope\/scope\/index\/_(_:_:)"
       ],
       "traits" : [
         {
@@ -305,17 +304,6 @@
   "title" : "Scope",
   "type" : "topic",
   "url" : "\/documentation\/authscope\/scope"
-},
-"doc://AuthScope/documentation/AuthScope/Scope/Collection-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/Collection-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "Collection Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/authscope\/scope\/collection-implementations"
 },
 "doc://AuthScope/documentation/AuthScope/Scope/Index": {
   "abstract" : [
@@ -392,7 +380,7 @@
   "type" : "topic",
   "url" : "\/documentation\/authscope\/scope\/index"
 },
-"doc://AuthScope/documentation/AuthScope/Scope/Index/_(_:_:)-2s4ww": {
+"doc://AuthScope/documentation/AuthScope/Scope/Index/_(_:_:)": {
   "abstract" : [
 
   ],
@@ -483,12 +471,12 @@
       "text" : "Bool"
     }
   ],
-  "identifier" : "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/Index\/_(_:_:)-2s4ww",
+  "identifier" : "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/Index\/_(_:_:)",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "<(_:_:)",
   "type" : "topic",
-  "url" : "\/documentation\/authscope\/scope\/index\/_(_:_:)-2s4ww"
+  "url" : "\/documentation\/authscope\/scope\/index\/_(_:_:)"
 }
 }
 }

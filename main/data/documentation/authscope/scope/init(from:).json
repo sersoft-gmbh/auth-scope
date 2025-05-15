@@ -3,8 +3,7 @@
     "paths" : [
       [
         "doc:\/\/AuthScope\/documentation\/AuthScope",
-        "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope",
-        "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/Decodable-Implementations"
+        "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope"
       ]
     ]
   },
@@ -86,7 +85,7 @@
     ],
     "remoteSource" : {
       "fileName" : "Scope+Codable.swift",
-      "url" : "https:\/\/github.com\/sersoft-gmbh\/auth-scope\/Sources\/AuthScope\/Scope+Codable.swift#L2"
+      "url" : "https:\/\/github.com\/sersoft-gmbh\/auth-scope\/blob\/refs\/heads\/main\/Sources\/AuthScope\/Scope+Codable.swift#L2"
     },
     "role" : "symbol",
     "roleHeading" : "Initializer",
@@ -213,17 +212,6 @@
   "title" : "Scope",
   "type" : "topic",
   "url" : "\/documentation\/authscope\/scope"
-},
-"doc://AuthScope/documentation/AuthScope/Scope/Decodable-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/Decodable-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "Decodable Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/authscope\/scope\/decodable-implementations"
 },
 "doc://AuthScope/documentation/AuthScope/Scope/init(from:)": {
   "abstract" : [

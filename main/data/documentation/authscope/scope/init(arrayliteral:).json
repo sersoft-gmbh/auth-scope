@@ -3,14 +3,13 @@
     "paths" : [
       [
         "doc:\/\/AuthScope\/documentation\/AuthScope",
-        "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope",
-        "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/ExpressibleByArrayLiteral-Implementations"
+        "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope"
       ]
     ]
   },
   "identifier" : {
     "interfaceLanguage" : "swift",
-    "url" : "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/init(arrayLiteral:)-50qke"
+    "url" : "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/init(arrayLiteral:)"
   },
   "kind" : "symbol",
   "metadata" : {
@@ -98,7 +97,7 @@
     ],
     "remoteSource" : {
       "fileName" : "Scope+SetAlgebra.swift",
-      "url" : "https:\/\/github.com\/sersoft-gmbh\/auth-scope\/Sources\/AuthScope\/Scope+SetAlgebra.swift#L5"
+      "url" : "https:\/\/github.com\/sersoft-gmbh\/auth-scope\/blob\/refs\/heads\/main\/Sources\/AuthScope\/Scope+SetAlgebra.swift#L5"
     },
     "role" : "symbol",
     "roleHeading" : "Initializer",
@@ -183,7 +182,7 @@
   "variants" : [
     {
       "paths" : [
-        "\/documentation\/authscope\/scope\/init(arrayliteral:)-50qke"
+        "\/documentation\/authscope\/scope\/init(arrayliteral:)"
       ],
       "traits" : [
         {
@@ -239,18 +238,7 @@
   "type" : "topic",
   "url" : "\/documentation\/authscope\/scope"
 },
-"doc://AuthScope/documentation/AuthScope/Scope/ExpressibleByArrayLiteral-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/ExpressibleByArrayLiteral-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "ExpressibleByArrayLiteral Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/authscope\/scope\/expressiblebyarrayliteral-implementations"
-},
-"doc://AuthScope/documentation/AuthScope/Scope/init(arrayLiteral:)-50qke": {
+"doc://AuthScope/documentation/AuthScope/Scope/init(arrayLiteral:)": {
   "abstract" : [
 
   ],
@@ -329,12 +317,12 @@
       "text" : "...)"
     }
   ],
-  "identifier" : "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/init(arrayLiteral:)-50qke",
+  "identifier" : "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/init(arrayLiteral:)",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "init(arrayLiteral:)",
   "type" : "topic",
-  "url" : "\/documentation\/authscope\/scope\/init(arrayliteral:)-50qke"
+  "url" : "\/documentation\/authscope\/scope\/init(arrayliteral:)"
 }
 }
 }

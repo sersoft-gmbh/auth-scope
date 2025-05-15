@@ -17,8 +17,7 @@
     "paths" : [
       [
         "doc:\/\/AuthScope\/documentation\/AuthScope",
-        "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope",
-        "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/Sequence-Implementations"
+        "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope"
       ]
     ]
   },
@@ -764,17 +763,6 @@
   "title" : "Scope",
   "type" : "topic",
   "url" : "\/documentation\/authscope\/scope"
-},
-"doc://AuthScope/documentation/AuthScope/Scope/Sequence-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/Sequence-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "Sequence Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/authscope\/scope\/sequence-implementations"
 },
 "doc://AuthScope/documentation/AuthScope/Scope/reduce(into:_:)": {
   "abstract" : [

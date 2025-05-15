@@ -35,7 +35,7 @@
       "anchor" : "Initializers",
       "generated" : true,
       "identifiers" : [
-        "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/init(arrayLiteral:)-50qke"
+        "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/init(arrayLiteral:)"
       ],
       "title" : "Initializers"
     },
@@ -170,7 +170,7 @@
   "type" : "topic",
   "url" : "\/documentation\/authscope\/scope\/arrayliteralelement"
 },
-"doc://AuthScope/documentation/AuthScope/Scope/init(arrayLiteral:)-50qke": {
+"doc://AuthScope/documentation/AuthScope/Scope/init(arrayLiteral:)": {
   "abstract" : [
 
   ],
@@ -249,12 +249,12 @@
       "text" : "...)"
     }
   ],
-  "identifier" : "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/init(arrayLiteral:)-50qke",
+  "identifier" : "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/init(arrayLiteral:)",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "init(arrayLiteral:)",
   "type" : "topic",
-  "url" : "\/documentation\/authscope\/scope\/init(arrayliteral:)-50qke"
+  "url" : "\/documentation\/authscope\/scope\/init(arrayliteral:)"
 }
 }
 }

@@ -3,8 +3,7 @@
     "paths" : [
       [
         "doc:\/\/AuthScope\/documentation\/AuthScope",
-        "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope",
-        "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/Sequence-Implementations"
+        "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope"
       ]
     ]
   },
@@ -75,7 +74,7 @@
     ],
     "remoteSource" : {
       "fileName" : "Scope+Collection.swift",
-      "url" : "https:\/\/github.com\/sersoft-gmbh\/auth-scope\/Sources\/AuthScope\/Scope+Collection.swift#L2"
+      "url" : "https:\/\/github.com\/sersoft-gmbh\/auth-scope\/blob\/refs\/heads\/main\/Sources\/AuthScope\/Scope+Collection.swift#L2"
     },
     "role" : "symbol",
     "roleHeading" : "Type Alias",
@@ -248,17 +247,6 @@
   "title" : "Scope.Element",
   "type" : "topic",
   "url" : "\/documentation\/authscope\/scope\/element"
-},
-"doc://AuthScope/documentation/AuthScope/Scope/Sequence-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/Sequence-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "Sequence Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/authscope\/scope\/sequence-implementations"
 }
 }
 }

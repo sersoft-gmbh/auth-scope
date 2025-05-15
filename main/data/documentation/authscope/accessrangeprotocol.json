@@ -46,7 +46,7 @@
     ],
     "remoteSource" : {
       "fileName" : "AccessRangeProtocol.swift",
-      "url" : "https:\/\/github.com\/sersoft-gmbh\/auth-scope\/Sources\/AuthScope\/AccessRangeProtocol.swift#L19"
+      "url" : "https:\/\/github.com\/sersoft-gmbh\/auth-scope\/blob\/refs\/heads\/main\/Sources\/AuthScope\/AccessRangeProtocol.swift#L19"
     },
     "role" : "symbol",
     "roleHeading" : "Protocol",
@@ -169,7 +169,7 @@
       "anchor" : "Initializers",
       "generated" : true,
       "identifiers" : [
-        "doc:\/\/AuthScope\/documentation\/AuthScope\/AccessRangeProtocol\/init(validating:)-1tsjf"
+        "doc:\/\/AuthScope\/documentation\/AuthScope\/AccessRangeProtocol\/init(validating:)"
       ],
       "title" : "Initializers"
     }
@@ -248,7 +248,7 @@
   "type" : "topic",
   "url" : "\/documentation\/authscope\/accessrangeprotocol"
 },
-"doc://AuthScope/documentation/AuthScope/AccessRangeProtocol/init(validating:)-1tsjf": {
+"doc://AuthScope/documentation/AuthScope/AccessRangeProtocol/init(validating:)": {
   "abstract" : [
     {
       "text" : "Creates an access range with the given raw value or throws an error (typically ",
@@ -280,7 +280,15 @@
     },
     {
       "kind" : "text",
-      "text" : ": some "
+      "text" : ": "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
     },
     {
       "kind" : "typeIdentifier",
@@ -296,13 +304,13 @@
       "text" : "throws"
     }
   ],
-  "identifier" : "doc:\/\/AuthScope\/documentation\/AuthScope\/AccessRangeProtocol\/init(validating:)-1tsjf",
+  "identifier" : "doc:\/\/AuthScope\/documentation\/AuthScope\/AccessRangeProtocol\/init(validating:)",
   "kind" : "symbol",
   "required" : true,
   "role" : "symbol",
   "title" : "init(validating:)",
   "type" : "topic",
-  "url" : "\/documentation\/authscope\/accessrangeprotocol\/init(validating:)-1tsjf"
+  "url" : "\/documentation\/authscope\/accessrangeprotocol\/init(validating:)"
 },
 "doc://AuthScope/documentation/AuthScope/InvalidAccessRangeError": {
   "abstract" : [

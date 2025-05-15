@@ -33,7 +33,7 @@
   },
   "identifier" : {
     "interfaceLanguage" : "swift",
-    "url" : "doc:\/\/AuthScope\/documentation\/AuthScope\/AccessRangeProtocol\/init(validating:)-1tsjf"
+    "url" : "doc:\/\/AuthScope\/documentation\/AuthScope\/AccessRangeProtocol\/init(validating:)"
   },
   "kind" : "symbol",
   "metadata" : {
@@ -53,7 +53,15 @@
       },
       {
         "kind" : "text",
-        "text" : ": some "
+        "text" : ": "
+      },
+      {
+        "kind" : "keyword",
+        "text" : "some"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
       },
       {
         "kind" : "typeIdentifier",
@@ -76,7 +84,7 @@
     ],
     "remoteSource" : {
       "fileName" : "AccessRangeProtocol.swift",
-      "url" : "https:\/\/github.com\/sersoft-gmbh\/auth-scope\/Sources\/AuthScope\/AccessRangeProtocol.swift#L25"
+      "url" : "https:\/\/github.com\/sersoft-gmbh\/auth-scope\/blob\/refs\/heads\/main\/Sources\/AuthScope\/AccessRangeProtocol.swift#L25"
     },
     "required" : true,
     "role" : "symbol",
@@ -117,7 +125,15 @@
             },
             {
               "kind" : "text",
-              "text" : ": some "
+              "text" : ": "
+            },
+            {
+              "kind" : "keyword",
+              "text" : "some"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
             },
             {
               "kind" : "typeIdentifier",
@@ -204,7 +220,7 @@
   "variants" : [
     {
       "paths" : [
-        "\/documentation\/authscope\/accessrangeprotocol\/init(validating:)-1tsjf"
+        "\/documentation\/authscope\/accessrangeprotocol\/init(validating:)"
       ],
       "traits" : [
         {
@@ -260,7 +276,7 @@
   "type" : "topic",
   "url" : "\/documentation\/authscope\/accessrangeprotocol"
 },
-"doc://AuthScope/documentation/AuthScope/AccessRangeProtocol/init(validating:)-1tsjf": {
+"doc://AuthScope/documentation/AuthScope/AccessRangeProtocol/init(validating:)": {
   "abstract" : [
     {
       "text" : "Creates an access range with the given raw value or throws an error (typically ",
@@ -292,7 +308,15 @@
     },
     {
       "kind" : "text",
-      "text" : ": some "
+      "text" : ": "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
     },
     {
       "kind" : "typeIdentifier",
@@ -308,13 +332,13 @@
       "text" : "throws"
     }
   ],
-  "identifier" : "doc:\/\/AuthScope\/documentation\/AuthScope\/AccessRangeProtocol\/init(validating:)-1tsjf",
+  "identifier" : "doc:\/\/AuthScope\/documentation\/AuthScope\/AccessRangeProtocol\/init(validating:)",
   "kind" : "symbol",
   "required" : true,
   "role" : "symbol",
   "title" : "init(validating:)",
   "type" : "topic",
-  "url" : "\/documentation\/authscope\/accessrangeprotocol\/init(validating:)-1tsjf"
+  "url" : "\/documentation\/authscope\/accessrangeprotocol\/init(validating:)"
 },
 "doc://AuthScope/documentation/AuthScope/AccessRangeProtocol/init(validating:)-9g808": {
   "abstract" : [
@@ -335,7 +359,15 @@
     },
     {
       "kind" : "text",
-      "text" : ": some "
+      "text" : ": "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
     },
     {
       "kind" : "typeIdentifier",

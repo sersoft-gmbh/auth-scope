@@ -3,8 +3,7 @@
     "paths" : [
       [
         "doc:\/\/AuthScope\/documentation\/AuthScope",
-        "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope",
-        "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/SetAlgebra-Implementations"
+        "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope"
       ]
     ]
   },
@@ -90,7 +89,7 @@
     ],
     "remoteSource" : {
       "fileName" : "Scope+SetAlgebra.swift",
-      "url" : "https:\/\/github.com\/sersoft-gmbh\/auth-scope\/Sources\/AuthScope\/Scope+SetAlgebra.swift#L25"
+      "url" : "https:\/\/github.com\/sersoft-gmbh\/auth-scope\/blob\/refs\/heads\/main\/Sources\/AuthScope\/Scope+SetAlgebra.swift#L25"
     },
     "role" : "symbol",
     "roleHeading" : "Instance Method",
@@ -238,17 +237,6 @@
   "title" : "Scope",
   "type" : "topic",
   "url" : "\/documentation\/authscope\/scope"
-},
-"doc://AuthScope/documentation/AuthScope/Scope/SetAlgebra-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/SetAlgebra-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "SetAlgebra Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/authscope\/scope\/setalgebra-implementations"
 },
 "doc://AuthScope/documentation/AuthScope/Scope/formIntersection(_:)": {
   "abstract" : [

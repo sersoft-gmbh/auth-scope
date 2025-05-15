@@ -3,8 +3,7 @@
     "paths" : [
       [
         "doc:\/\/AuthScope\/documentation\/AuthScope",
-        "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope",
-        "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/Encodable-Implementations"
+        "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope"
       ]
     ]
   },
@@ -94,7 +93,7 @@
     ],
     "remoteSource" : {
       "fileName" : "Scope+Codable.swift",
-      "url" : "https:\/\/github.com\/sersoft-gmbh\/auth-scope\/Sources\/AuthScope\/Scope+Codable.swift#L16"
+      "url" : "https:\/\/github.com\/sersoft-gmbh\/auth-scope\/blob\/refs\/heads\/main\/Sources\/AuthScope\/Scope+Codable.swift#L16"
     },
     "role" : "symbol",
     "roleHeading" : "Instance Method",
@@ -229,17 +228,6 @@
   "title" : "Scope",
   "type" : "topic",
   "url" : "\/documentation\/authscope\/scope"
-},
-"doc://AuthScope/documentation/AuthScope/Scope/Encodable-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/Encodable-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "Encodable Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/authscope\/scope\/encodable-implementations"
 },
 "doc://AuthScope/documentation/AuthScope/Scope/encode(to:)": {
   "abstract" : [
