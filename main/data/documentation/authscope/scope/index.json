@@ -139,6 +139,7 @@
         "doc:\/\/AuthScope\/s15BitwiseCopyableP",
         "doc:\/\/AuthScope\/SL",
         "doc:\/\/AuthScope\/SQ",
+        "doc:\/\/AuthScope\/SH",
         "doc:\/\/AuthScope\/s8SendableP"
       ],
       "kind" : "relationships",
@@ -187,6 +188,11 @@
   ]
 , 
 "references": {
+"doc://AuthScope/SH": {
+  "identifier" : "doc:\/\/AuthScope\/SH",
+  "title" : "Swift.Hashable",
+  "type" : "unresolvable"
+},
 "doc://AuthScope/SL": {
   "identifier" : "doc:\/\/AuthScope\/SL",
   "title" : "Swift.Comparable",
@@ -199,7 +205,10 @@
 },
 "doc://AuthScope/documentation/AuthScope": {
   "abstract" : [
-
+    {
+      "text" : "Handle authentication scopes with ease.",
+      "type" : "text"
+    }
   ],
   "identifier" : "doc:\/\/AuthScope\/documentation\/AuthScope",
   "kind" : "symbol",

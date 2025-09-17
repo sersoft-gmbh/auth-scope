@@ -277,7 +277,10 @@
 "references": {
 "doc://AuthScope/documentation/AuthScope": {
   "abstract" : [
-
+    {
+      "text" : "Handle authentication scopes with ease.",
+      "type" : "text"
+    }
   ],
   "identifier" : "doc:\/\/AuthScope\/documentation\/AuthScope",
   "kind" : "symbol",

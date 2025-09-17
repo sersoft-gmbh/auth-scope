@@ -51,6 +51,7 @@
         "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/elementsEqual(_:)",
         "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/elementsEqual(_:by:)",
         "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/enumerated()",
+        "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/filter(_:)-7vvh2",
         "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/first(where:)",
         "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/flatMap(_:)-3zt15",
         "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/flatMap(_:)-6zrmt",
@@ -103,7 +104,10 @@
 "references": {
 "doc://AuthScope/documentation/AuthScope": {
   "abstract" : [
-
+    {
+      "text" : "Handle authentication scopes with ease.",
+      "type" : "text"
+    }
   ],
   "identifier" : "doc:\/\/AuthScope\/documentation\/AuthScope",
   "kind" : "symbol",
@@ -1054,6 +1058,105 @@
   "title" : "enumerated()",
   "type" : "topic",
   "url" : "\/documentation\/authscope\/scope\/enumerated()"
+},
+"doc://AuthScope/documentation/AuthScope/Scope/filter(_:)-7vvh2": {
+  "abstract" : [
+    {
+      "text" : "Returns an array containing, in order, the elements of the sequence",
+      "type" : "text"
+    },
+    {
+      "text" : " ",
+      "type" : "text"
+    },
+    {
+      "text" : "that satisfy the given predicate.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "filter"
+    },
+    {
+      "kind" : "text",
+      "text" : "(("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:ST7ElementQa",
+      "text" : "Element"
+    },
+    {
+      "kind" : "text",
+      "text" : ") "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "throws"
+    },
+    {
+      "kind" : "text",
+      "text" : " -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    },
+    {
+      "kind" : "text",
+      "text" : ") "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "rethrows"
+    },
+    {
+      "kind" : "text",
+      "text" : " -> ["
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:ST7ElementQa",
+      "text" : "Element"
+    },
+    {
+      "kind" : "text",
+      "text" : "]"
+    }
+  ],
+  "identifier" : "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/filter(_:)-7vvh2",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "filter(_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/authscope\/scope\/filter(_:)-7vvh2"
 },
 "doc://AuthScope/documentation/AuthScope/Scope/first(where:)": {
   "abstract" : [

@@ -251,7 +251,10 @@
 },
 "doc://AuthScope/documentation/AuthScope": {
   "abstract" : [
-
+    {
+      "text" : "Handle authentication scopes with ease.",
+      "type" : "text"
+    }
   ],
   "identifier" : "doc:\/\/AuthScope\/documentation\/AuthScope",
   "kind" : "symbol",
@@ -1039,7 +1042,15 @@
     },
     {
       "kind" : "text",
-      "text" : "(("
+      "text" : "<"
+    },
+    {
+      "kind" : "genericParameter",
+      "text" : "F"
+    },
+    {
+      "kind" : "text",
+      "text" : ">(("
     },
     {
       "kind" : "typeIdentifier",
@@ -1055,7 +1066,15 @@
     },
     {
       "kind" : "text",
-      "text" : " -> "
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "F"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
     },
     {
       "kind" : "typeIdentifier",
@@ -1068,11 +1087,19 @@
     },
     {
       "kind" : "keyword",
-      "text" : "rethrows"
+      "text" : "throws"
     },
     {
       "kind" : "text",
-      "text" : " -> "
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "F"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
     },
     {
       "kind" : "typeIdentifier",
