@@ -35,7 +35,7 @@ struct AccessRangeProtocolTests {
 #endif
         guard let error else { return }
         #expect(error.rawValue == invalidRawValue)
-        #expect(error.accessRangeType == AccessRange.self)
+        #expect(error.accessRangeType is AccessRange.Type)
         #expect(error.description == "The value '\(invalidRawValue)' is not a valid scope access range!")
         #expect(error.debugDescription == "The value '\(invalidRawValue)' is not a valid scope access range of \(AccessRange.self)!")
     }
