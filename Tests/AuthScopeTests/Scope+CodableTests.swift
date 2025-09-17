@@ -27,10 +27,11 @@ struct Scope_CodableTests {
         do {
             _ = try JSONDecoder().decode(Wrapper.self, from: Data(json.utf8)).scope
             error = nil
+            Issue.record("Expected to throw")
         } catch let caughtError as DecodingError {
             error = caughtError
-        } catch {
-            #expect(error is DecodingError) // Will always fail
+        } catch let caughtError {
+            #expect(caughtError is DecodingError) // Will always fail
             error = nil
         }
 #endif

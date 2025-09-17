@@ -25,15 +25,18 @@ struct AccessRangeProtocolTests {
         do {
             _ = try AccessRange(validating: invalidRawValue)
             error = nil
+            Issue.record("Expected to throw")
         } catch let caughtError as InvalidAccessRangeError {
             error = caughtError
-        } catch {
-            #expect(error is InvalidAccessRangeError) // Will always fail
+        } catch let caughtError {
+            #expect(caughtError is InvalidAccessRangeError) // Will always fail
+            error = nil
         }
 #endif
-        #expect(error?.rawValue == invalidRawValue)
-        #expect(error?.accessRangeType == AccessRange.self)
-        #expect(error?.description == "The value '\(invalidRawValue)' is not a valid scope access range!")
-        #expect(error?.debugDescription == "The value '\(invalidRawValue)' is not a valid scope access range of \(AccessRange.self)!")
+        guard let error else { return }
+        #expect(error.rawValue == invalidRawValue)
+        #expect(error.accessRangeType == AccessRange.self)
+        #expect(error.description == "The value '\(invalidRawValue)' is not a valid scope access range!")
+        #expect(error.debugDescription == "The value '\(invalidRawValue)' is not a valid scope access range of \(AccessRange.self)!")
     }
 }
