@@ -1,20 +1,23 @@
-import XCTest
+import Testing
 @testable import AuthScope
 
-final class Scope_ScopeStringTests: XCTestCase {
-    func testScopeInitializerWithScopeString() throws {
+@Suite
+struct Scope_ScopeStringTests {
+    @Test
+    func scopeInitializerWithScopeString() throws {
         let scope = try Scope<TestAccessRange>(scopeString: "a b c d e f")
-        XCTAssertEqual(scope.accessRanges, [.a, .b, .c, .d, .e, .f])
+        #expect(scope.accessRanges == [.a, .b, .c, .d, .e, .f])
     }
 
-    func testScopeStringCreation() throws {
+    @Test
+    func scopeStringCreation() throws {
         let scope = Scope<TestAccessRange>(accessRanges: .a, .b, .c, .d, .e, .f)
-        XCTAssertEqual(scope.scopeString.split(separator: " ").sorted(),
-                       "a b c d e f".split(separator: " ").sorted())
+        #expect(scope.scopeString.split(separator: " ").sorted() == "a b c d e f".split(separator: " ").sorted())
     }
 
-    func testScopeStringRoundtrip() {
+    @Test
+    func scopeStringRoundtrip() throws {
         let scope = Scope<TestAccessRange>(accessRanges: .a, .b, .c, .d, .e, .f)
-        XCTAssertEqual(try Scope(scopeString: scope.scopeString), scope)
+        #expect(try Scope(scopeString: scope.scopeString) == scope)
     }
 }

@@ -1,40 +1,48 @@
-import XCTest
+import Testing
 @testable import AuthScope
 
-final class Scope_CollectionTests: XCTestCase {
-    func testIndexComparison() {
+@Suite
+struct Scope_CollectionTests {
+    @Test
+    func indexComparison() {
         let scope: Scope<TestAccessRange> = [.a, .b, .c]
-        XCTAssertTrue(scope.startIndex < scope.endIndex)
+        #expect(scope.startIndex < scope.endIndex)
     }
 
-    func testScopeIsEmpty() {
-        XCTAssertTrue(Scope<TestAccessRange>().isEmpty)
-        XCTAssertFalse(Scope<TestAccessRange>(accessRanges: .a, .b, .c).isEmpty)
+    @Test
+    func scopeIsEmpty() {
+        #expect(Scope<TestAccessRange>().isEmpty)
+        #expect(!Scope<TestAccessRange>(accessRanges: .a, .b, .c).isEmpty)
     }
 
-    func testScopeStartIndex() {
+    @Test
+    func scopeStartIndex() {
         let scope: Scope<TestAccessRange> = [.a, .b, .c, .d]
-        XCTAssertEqual(scope.startIndex.setIndex, scope.accessRanges.startIndex)
+        #expect(scope.startIndex.setIndex == scope.accessRanges.startIndex)
     }
 
-    func testScopeEndIndex() {
+    @Test
+    func scopeEndIndex() {
         let scope: Scope<TestAccessRange> = [.a, .b, .c, .d]
-        XCTAssertEqual(scope.endIndex.setIndex, scope.accessRanges.endIndex)
+        #expect(scope.endIndex.setIndex == scope.accessRanges.endIndex)
     }
 
-    func testScopeIndexSubscript() {
+    @Test
+    func scopeIndexSubscript() {
         let scope: Scope<TestAccessRange> = [.a, .b, .c, .d]
         let index = scope.index(after: scope.startIndex)
-        XCTAssertEqual(scope[index], scope.accessRanges[index.setIndex])
+        #expect(scope[index] == scope.accessRanges[index.setIndex])
     }
 
-    func testScopeIndexAfterCalculation() {
+    @Test
+    func scopeIndexAfterCalculation() {
         let scope: Scope<TestAccessRange> = [.a, .b, .c, .d]
-        XCTAssertEqual(scope.index(after: scope.startIndex).setIndex, scope.accessRanges.index(after: scope.accessRanges.startIndex))
+        #expect(scope.index(after: scope.startIndex).setIndex == scope.accessRanges.index(after: scope.accessRanges.startIndex))
     }
 
-    func testScopeFiltering() {
+    @Test
+    func scopeFiltering() {
         let scope: Scope<TestAccessRange> = [.a, .b, .c, .d]
-        XCTAssertEqual(scope.filter { $0 == .a }, Scope(accessRanges: .a))
+        #expect(scope.filter { $0 == .a } == Scope(accessRanges: .a))
     }
 }

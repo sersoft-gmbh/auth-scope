@@ -3,7 +3,7 @@ extension Scope: Collection {
 
     /// The index type of ``Scope``.
     @frozen
-    public struct Index: Sendable, Comparable {
+    public struct Index: Sendable, Hashable, Comparable {
         @usableFromInline
         let setIndex: Set<Element>.Index
 
@@ -38,7 +38,12 @@ extension Scope: Collection {
     /// - Throws: Any error thrown by `isIncluded`.
     /// - Returns: A filtered scope which only contains the access ranges for which `isIncluded` returned `true`.
     @inlinable
-    public func filter(_ isIncluded: (AccessRange) throws -> Bool) rethrows -> Scope {
-        try Scope(accessRanges: accessRanges.filter(isIncluded))
+    public func filter<F: Error>(_ isIncluded: (AccessRange) throws(F) -> Bool) throws(F) -> Scope {
+        // FIXME: Change once Swift supports typed throws in Set.filter.
+        do {
+            return try Scope(accessRanges: accessRanges.filter(isIncluded))
+        } catch {
+            throw error as! F
+        }
     }
 }

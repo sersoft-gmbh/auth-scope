@@ -1,26 +1,39 @@
-import XCTest
+import Testing
 import AuthScope
 
-final class AccessRangeProtocolTests: XCTestCase {
+@Suite
+struct AccessRangeProtocolTests {
     private enum AccessRange: String, AccessRangeProtocol {
         case testValue
     }
 
-    func testAccessRangeProtocolDefaultInitWithValidRawValue() throws {
-        let range = try AccessRange(validating: AccessRange.testValue.rawValue)
-        XCTAssertEqual(range, .testValue)
+    @Test
+    func accessRangeProtocolDefaultInitWithValidRawValue() throws {
+        #expect(try AccessRange(validating: AccessRange.testValue.rawValue) == .testValue)
     }
 
-    func testAccessRangeProtocolDefaultInitWithInvalidRawValue() {
+    @Test
+    func accessRangeProtocolDefaultInitWithInvalidRawValue() {
         let invalidRawValue = "invalid"
-        XCTAssertThrowsError(try AccessRange(validating: invalidRawValue)) {
-            XCTAssertTrue($0 is InvalidAccessRangeError)
-            if let accessRangeError = $0 as? InvalidAccessRangeError {
-                XCTAssertEqual(accessRangeError.rawValue, invalidRawValue)
-                XCTAssertTrue(accessRangeError.accessRangeType == AccessRange.self)
-                XCTAssertEqual(accessRangeError.description, "The value '\(invalidRawValue)' is not a valid scope access range!")
-                XCTAssertEqual(accessRangeError.debugDescription, "The value '\(invalidRawValue)' is not a valid scope access range of \(AccessRange.self)!")
-            }
+
+#if swift(>=6.1)
+        let error = #expect(throws: InvalidAccessRangeError.self) {
+            try AccessRange(validating: invalidRawValue)
         }
+#else
+        let error: InvalidAccessRangeError?
+        do {
+            _ = try AccessRange(validating: invalidRawValue)
+            error = nil
+        } catch let caughtError as InvalidAccessRangeError {
+            error = caughtError
+        } catch {
+            #expect(error is InvalidAccessRangeError) // Will always fail
+        }
+#endif
+        #expect(error?.rawValue == invalidRawValue)
+        #expect(error?.accessRangeType == AccessRange.self)
+        #expect(error?.description == "The value '\(invalidRawValue)' is not a valid scope access range!")
+        #expect(error?.debugDescription == "The value '\(invalidRawValue)' is not a valid scope access range of \(AccessRange.self)!")
     }
 }

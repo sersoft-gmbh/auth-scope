@@ -1,8 +1,10 @@
-import XCTest
+import Testing
 import AuthScope
 
-final class Scope_DefaultsTests: XCTestCase {
-    func testScopeAllDefault() {
-        XCTAssertEqual(Scope<TestAccessRange>.all, Scope(accessRanges: TestAccessRange.allCases))
+@Suite
+struct Scope_DefaultsTests {
+    @Test
+    func scopeAllDefault() {
+        #expect(Scope<TestAccessRange>.all == Scope(accessRanges: TestAccessRange.allCases))
     }
 }

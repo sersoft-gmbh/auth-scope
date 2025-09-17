@@ -1,16 +1,19 @@
-import XCTest
+import Testing
 import AuthScope
 
-final class Scope_CustomStringConvertibleTests: XCTestCase {
-    func testScopeDescription() {
+@Suite
+struct Scope_CustomStringConvertibleTests {
+    @Test
+    func scopeDescription() {
         let accessRanges: Set<TestAccessRange> = [.a, .b, .c]
         let scope = Scope(accessRanges: accessRanges)
-        XCTAssertEqual(scope.description, String(describing: accessRanges.map(\.rawValue).sorted()))
+        #expect(scope.description == String(describing: accessRanges.map(\.rawValue).sorted()))
     }
 
-    func testScopeDebugDescription() {
+    @Test
+    func scopeDebugDescription() {
         let accessRanges: Set<TestAccessRange> = [.d, .e, .f]
         let scope = Scope(accessRanges: accessRanges)
-        XCTAssertEqual(scope.debugDescription, "Scope<\(TestAccessRange.self)> { \(accessRanges.map(\.rawValue).sorted().joined(separator: ", ")) }")
+        #expect(scope.debugDescription == "Scope<\(TestAccessRange.self)> { \(accessRanges.map(\.rawValue).sorted().joined(separator: ", ")) }")
     }
 }

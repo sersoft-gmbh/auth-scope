@@ -14,6 +14,6 @@ extension Scope {
     /// - Throws: An error if at least one of the access ranges in the scope string is invalid.
     /// - SeeAlso: ``AccessRangeProtocol/init(validating:)``
     public init(scopeString: some StringProtocol) throws {
-        try self.init(accessRanges: scopeString.split(separator: Scope.stringSeparator).map(AccessRange.init(validating:)))
+        try self.init(accessRanges: scopeString.split(separator: Scope.stringSeparator).map { try AccessRange(validating: $0) })
     }
 }

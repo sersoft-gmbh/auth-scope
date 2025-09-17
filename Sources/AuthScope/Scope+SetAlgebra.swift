@@ -7,7 +7,7 @@ extension Scope: SetAlgebra {
     }
 
     @inlinable
-    public __consuming func union(_ other: __owned Scope) -> Scope {
+    public func union(_ other: __owned Scope) -> Scope {
         Scope(accessRanges: accessRanges.union(other.accessRanges))
     }
 
@@ -17,7 +17,7 @@ extension Scope: SetAlgebra {
     }
 
     @inlinable
-    public __consuming func intersection(_ other: Scope) -> Scope {
+    public func intersection(_ other: Scope) -> Scope {
         Scope(accessRanges: accessRanges.intersection(other.accessRanges))
     }
 
@@ -27,7 +27,7 @@ extension Scope: SetAlgebra {
     }
 
     @inlinable
-    public __consuming func symmetricDifference(_ other: __owned Scope) -> Scope {
+    public func symmetricDifference(_ other: __owned Scope) -> Scope {
         Scope(accessRanges: accessRanges.symmetricDifference(other.accessRanges))
     }
 

@@ -1,43 +1,49 @@
-import XCTest
+import Testing
 @testable import AuthScope
 
-final class ScopeTests: XCTestCase {
-    func testScopeInitializerWithAccessRangeSet() {
+@Suite
+struct ScopeTests {
+    @Test
+    func scopeInitializerWithAccessRangeSet() {
         let accessRanges: Set<TestAccessRange> = [.a, .b, .c, .d]
         let scope = Scope(accessRanges: accessRanges)
-        XCTAssertEqual(scope.accessRanges, accessRanges)
+        #expect(scope.accessRanges == accessRanges)
     }
 
-    func testScopeInitializerWithAccessRangeCollection() {
+    @Test
+    func scopeInitializerWithAccessRangeCollection() {
         let accessRanges: Array<TestAccessRange> = [.a, .b, .c, .d]
         let scope = Scope(accessRanges: accessRanges)
-        XCTAssertEqual(scope.accessRanges, Set(accessRanges))
+        #expect(scope.accessRanges == Set(accessRanges))
     }
 
-    func testScopeInitializerWithAccessRangeVariadicList() {
+    @Test
+    func scopeInitializerWithAccessRangeVariadicList() {
         let scope = Scope<TestAccessRange>(accessRanges: .a, .b, .c, .d)
-        XCTAssertEqual(scope.accessRanges, [.a, .b, .c, .d])
+        #expect(scope.accessRanges == [.a, .b, .c, .d])
     }
 
-    func testScopeEmptyInitializer() {
-        let scope = Scope<TestAccessRange>()
-        XCTAssertTrue(scope.accessRanges.isEmpty)
+    @Test
+    func scopeEmptyInitializer() {
+        #expect(Scope<TestAccessRange>().accessRanges.isEmpty)
     }
 
-    func testScopeEquatabilityIsBasedOnAccessRange() {
+    @Test
+    func scopeEquatabilityIsBasedOnAccessRange() {
         let scope1 = Scope<TestAccessRange>(accessRanges: .a, .b, .c, .d)
         let scope2 = Scope<TestAccessRange>(accessRanges: .a, .b, .c, .d)
         let scope3 = Scope<TestAccessRange>(accessRanges: .a, .b, .c)
-        XCTAssertEqual(scope1 == scope2, scope1.accessRanges == scope2.accessRanges)
-        XCTAssertEqual(scope2 == scope3, scope2.accessRanges == scope3.accessRanges)
-        XCTAssertEqual(scope1, scope2)
-        XCTAssertNotEqual(scope2, scope3)
+        #expect((scope1 == scope2) == (scope1.accessRanges == scope2.accessRanges))
+        #expect((scope2 == scope3) == (scope2.accessRanges == scope3.accessRanges))
+        #expect(scope1 == scope2)
+        #expect(scope2 != scope3)
     }
 
-    func testScopeHashingIsBasedOnAccessRange() {
+    @Test
+    func scopeHashingIsBasedOnAccessRange() {
         let scope = Scope<TestAccessRange>(accessRanges: .a, .b, .c, .d)
         var hasher = Hasher()
         hasher.combine(scope.accessRanges)
-        XCTAssertEqual(hasher.finalize(), scope.hashValue)
+        #expect(hasher.finalize() == scope.hashValue)
     }
 }
