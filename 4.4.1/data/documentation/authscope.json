@@ -1,0 +1,868 @@
+{
+  "abstract" : [
+    {
+      "text" : "Handle authentication scopes with ease.",
+      "type" : "text"
+    }
+  ],
+  "hierarchy" : {
+    "paths" : [
+      [
+
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "swift",
+    "url" : "doc:\/\/AuthScope\/documentation\/AuthScope"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "externalID" : "AuthScope",
+    "modules" : [
+      {
+        "name" : "AuthScope"
+      }
+    ],
+    "role" : "collection",
+    "roleHeading" : "Framework",
+    "symbolKind" : "module",
+    "title" : "AuthScope"
+  },
+  "primaryContentSections" : [
+    {
+      "content" : [
+        {
+          "anchor" : "Installation",
+          "level" : 2,
+          "text" : "Installation",
+          "type" : "heading"
+        },
+        {
+          "anchor" : "Swift-Package-Manager",
+          "level" : 3,
+          "text" : "Swift Package Manager",
+          "type" : "heading"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "Add the following package dependency to your ",
+              "type" : "text"
+            },
+            {
+              "code" : "Package.swift",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : ":",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "code" : [
+            ".package(url: \"https:\/\/github.com\/sersoft-gmbh\/auth-scope\", from: \"4.0.0\"),"
+          ],
+          "syntax" : "swift",
+          "type" : "codeListing"
+        },
+        {
+          "anchor" : "Usage",
+          "level" : 2,
+          "text" : "Usage",
+          "type" : "heading"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "The main object you want to use is ",
+              "type" : "text"
+            },
+            {
+              "identifier" : "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope",
+              "isActive" : true,
+              "type" : "reference"
+            },
+            {
+              "text" : ". It’s generic and wraps all the logic around a given ",
+              "type" : "text"
+            },
+            {
+              "code" : "AccessRange",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " type. Since ",
+              "type" : "text"
+            },
+            {
+              "identifier" : "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope",
+              "isActive" : true,
+              "type" : "reference"
+            },
+            {
+              "text" : " can’t know what access ranges you have, you need to provide them yourself. Typically, this is done by using an ",
+              "type" : "text"
+            },
+            {
+              "code" : "enum",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " and conforming it to ",
+              "type" : "text"
+            },
+            {
+              "identifier" : "doc:\/\/AuthScope\/documentation\/AuthScope\/AccessRangeProtocol",
+              "isActive" : true,
+              "type" : "reference"
+            },
+            {
+              "text" : ":",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "code" : [
+            "enum MyAccessRange: String, AccessRangeProtocol, CaseIterable {",
+            "    case readPosts = \"posts:read\"",
+            "    case writePosts = \"posts:write\"",
+            "",
+            "    case readUsers = \"users:read\"",
+            "    case writeUsers = \"users:write\"",
+            "}"
+          ],
+          "syntax" : "swift",
+          "type" : "codeListing"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "You can then use your ",
+              "type" : "text"
+            },
+            {
+              "code" : "enum",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " with ",
+              "type" : "text"
+            },
+            {
+              "identifier" : "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope",
+              "isActive" : true,
+              "type" : "reference"
+            },
+            {
+              "text" : ":",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "code" : [
+            "let postsScope = Scope<MyAccessRange>(accessRanges: .readPosts, .writePosts)",
+            "",
+            "postsScope.contains(.writePosts) \/\/ -> true",
+            "postsScope.contains(.readUsers) \/\/ -> false"
+          ],
+          "syntax" : "swift",
+          "type" : "codeListing"
+        },
+        {
+          "inlineContent" : [
+            {
+              "identifier" : "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope",
+              "isActive" : true,
+              "type" : "reference"
+            },
+            {
+              "text" : " conforms to ",
+              "type" : "text"
+            },
+            {
+              "code" : "SetAlgebra",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " to make checking access ranges easier:",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "code" : [
+            "let completeScope = Scope<MyAccessRange>.all \/\/ `.all` is available when `AccessRange` conforms to `CaseIterable`",
+            "completeScope.isSuperset(of: postsScope) \/\/ -> true"
+          ],
+          "syntax" : "swift",
+          "type" : "codeListing"
+        },
+        {
+          "inlineContent" : [
+            {
+              "identifier" : "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope",
+              "isActive" : true,
+              "type" : "reference"
+            },
+            {
+              "text" : " is also able to generate a “scope string”, since this is usually how they’re provided to APIs. The “scope string” contains all access ranges (their ",
+              "type" : "text"
+            },
+            {
+              "code" : "AccessRangeProtocol\/rawValue",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " to be exact) separated by space. It’s important to note that ",
+              "type" : "text"
+            },
+            {
+              "identifier" : "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope",
+              "isActive" : true,
+              "type" : "reference"
+            },
+            {
+              "text" : " does not keep the access ranges in a given order. This means, that it’s not guaranteed that two calls to ",
+              "type" : "text"
+            },
+            {
+              "identifier" : "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/scopeString",
+              "isActive" : true,
+              "type" : "reference"
+            },
+            {
+              "text" : " will contain the access ranges in the same order. It is guaranteed, however, that the resulting scope contains all access ranges. ",
+              "type" : "text"
+            },
+            {
+              "identifier" : "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope",
+              "isActive" : true,
+              "type" : "reference"
+            },
+            {
+              "text" : " can of course also be created from a scope string. This initializer will throw an error if any of the contained access ranges is not valid.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "code" : [
+            "let usersScope: Scope<MyAccessRange> = [.readUsers, .writeUsers]",
+            "let string = usersScope.scopeString \/\/ -> \"users:read users:write\" OR \"users:write users:read\"",
+            "let recreatedScope = try Scope<MyAccessRange>(scopeString: string)",
+            "usersScope == recreatedScope \/\/ true"
+          ],
+          "syntax" : "swift",
+          "type" : "codeListing"
+        },
+        {
+          "inlineContent" : [
+            {
+              "identifier" : "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope",
+              "isActive" : true,
+              "type" : "reference"
+            },
+            {
+              "text" : " is also ",
+              "type" : "text"
+            },
+            {
+              "code" : "Codable",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " and encodes\/decodes itself as its scope string.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "Last but not least, ",
+              "type" : "text"
+            },
+            {
+              "identifier" : "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope",
+              "isActive" : true,
+              "type" : "reference"
+            },
+            {
+              "text" : " also provides some useful regular expression patterns, that can be used to perform matches on a string basis. This is not recommended if your scopes are available as Swift types, but can be useful if you have to match scopes e.g. in a database.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "There are currently three regular expression patterns that are provided:",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "items" : [
+            {
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "identifier" : "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/exactMatchRegexPattern",
+                      "isActive" : true,
+                      "type" : "reference"
+                    },
+                    {
+                      "text" : ": Returns a pattern that matches a scope string that contains ",
+                      "type" : "text"
+                    },
+                    {
+                      "inlineContent" : [
+                        {
+                          "text" : "exactly",
+                          "type" : "text"
+                        }
+                      ],
+                      "type" : "strong"
+                    },
+                    {
+                      "text" : " the same access ranges. Not more and not less.",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ]
+            },
+            {
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "identifier" : "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/containsAllRegexPattern",
+                      "isActive" : true,
+                      "type" : "reference"
+                    },
+                    {
+                      "text" : ": Returns a pattern that matches a scope string that contains ",
+                      "type" : "text"
+                    },
+                    {
+                      "inlineContent" : [
+                        {
+                          "text" : "all",
+                          "type" : "text"
+                        }
+                      ],
+                      "type" : "strong"
+                    },
+                    {
+                      "text" : " access ranges, but is allowed to contain more.",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ]
+            },
+            {
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "identifier" : "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/containsAnyRegexPattern",
+                      "isActive" : true,
+                      "type" : "reference"
+                    },
+                    {
+                      "text" : ": Returns a pattern that matches a scope string that contains ",
+                      "type" : "text"
+                    },
+                    {
+                      "inlineContent" : [
+                        {
+                          "text" : "any",
+                          "type" : "text"
+                        }
+                      ],
+                      "type" : "strong"
+                    },
+                    {
+                      "text" : " access ranges. A match is made as soon as one access range is contained.",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ]
+            }
+          ],
+          "type" : "unorderedList"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "For all these patterns, a ",
+              "type" : "text"
+            },
+            {
+              "code" : "Regex",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " is available as well.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        }
+      ],
+      "kind" : "content"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "topicSections" : [
+    {
+      "anchor" : "Protocols",
+      "generated" : true,
+      "identifiers" : [
+        "doc:\/\/AuthScope\/documentation\/AuthScope\/AccessRangeProtocol"
+      ],
+      "title" : "Protocols"
+    },
+    {
+      "anchor" : "Structures",
+      "generated" : true,
+      "identifiers" : [
+        "doc:\/\/AuthScope\/documentation\/AuthScope\/InvalidAccessRangeError",
+        "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope"
+      ],
+      "title" : "Structures"
+    }
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/authscope"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "swift"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://AuthScope/documentation/AuthScope": {
+  "abstract" : [
+    {
+      "text" : "Handle authentication scopes with ease.",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/AuthScope\/documentation\/AuthScope",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "AuthScope",
+  "type" : "topic",
+  "url" : "\/documentation\/authscope"
+},
+"doc://AuthScope/documentation/AuthScope/AccessRangeProtocol": {
+  "abstract" : [
+    {
+      "text" : "Describes an access range type. Typically an enum.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "protocol"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "AccessRangeProtocol"
+    }
+  ],
+  "identifier" : "doc:\/\/AuthScope\/documentation\/AuthScope\/AccessRangeProtocol",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "AccessRangeProtocol"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "AccessRangeProtocol",
+  "type" : "topic",
+  "url" : "\/documentation\/authscope\/accessrangeprotocol"
+},
+"doc://AuthScope/documentation/AuthScope/InvalidAccessRangeError": {
+  "abstract" : [
+    {
+      "text" : "The error thrown when an access range is initialized with an invalid raw value.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "struct"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "InvalidAccessRangeError"
+    }
+  ],
+  "identifier" : "doc:\/\/AuthScope\/documentation\/AuthScope\/InvalidAccessRangeError",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "InvalidAccessRangeError"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "InvalidAccessRangeError",
+  "type" : "topic",
+  "url" : "\/documentation\/authscope\/invalidaccessrangeerror"
+},
+"doc://AuthScope/documentation/AuthScope/Scope": {
+  "abstract" : [
+    {
+      "text" : "A set of access ranges.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "struct"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "Scope"
+    }
+  ],
+  "identifier" : "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "Scope"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "Scope",
+  "type" : "topic",
+  "url" : "\/documentation\/authscope\/scope"
+},
+"doc://AuthScope/documentation/AuthScope/Scope/containsAllRegexPattern": {
+  "abstract" : [
+    {
+      "text" : "Returns a regular expression pattern that matches a string that has at least the access ranges in self (but can have more).",
+      "type" : "text"
+    }
+  ],
+  "conformance" : {
+    "availabilityPrefix" : [
+      {
+        "text" : "Available when",
+        "type" : "text"
+      }
+    ],
+    "conformancePrefix" : [
+      {
+        "text" : "Conforms when",
+        "type" : "text"
+      }
+    ],
+    "constraints" : [
+      {
+        "code" : "AccessRange",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : " conforms to ",
+        "type" : "text"
+      },
+      {
+        "code" : "AccessRangeProtocol",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : ".",
+        "type" : "text"
+      }
+    ]
+  },
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "containsAllRegexPattern"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:SS",
+      "text" : "String"
+    }
+  ],
+  "identifier" : "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/containsAllRegexPattern",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "containsAllRegexPattern",
+  "type" : "topic",
+  "url" : "\/documentation\/authscope\/scope\/containsallregexpattern"
+},
+"doc://AuthScope/documentation/AuthScope/Scope/containsAnyRegexPattern": {
+  "abstract" : [
+    {
+      "text" : "Returns a regular expression pattern that matches a string that has at least one of access ranges in self (but not all).",
+      "type" : "text"
+    }
+  ],
+  "conformance" : {
+    "availabilityPrefix" : [
+      {
+        "text" : "Available when",
+        "type" : "text"
+      }
+    ],
+    "conformancePrefix" : [
+      {
+        "text" : "Conforms when",
+        "type" : "text"
+      }
+    ],
+    "constraints" : [
+      {
+        "code" : "AccessRange",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : " conforms to ",
+        "type" : "text"
+      },
+      {
+        "code" : "AccessRangeProtocol",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : ".",
+        "type" : "text"
+      }
+    ]
+  },
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "containsAnyRegexPattern"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:SS",
+      "text" : "String"
+    }
+  ],
+  "identifier" : "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/containsAnyRegexPattern",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "containsAnyRegexPattern",
+  "type" : "topic",
+  "url" : "\/documentation\/authscope\/scope\/containsanyregexpattern"
+},
+"doc://AuthScope/documentation/AuthScope/Scope/exactMatchRegexPattern": {
+  "abstract" : [
+    {
+      "text" : "Returns a regular expression pattern that matches a string that has exactly the access ranges in self (not more, not less).",
+      "type" : "text"
+    }
+  ],
+  "conformance" : {
+    "availabilityPrefix" : [
+      {
+        "text" : "Available when",
+        "type" : "text"
+      }
+    ],
+    "conformancePrefix" : [
+      {
+        "text" : "Conforms when",
+        "type" : "text"
+      }
+    ],
+    "constraints" : [
+      {
+        "code" : "AccessRange",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : " conforms to ",
+        "type" : "text"
+      },
+      {
+        "code" : "AccessRangeProtocol",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : ".",
+        "type" : "text"
+      }
+    ]
+  },
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "exactMatchRegexPattern"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:SS",
+      "text" : "String"
+    }
+  ],
+  "identifier" : "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/exactMatchRegexPattern",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "exactMatchRegexPattern",
+  "type" : "topic",
+  "url" : "\/documentation\/authscope\/scope\/exactmatchregexpattern"
+},
+"doc://AuthScope/documentation/AuthScope/Scope/scopeString": {
+  "abstract" : [
+    {
+      "text" : "A string containing all access ranges in self seperated by space.",
+      "type" : "text"
+    }
+  ],
+  "conformance" : {
+    "availabilityPrefix" : [
+      {
+        "text" : "Available when",
+        "type" : "text"
+      }
+    ],
+    "conformancePrefix" : [
+      {
+        "text" : "Conforms when",
+        "type" : "text"
+      }
+    ],
+    "constraints" : [
+      {
+        "code" : "AccessRange",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : " conforms to ",
+        "type" : "text"
+      },
+      {
+        "code" : "AccessRangeProtocol",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : ".",
+        "type" : "text"
+      }
+    ]
+  },
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "scopeString"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:SS",
+      "text" : "String"
+    }
+  ],
+  "identifier" : "doc:\/\/AuthScope\/documentation\/AuthScope\/Scope\/scopeString",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "scopeString",
+  "type" : "topic",
+  "url" : "\/documentation\/authscope\/scope\/scopestring"
+}
+}
+}
