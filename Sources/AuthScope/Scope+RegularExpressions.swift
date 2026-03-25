@@ -78,6 +78,17 @@ extension Scope {
         }
     }
 
+#if compiler(>=6.3)
+    @inline(always)
+    private var startOfAccessRangePattern: String {
+        "(?:^|\(Scope.stringSeparator))"
+    }
+
+    @inline(always)
+    private var endOfAccessRangePattern: String {
+        "(?:\(Scope.stringSeparator)|$)"
+    }
+#else
     @inline(__always)
     private var startOfAccessRangePattern: String {
         "(?:^|\(Scope.stringSeparator))"
@@ -87,6 +98,7 @@ extension Scope {
     private var endOfAccessRangePattern: String {
         "(?:\(Scope.stringSeparator)|$)"
     }
+#endif
 
     /// Returns a regular expression pattern that matches a string that has exactly the access ranges in self (not more, not less).
     /// - Note: The order of the access ranges in the string is irrelevant.
