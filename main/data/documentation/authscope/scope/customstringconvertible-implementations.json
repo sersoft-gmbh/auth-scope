@@ -104,7 +104,10 @@
 },
 "doc://AuthScope/documentation/AuthScope/Scope/description": {
   "abstract" : [
-
+    {
+      "text" : "A textual representation of this instance.",
+      "type" : "text"
+    }
   ],
   "conformance" : {
     "availabilityPrefix" : [

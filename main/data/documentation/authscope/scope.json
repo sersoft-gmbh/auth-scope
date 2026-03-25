@@ -126,9 +126,11 @@
         "doc:\/\/AuthScope\/Se",
         "doc:\/\/AuthScope\/SE",
         "doc:\/\/AuthScope\/SQ",
+        "doc:\/\/AuthScope\/s9EscapableP",
         "doc:\/\/AuthScope\/s25ExpressibleByArrayLiteralP",
         "doc:\/\/AuthScope\/SH",
         "doc:\/\/AuthScope\/s8SendableP",
+        "doc:\/\/AuthScope\/s16SendableMetatypeP",
         "doc:\/\/AuthScope\/ST",
         "doc:\/\/AuthScope\/s10SetAlgebraP"
       ],
@@ -1463,6 +1465,11 @@
   "title" : "Swift.SetAlgebra",
   "type" : "unresolvable"
 },
+"doc://AuthScope/s16SendableMetatypeP": {
+  "identifier" : "doc:\/\/AuthScope\/s16SendableMetatypeP",
+  "title" : "Swift.SendableMetatype",
+  "type" : "unresolvable"
+},
 "doc://AuthScope/s23CustomStringConvertibleP": {
   "identifier" : "doc:\/\/AuthScope\/s23CustomStringConvertibleP",
   "title" : "Swift.CustomStringConvertible",
@@ -1486,6 +1493,11 @@
 "doc://AuthScope/s8SendableP": {
   "identifier" : "doc:\/\/AuthScope\/s8SendableP",
   "title" : "Swift.Sendable",
+  "type" : "unresolvable"
+},
+"doc://AuthScope/s9EscapableP": {
+  "identifier" : "doc:\/\/AuthScope\/s9EscapableP",
+  "title" : "Swift.Escapable",
   "type" : "unresolvable"
 }
 }

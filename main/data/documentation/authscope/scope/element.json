@@ -1,4 +1,10 @@
 {
+  "abstract" : [
+    {
+      "text" : "A type representing the sequence’s elements.",
+      "type" : "text"
+    }
+  ],
   "hierarchy" : {
     "paths" : [
       [
@@ -190,7 +196,10 @@
 },
 "doc://AuthScope/documentation/AuthScope/Scope/Element": {
   "abstract" : [
-
+    {
+      "text" : "A type representing the sequence’s elements.",
+      "type" : "text"
+    }
   ],
   "conformance" : {
     "availabilityPrefix" : [

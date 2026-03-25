@@ -1,4 +1,10 @@
 {
+  "abstract" : [
+    {
+      "text" : "The position of the first element in a nonempty collection.",
+      "type" : "text"
+    }
+  ],
   "hierarchy" : {
     "paths" : [
       [
@@ -168,6 +174,42 @@
         }
       ],
       "kind" : "declarations"
+    },
+    {
+      "content" : [
+        {
+          "anchor" : "discussion",
+          "level" : 2,
+          "text" : "Discussion",
+          "type" : "heading"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "If the collection is empty, ",
+              "type" : "text"
+            },
+            {
+              "code" : "startIndex",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " is equal to ",
+              "type" : "text"
+            },
+            {
+              "code" : "endIndex",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : ".",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        }
+      ],
+      "kind" : "content"
     }
   ],
   "schemaVersion" : {
@@ -317,7 +359,10 @@
 },
 "doc://AuthScope/documentation/AuthScope/Scope/startIndex": {
   "abstract" : [
-
+    {
+      "text" : "The position of the first element in a nonempty collection.",
+      "type" : "text"
+    }
   ],
   "conformance" : {
     "availabilityPrefix" : [

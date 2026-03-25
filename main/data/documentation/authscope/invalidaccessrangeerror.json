@@ -88,7 +88,8 @@
         "doc:\/\/AuthScope\/s28CustomDebugStringConvertibleP",
         "doc:\/\/AuthScope\/s23CustomStringConvertibleP",
         "doc:\/\/AuthScope\/s5ErrorP",
-        "doc:\/\/AuthScope\/s8SendableP"
+        "doc:\/\/AuthScope\/s8SendableP",
+        "doc:\/\/AuthScope\/s16SendableMetatypeP"
       ],
       "kind" : "relationships",
       "title" : "Conforms To",
@@ -229,7 +230,10 @@
 },
 "doc://AuthScope/documentation/AuthScope/InvalidAccessRangeError/debugDescription": {
   "abstract" : [
-
+    {
+      "text" : "A textual representation of this instance, suitable for debugging.",
+      "type" : "text"
+    }
   ],
   "fragments" : [
     {
@@ -263,7 +267,10 @@
 },
 "doc://AuthScope/documentation/AuthScope/InvalidAccessRangeError/description": {
   "abstract" : [
-
+    {
+      "text" : "A textual representation of this instance.",
+      "type" : "text"
+    }
   ],
   "fragments" : [
     {
@@ -331,6 +338,11 @@
   "title" : "rawValue",
   "type" : "topic",
   "url" : "\/documentation\/authscope\/invalidaccessrangeerror\/rawvalue"
+},
+"doc://AuthScope/s16SendableMetatypeP": {
+  "identifier" : "doc:\/\/AuthScope\/s16SendableMetatypeP",
+  "title" : "Swift.SendableMetatype",
+  "type" : "unresolvable"
 },
 "doc://AuthScope/s23CustomStringConvertibleP": {
   "identifier" : "doc:\/\/AuthScope\/s23CustomStringConvertibleP",

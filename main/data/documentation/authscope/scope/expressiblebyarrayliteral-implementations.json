@@ -112,7 +112,10 @@
 },
 "doc://AuthScope/documentation/AuthScope/Scope/ArrayLiteralElement": {
   "abstract" : [
-
+    {
+      "text" : "The type of the elements of an array literal.",
+      "type" : "text"
+    }
   ],
   "conformance" : {
     "availabilityPrefix" : [
@@ -175,7 +178,10 @@
 },
 "doc://AuthScope/documentation/AuthScope/Scope/init(arrayLiteral:)": {
   "abstract" : [
-
+    {
+      "text" : "Creates an instance initialized with the given elements.",
+      "type" : "text"
+    }
   ],
   "conformance" : {
     "availabilityPrefix" : [

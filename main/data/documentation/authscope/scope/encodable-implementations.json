@@ -104,7 +104,10 @@
 },
 "doc://AuthScope/documentation/AuthScope/Scope/encode(to:)": {
   "abstract" : [
-
+    {
+      "text" : "Encodes this value into the given encoder.",
+      "type" : "text"
+    }
   ],
   "conformance" : {
     "availabilityPrefix" : [

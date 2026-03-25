@@ -128,7 +128,10 @@
 },
 "doc://AuthScope/documentation/AuthScope/Scope/formIntersection(_:)": {
   "abstract" : [
-
+    {
+      "text" : "Removes the elements of this set that aren’t also in the given set.",
+      "type" : "text"
+    }
   ],
   "conformance" : {
     "availabilityPrefix" : [
@@ -206,7 +209,18 @@
 },
 "doc://AuthScope/documentation/AuthScope/Scope/formSymmetricDifference(_:)": {
   "abstract" : [
-
+    {
+      "text" : "Removes the elements of the set that are also in the given set and adds",
+      "type" : "text"
+    },
+    {
+      "text" : " ",
+      "type" : "text"
+    },
+    {
+      "text" : "the members of the given set that are not already in the set.",
+      "type" : "text"
+    }
   ],
   "conformance" : {
     "availabilityPrefix" : [
@@ -284,7 +298,10 @@
 },
 "doc://AuthScope/documentation/AuthScope/Scope/formUnion(_:)": {
   "abstract" : [
-
+    {
+      "text" : "Adds the elements of the given set to the set.",
+      "type" : "text"
+    }
   ],
   "conformance" : {
     "availabilityPrefix" : [
@@ -483,7 +500,10 @@
 },
 "doc://AuthScope/documentation/AuthScope/Scope/insert(_:)": {
   "abstract" : [
-
+    {
+      "text" : "Inserts the given element in the set if it is not already present.",
+      "type" : "text"
+    }
   ],
   "conformance" : {
     "availabilityPrefix" : [
@@ -611,7 +631,18 @@
 },
 "doc://AuthScope/documentation/AuthScope/Scope/intersection(_:)": {
   "abstract" : [
-
+    {
+      "text" : "Returns a new set with the elements that are common to both this set and",
+      "type" : "text"
+    },
+    {
+      "text" : " ",
+      "type" : "text"
+    },
+    {
+      "text" : "the given set.",
+      "type" : "text"
+    }
   ],
   "conformance" : {
     "availabilityPrefix" : [
@@ -1011,7 +1042,10 @@
 },
 "doc://AuthScope/documentation/AuthScope/Scope/remove(_:)": {
   "abstract" : [
-
+    {
+      "text" : "Removes the given element and any elements subsumed by the given element.",
+      "type" : "text"
+    }
   ],
   "conformance" : {
     "availabilityPrefix" : [
@@ -1214,7 +1248,18 @@
 },
 "doc://AuthScope/documentation/AuthScope/Scope/symmetricDifference(_:)": {
   "abstract" : [
-
+    {
+      "text" : "Returns a new set with the elements that are either in this set or in the",
+      "type" : "text"
+    },
+    {
+      "text" : " ",
+      "type" : "text"
+    },
+    {
+      "text" : "given set, but not in both.",
+      "type" : "text"
+    }
   ],
   "conformance" : {
     "availabilityPrefix" : [
@@ -1309,7 +1354,10 @@
 },
 "doc://AuthScope/documentation/AuthScope/Scope/union(_:)": {
   "abstract" : [
-
+    {
+      "text" : "Returns a new set with the elements of both this and the given set.",
+      "type" : "text"
+    }
   ],
   "conformance" : {
     "availabilityPrefix" : [
@@ -1404,7 +1452,10 @@
 },
 "doc://AuthScope/documentation/AuthScope/Scope/update(with:)": {
   "abstract" : [
-
+    {
+      "text" : "Inserts the given element into the set unconditionally.",
+      "type" : "text"
+    }
   ],
   "conformance" : {
     "availabilityPrefix" : [

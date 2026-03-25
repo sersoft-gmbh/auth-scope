@@ -104,7 +104,10 @@
 },
 "doc://AuthScope/documentation/AuthScope/Scope/init(from:)": {
   "abstract" : [
-
+    {
+      "text" : "Creates a new instance by decoding from the given decoder.",
+      "type" : "text"
+    }
   ],
   "conformance" : {
     "availabilityPrefix" : [

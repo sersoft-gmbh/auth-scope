@@ -1,4 +1,10 @@
 {
+  "abstract" : [
+    {
+      "text" : "Adds the elements of the given set to the set.",
+      "type" : "text"
+    }
+  ],
   "hierarchy" : {
     "paths" : [
       [
@@ -169,6 +175,111 @@
         }
       ],
       "kind" : "declarations"
+    },
+    {
+      "kind" : "parameters",
+      "parameters" : [
+        {
+          "content" : [
+            {
+              "inlineContent" : [
+                {
+                  "text" : "A set of the same type as the current set.",
+                  "type" : "text"
+                }
+              ],
+              "type" : "paragraph"
+            }
+          ],
+          "name" : "other"
+        }
+      ]
+    },
+    {
+      "content" : [
+        {
+          "anchor" : "discussion",
+          "level" : 2,
+          "text" : "Discussion",
+          "type" : "heading"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "In the following example, the elements of the ",
+              "type" : "text"
+            },
+            {
+              "code" : "visitors",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " set are added to",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "the ",
+              "type" : "text"
+            },
+            {
+              "code" : "attendees",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " set:",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "code" : [
+            "var attendees: Set = [\"Alicia\", \"Bethany\", \"Diana\"]",
+            "let visitors: Set = [\"Diana\", \"Marcia\", \"Nathaniel\"]",
+            "attendees.formUnion(visitors)",
+            "print(attendees)",
+            "\/\/ Prints \"[\"Diana\", \"Nathaniel\", \"Bethany\", \"Alicia\", \"Marcia\"]\""
+          ],
+          "syntax" : null,
+          "type" : "codeListing"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "If the set already contains one or more elements that are also in",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "code" : "other",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : ", the existing members are kept.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "code" : [
+            "var initialIndices = Set(0..<5)",
+            "initialIndices.formUnion([2, 3, 6, 7])",
+            "print(initialIndices)",
+            "\/\/ Prints \"[2, 4, 6, 7, 0, 1, 3]\""
+          ],
+          "syntax" : null,
+          "type" : "codeListing"
+        }
+      ],
+      "kind" : "content"
     }
   ],
   "schemaVersion" : {
@@ -243,7 +354,10 @@
 },
 "doc://AuthScope/documentation/AuthScope/Scope/formUnion(_:)": {
   "abstract" : [
-
+    {
+      "text" : "Adds the elements of the given set to the set.",
+      "type" : "text"
+    }
   ],
   "conformance" : {
     "availabilityPrefix" : [

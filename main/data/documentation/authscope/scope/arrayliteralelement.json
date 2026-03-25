@@ -1,4 +1,10 @@
 {
+  "abstract" : [
+    {
+      "text" : "The type of the elements of an array literal.",
+      "type" : "text"
+    }
+  ],
   "hierarchy" : {
     "paths" : [
       [
@@ -208,7 +214,10 @@
 },
 "doc://AuthScope/documentation/AuthScope/Scope/ArrayLiteralElement": {
   "abstract" : [
-
+    {
+      "text" : "The type of the elements of an array literal.",
+      "type" : "text"
+    }
   ],
   "conformance" : {
     "availabilityPrefix" : [

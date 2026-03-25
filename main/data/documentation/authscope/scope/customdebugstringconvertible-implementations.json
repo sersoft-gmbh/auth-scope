@@ -104,7 +104,10 @@
 },
 "doc://AuthScope/documentation/AuthScope/Scope/debugDescription": {
   "abstract" : [
-
+    {
+      "text" : "A textual representation of this instance, suitable for debugging.",
+      "type" : "text"
+    }
   ],
   "conformance" : {
     "availabilityPrefix" : [

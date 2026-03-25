@@ -152,7 +152,10 @@
 },
 "doc://AuthScope/documentation/AuthScope/Scope/Element": {
   "abstract" : [
-
+    {
+      "text" : "A type representing the sequence’s elements.",
+      "type" : "text"
+    }
   ],
   "conformance" : {
     "availabilityPrefix" : [
@@ -3570,7 +3573,10 @@
 },
 "doc://AuthScope/documentation/AuthScope/Scope/withContiguousStorageIfAvailable(_:)": {
   "abstract" : [
-
+    {
+      "text" : "Executes a closure on the sequence’s contiguous storage.",
+      "type" : "text"
+    }
   ],
   "fragments" : [
     {

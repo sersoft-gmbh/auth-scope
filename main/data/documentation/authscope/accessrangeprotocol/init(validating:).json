@@ -345,7 +345,19 @@
 },
 "doc://AuthScope/documentation/AuthScope/AccessRangeProtocol/init(validating:)-9g808": {
   "abstract" : [
-
+    {
+      "text" : "Creates an access range with the given raw value or throws an error (typically ",
+      "type" : "text"
+    },
+    {
+      "identifier" : "doc:\/\/AuthScope\/documentation\/AuthScope\/InvalidAccessRangeError",
+      "isActive" : true,
+      "type" : "reference"
+    },
+    {
+      "text" : ") if it’s not a valid raw value.",
+      "type" : "text"
+    }
   ],
   "fragments" : [
     {

@@ -140,7 +140,8 @@
         "doc:\/\/AuthScope\/SL",
         "doc:\/\/AuthScope\/SQ",
         "doc:\/\/AuthScope\/SH",
-        "doc:\/\/AuthScope\/s8SendableP"
+        "doc:\/\/AuthScope\/s8SendableP",
+        "doc:\/\/AuthScope\/s16SendableMetatypeP"
       ],
       "kind" : "relationships",
       "title" : "Conforms To",
@@ -350,7 +351,18 @@
 },
 "doc://AuthScope/documentation/AuthScope/Scope/Index/_(_:_:)": {
   "abstract" : [
-
+    {
+      "text" : "Returns a Boolean value indicating whether the value of the first",
+      "type" : "text"
+    },
+    {
+      "text" : " ",
+      "type" : "text"
+    },
+    {
+      "text" : "argument is less than that of the second argument.",
+      "type" : "text"
+    }
   ],
   "fragments" : [
     {
@@ -449,6 +461,11 @@
 "doc://AuthScope/s15BitwiseCopyableP": {
   "identifier" : "doc:\/\/AuthScope\/s15BitwiseCopyableP",
   "title" : "Swift.BitwiseCopyable",
+  "type" : "unresolvable"
+},
+"doc://AuthScope/s16SendableMetatypeP": {
+  "identifier" : "doc:\/\/AuthScope\/s16SendableMetatypeP",
+  "title" : "Swift.SendableMetatype",
   "type" : "unresolvable"
 },
 "doc://AuthScope/s8SendableP": {

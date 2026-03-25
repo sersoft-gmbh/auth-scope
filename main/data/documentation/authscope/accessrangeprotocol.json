@@ -149,7 +149,8 @@
         "doc:\/\/AuthScope\/SQ",
         "doc:\/\/AuthScope\/SH",
         "doc:\/\/AuthScope\/SY",
-        "doc:\/\/AuthScope\/s8SendableP"
+        "doc:\/\/AuthScope\/s8SendableP",
+        "doc:\/\/AuthScope\/s16SendableMetatypeP"
       ],
       "kind" : "relationships",
       "title" : "Inherits From",
@@ -348,6 +349,11 @@
   "title" : "InvalidAccessRangeError",
   "type" : "topic",
   "url" : "\/documentation\/authscope\/invalidaccessrangeerror"
+},
+"doc://AuthScope/s16SendableMetatypeP": {
+  "identifier" : "doc:\/\/AuthScope\/s16SendableMetatypeP",
+  "title" : "Swift.SendableMetatype",
+  "type" : "unresolvable"
 },
 "doc://AuthScope/s8SendableP": {
   "identifier" : "doc:\/\/AuthScope\/s8SendableP",
